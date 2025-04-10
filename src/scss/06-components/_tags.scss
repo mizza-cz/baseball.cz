@@ -1,0 +1,17 @@
+.tags {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.tag {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  padding: 4px 16px;
+  background-color: var(--color-tertiary);
+  color: var(--color-light);
+}

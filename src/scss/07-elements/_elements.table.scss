@@ -1,0 +1,27 @@
+/*! purgecss start ignore */
+.table-responsive {
+  table {
+    border-collapse: collapse;
+  }
+  th {
+    background-color: var(--color-line);
+    padding: 8px 24px;
+    text-align: left;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: 10%;
+    vertical-align: middle;
+    text-transform: uppercase;
+  }
+  td {
+    padding: 8px 24px;
+    font-size: 18px;
+    line-height: 30px;
+    vertical-align: middle;
+    border-bottom: 1px solid var(--color-line);
+  }
+}
+
+/*! purgecss end ignore */

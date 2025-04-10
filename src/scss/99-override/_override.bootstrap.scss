@@ -1,0 +1,53 @@
+/*! purgecss start ignore */
+.container {
+  margin: 0 auto;
+  padding: 0 16px !important;
+  max-width: 96rem !important;
+  width: 100%;
+}
+.g-5 {
+  --bs-gutter-y: 32px !important;
+  --bs-gutter-x: 32px !important;
+}
+
+.text-primary {
+  color: var(--color-primary) !important;
+}
+.text-tertiary {
+  color: var(--color-tertiary);
+}
+.text-secondary {
+  color: var(--color-secondary) !important;
+}
+.border-1 {
+  border: 1px solid var(--color-line);
+}
+
+.py-5 {
+  padding-top: 32px !important;
+  padding-bottom: 32px !important;
+}
+.mb-5 {
+  margin-bottom: 32px !important;
+}
+.mb-6 {
+  margin-bottom: 40px !important;
+}
+.mb-7 {
+  margin-bottom: 48px !important;
+}
+.px-6 {
+  padding-left: 40px !important;
+  padding-right: 40px !important;
+}
+
+.text-light {
+  color: var(--color-light) !important;
+}
+.linkDecoration {
+  text-decoration-color: transparent;
+  &:hover {
+    text-decoration-color: inherit;
+  }
+}
+/*! purgecss end ignore */

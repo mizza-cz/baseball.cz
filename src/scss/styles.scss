@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+@import "../../node_modules/bootstrap/scss/functions";
+
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/variables-dark";
+@import "../../node_modules/bootstrap/scss/maps";
+
+@import "01-settings/*.scss";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/utilities";
+@import "02-tools/*.scss";
+@import "03-generic/*.scss";
+@import "04-utilities/*.scss";
+@import "05-vendor/*.scss";
+@import "06-components/*.scss";
+@import "07-elements/*.scss";
+@import "../components/**/*.scss";
+/*! purgecss start ignore */
+@import "99-override/*.scss";
+/*! purgecss end ignore */

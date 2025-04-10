@@ -1,0 +1,86 @@
+.o-content {
+  &::after {
+    display: table;
+    clear: both;
+    content: "";
+  }
+  > :first-child {
+    margin-top: 0;
+  }
+  > :last-child {
+    margin-bottom: 0;
+  }
+  p {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 16px;
+  }
+  .table-responsive {
+    margin: 32px 0;
+    .table {
+      margin: 0;
+    }
+  }
+}
+
+.h1,
+.o-content h1 {
+  font-size: 40px;
+  line-height: 50px;
+}
+
+.h2,
+.o-content h2 {
+  font-size: 32px;
+  line-height: 48px;
+}
+
+.h3,
+.o-content h3 {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.h4,
+.o-content h4 {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.h5,
+.o-content h5 {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.h6,
+.o-content h6 {
+  font-size: 14px;
+  line-height: 23px;
+}
+
+.text-xs {
+  font-size: 12px;
+  line-height: 20px;
+}
+.text-sm {
+  font-size: 14px;
+  line-height: 23px;
+}
+
+.text-md {
+  font-size: 16px;
+  line-height: 27px;
+}
+.text-lg {
+  font-size: 18px;
+  line-height: 30px;
+}
+.text-xl {
+  font-size: 20px;
+  line-height: 32px;
+}
+.text-xxl {
+  font-size: 24px;
+  line-height: 36px;
+}
