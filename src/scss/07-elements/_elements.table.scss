@@ -2,6 +2,7 @@
 .table-responsive {
   table {
     border-collapse: collapse;
+    min-width: 600px;
   }
   th {
     background-color: var(--color-line);

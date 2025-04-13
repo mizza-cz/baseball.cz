@@ -1,0 +1,126 @@
+{% extends "@components/base/base.twig" %} {% set title = "07.0_nbp-calendar" %}
+{% block main %}
+
+<div class="headerSection">
+  <div class="container">
+    <div class="headerSection__inner">
+      <h1 class="h1 text-primary">NBP</h1>
+      <div class="d-flex align-items-center gap-5 flex-wrap">
+        <ul class="headerSection__menu">
+          <li>
+            <a href="#" class="headerSection__menu-link"> Přehled </a>
+          </li>
+          <li>
+            <a href="#" class="headerSection__menu-link"> Pro trenéry </a>
+          </li>
+          <li>
+            <a href="#" class="headerSection__menu-link active"> Kalendář </a>
+          </li>
+        </ul>
+        <ul class="headerSection__social">
+          <li>
+            <a href="#" target="_blank">
+              {% include "@images/fb-primary.svg" %}
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank">
+              {% include "@images/youtube-primary.svg" %}
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="mb-7">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-6">
+        <a class="d-block w-100 h-100" href="#">
+          <img
+            loading="lazy"
+            srcset="
+              https://placehold.co/704x120?text=704x120 1408w,
+              https://placehold.co/704x120?text=704x120  704w
+            "
+            sizes="
+                     (min-width: 704w) 704w
+                     
+                   "
+            width="704"
+            height="120"
+            class="object-fit-cover w-100 h-100"
+            alt=""
+          />
+        </a>
+      </div>
+      <div class="col-lg-6">
+        <a class="d-block w-100 h-100" href="#">
+          <img
+            loading="lazy"
+            srcset="
+              https://placehold.co/704x120?text=704x120 1408w,
+              https://placehold.co/704x120?text=704x120  704w
+            "
+            sizes="
+                  (min-width: 704w) 704w
+                  
+                "
+            width="704"
+            height="120"
+            class="object-fit-cover w-100 h-100"
+            alt=""
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">Calendar content</div>
+<div class="mb-7">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-6">
+        <a class="d-block w-100 h-100" href="#">
+          <img
+            loading="lazy"
+            srcset="
+              https://placehold.co/704x120?text=704x120 1408w,
+              https://placehold.co/704x120?text=704x120  704w
+            "
+            sizes="
+                     (min-width: 704w) 704w
+                     
+                   "
+            width="704"
+            height="120"
+            class="object-fit-cover w-100 h-100"
+            alt=""
+          />
+        </a>
+      </div>
+      <div class="col-lg-6">
+        <a class="d-block w-100 h-100" href="#">
+          <img
+            loading="lazy"
+            srcset="
+              https://placehold.co/704x120?text=704x120 1408w,
+              https://placehold.co/704x120?text=704x120  704w
+            "
+            sizes="
+                  (min-width: 704w) 704w
+                  
+                "
+            width="704"
+            height="120"
+            class="object-fit-cover w-100 h-100"
+            alt=""
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+{% include "@components/partnersSlider/partnersSlider.twig" %} {% endblock %}

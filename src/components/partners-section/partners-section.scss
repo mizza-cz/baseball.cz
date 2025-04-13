@@ -1,4 +1,9 @@
 .partners-section {
+  margin-top: 32px;
+  margin-bottom: 48px;
+  @include media-breakpoint-down(lg) {
+    margin-bottom: 32px;
+  }
   &__item {
     display: flex;
     width: 100%;

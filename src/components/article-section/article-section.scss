@@ -8,7 +8,7 @@
     position: relative;
     aspect-ratio: 1072/710;
     width: 100%;
-    margin-bottom: 40px;
+
     &::before {
       content: "";
       position: absolute;
@@ -28,11 +28,6 @@
 }
 
 .galleryBox {
-  margin-bottom: 48px;
-  @include media-breakpoint-down(lg) {
-    margin-bottom: 32px;
-  }
-
   &__item {
     display: block;
     position: relative;

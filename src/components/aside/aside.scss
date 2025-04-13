@@ -2,4 +2,27 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
+
+  &__menu {
+  }
+  &__menu-item {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: 0.1em;
+    text-decoration-color: transparent;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    padding: 9px 16px 8px;
+    border-bottom: 1px solid var(--color-line);
+    color: var(--color-primary);
+    display: block;
+    &:hover {
+      text-decoration-color: inherit;
+    }
+  }
+  &__menu-item.active {
+    background-color: var(--color-secondary);
+    color: var(--color-light);
+  }
 }

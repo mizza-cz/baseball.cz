@@ -1,0 +1,24 @@
+.subPage {
+  margin-top: 32px;
+  margin-bottom: 48px;
+  &__wrapper {
+    border: 1px solid var(--color-line);
+    box-shadow: var(--shadow-4xl);
+    padding: 48px 80px;
+    @include media-breakpoint-only(xl) {
+      padding: 40px 60px;
+    }
+    @include media-breakpoint-only(lg) {
+      padding: 40px 60px;
+    }
+    @include media-breakpoint-only(md) {
+      padding: 32px 40px;
+    }
+    @include media-breakpoint-only(sm) {
+      padding: 32px;
+    }
+    @include media-breakpoint-down(sm) {
+      padding: 32px 24px;
+    }
+  }
+}
