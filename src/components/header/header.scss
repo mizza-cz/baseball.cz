@@ -1,0 +1,283 @@
+.header {
+  background-color: var(--color-primary);
+  padding-left: 56px;
+
+  position: relative;
+  z-index: 101;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__logo {
+    display: block;
+    width: 182px;
+    height: 51px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  &__menu {
+    padding: 0 56px;
+    display: flex;
+    align-items: center;
+    background-color: var(--color-secondary);
+    height: 88px;
+    &-link {
+      width: 40px;
+      height: 40px;
+      display: block;
+      background-color: transparent;
+      padding: 0;
+      margin: 0;
+      cursor: pointer;
+      border: none;
+      transition: all 0.3s;
+      &:hover {
+        transform: scale(1.05);
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+
+  .navbar__menu {
+    display: flex;
+    align-items: center;
+  }
+  .navbar {
+    @include media-breakpoint-down(xl) {
+      opacity: 0;
+
+      visibility: hidden;
+      position: absolute;
+      transition: all 0.3s ease-out;
+      right: 0px;
+      z-index: 99999;
+      top: calc(100% + 1px);
+      width: calc(100% + 32px);
+      margin: 0 auto;
+      justify-content: center;
+      align-items: center;
+      padding: 16px 40px 16px;
+      flex-direction: column;
+      background-color: var(--color-primary);
+      left: -16px;
+      border-bottom: 4px solid var(--color-secondary);
+    }
+    .header__links {
+      display: none;
+      @include media-breakpoint-down(xl) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 24px;
+        padding-bottom: 24px;
+      }
+    }
+
+    &__menu {
+      display: flex;
+      height: 88px;
+      align-items: center;
+      @include media-breakpoint-down(xl) {
+        flex-direction: column;
+        height: auto;
+        padding-left: 0;
+        width: 100%;
+      }
+      &-list {
+        position: relative;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        transition: all 0.3s;
+
+        &:last-child .navbar__menu-item::before {
+          display: none;
+        }
+        @include media-breakpoint-down(xl) {
+          width: 100%;
+          display: block;
+          padding-left: 0;
+          padding-right: 0;
+        }
+
+        &.active {
+          .dropdown-menu {
+            @include media-breakpoint-down(xl) {
+              height: 100%;
+              display: block;
+              position: static;
+            }
+          }
+        }
+        &.active {
+          .navbar__menu-item {
+            color: var(--color-light);
+            &::after {
+              opacity: 1;
+              visibility: visible;
+            }
+          }
+
+          .dropdown-menu {
+            transition: all 0.8s;
+            display: flex;
+            z-index: 28;
+          }
+        }
+      }
+      &-item {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 16px;
+        color: var(--color-dark);
+        transition: all 0.3s;
+        position: relative;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        height: 100%;
+
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-top: 4px;
+
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 27px;
+        letter-spacing: 0.1em;
+        vertical-align: middle;
+        text-transform: uppercase;
+        color: var(--color-light);
+
+        &::before {
+          content: "";
+          position: absolute;
+          right: 0;
+          width: 6px;
+          height: 6px;
+          background: var(--color-tertiary);
+          border-radius: 100%;
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          width: calc(100% - 48px);
+          height: 2px;
+          background-color: var(--color-light);
+          bottom: 26px;
+          transition: all 0.3s;
+          opacity: 0;
+          visibility: hidden;
+        }
+        @include media-breakpoint-down(xl) {
+          border-left: none;
+          border-bottom: 1px solid var(--color-line);
+          color: var(--color-light);
+        }
+        &:hover {
+          color: var(--color-light);
+          &::after {
+            opacity: 1;
+            visibility: visible;
+          }
+        }
+        @include media-breakpoint-down(xl) {
+          text-align: center;
+          margin: 0 auto;
+
+          padding-top: 16px;
+          padding-bottom: 16px;
+          justify-content: center;
+        }
+      }
+    }
+  }
+
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    z-index: 33;
+    width: max-content;
+    background-color: var(--color-light);
+    top: 100%;
+    min-width: 180px;
+    padding: 16px 24px;
+    box-shadow: 0px 0px 20px 0px rgba(16, 24, 40, 0.05);
+    border-radius: 0 0 6px 6px;
+    border-inline: 1px solid var(--color-line);
+    border-bottom: 2px solid var(--color-line);
+    gap: 4px;
+
+    flex-direction: column;
+    @include media-breakpoint-down(xl) {
+      width: 100%;
+      padding-bottom: 0;
+      box-shadow: none;
+      background-color: var(--color-primary);
+    }
+    &__list {
+      width: 100%;
+      text-align: left;
+      position: relative;
+
+      a {
+        display: block;
+        width: 100%;
+        padding: 0;
+        text-decoration-color: transparent;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+        color: var(--color-primary);
+
+        @include media-breakpoint-down(xl) {
+          width: 100%;
+          text-align: center;
+          padding: 6px 0;
+          color: var(--color-light);
+        }
+        &:hover {
+          color: var(--color-primary);
+          text-decoration-color: inherit;
+        }
+      }
+    }
+  }
+
+  .dropdown-item.dropdown-toggle {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: all 0.1s;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+  .dropdown-item:hover,
+  .dropdown-item:focus {
+    color: var(--color-primary);
+    @include media-breakpoint-down(xl) {
+      color: var(--color-light);
+    }
+  }
+  .dropdown-item.dropdown-toggle.show::before {
+    transform: rotate(90deg) translateY(-20%) translateX(-50%);
+  }
+  .dropdown-toggle::after {
+    vertical-align: middle;
+  }
+}

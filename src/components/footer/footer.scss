@@ -1,0 +1,81 @@
+.footer {
+  background-color: var(--color-primary);
+  &__board {
+    border-bottom: 2px solid var(--color-tertiary);
+  }
+  &__inner {
+    display: flex;
+    margin-left: -56px;
+    margin-right: -56px;
+    @include media-breakpoint-down(xl) {
+      margin-left: -24px;
+      margin-right: -24px;
+    }
+    @include media-breakpoint-down(md) {
+      flex-wrap: wrap;
+    }
+  }
+  &__logo {
+    width: 160px;
+    height: 45px;
+    display: block;
+    margin-bottom: 32px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}
+
+.footer__social {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  a {
+    display: block;
+    width: 32px;
+    height: 32px;
+    transition: all 0.3s;
+    &:hover {
+      transform: scale(1.05);
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.footer__col {
+  padding-top: 56px;
+  padding-bottom: 32px;
+  padding-left: 56px;
+  padding-right: 56px;
+  @include media-breakpoint-down(xl) {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  @include media-breakpoint-down(md) {
+    max-width: 50%;
+    flex: 0 0 50%;
+  }
+  flex: auto;
+  &:not(:last-child) {
+    border-right: 2px solid var(--color-tertiary);
+  }
+}
+
+.footer__list {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  color: var(--color-light);
+  a {
+    text-decoration-color: transparent;
+    &:hover {
+      text-decoration-color: inherit;
+    }
+  }
+}

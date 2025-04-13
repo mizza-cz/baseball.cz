@@ -9,6 +9,15 @@
   --bs-gutter-y: 32px !important;
   --bs-gutter-x: 32px !important;
 }
+.gx-5 {
+  --bs-gutter-x: 32px !important;
+}
+.gx-7 {
+  --bs-gutter-x: 48px !important;
+  @include media-breakpoint-down(lg) {
+    --bs-gutter-x: 32px !important;
+  }
+}
 
 .text-primary {
   color: var(--color-primary) !important;
@@ -35,6 +44,9 @@
 }
 .mb-7 {
   margin-bottom: 48px !important;
+  @include media-breakpoint-down(lg) {
+    margin-bottom: 32px !important;
+  }
 }
 .px-6 {
   padding-left: 40px !important;
@@ -49,5 +61,11 @@
   &:hover {
     text-decoration-color: inherit;
   }
+}
+.gap-20 {
+  gap: 20px;
+}
+.gap-12 {
+  gap: 12px;
 }
 /*! purgecss end ignore */

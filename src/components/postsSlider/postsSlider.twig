@@ -1,0 +1,90 @@
+<div class="postsSlider">
+  <div class="container">
+    <ul class="postsSlider__inner">
+      <li class="postsSlider__item">
+        {% include "@components/post/post.twig" %}
+      </li>
+      <li class="postsSlider__item">
+        <a href="#" class="post">
+          <div class="tag">Reprezentace</div>
+          <img
+            loading="lazy"
+            srcset="
+              https://picsum.photos/672/672 672w,
+              https://picsum.photos/336/336 336w
+            "
+            sizes="
+                  (min-width: 336px) 336px,
+                  calc(100vw - 2rem)
+                "
+            width="336"
+            height="336"
+            class="object-fit-cover"
+            alt=""
+          />
+          <div class="post__content">
+            <h3 class="h4 text-light mb-2">
+              KPMG novým hlavním partnerem českého baseballu pro sezóny 2025 a
+              2026
+            </h3>
+            <div class="text-tertiary text-md">24. 1. 2024</div>
+          </div>
+        </a>
+      </li>
+      <li class="postsSlider__item">
+        {% include "@components/post/post.twig" %}
+      </li>
+      <li class="postsSlider__item">
+        {% include "@components/post/post.twig" %}
+      </li>
+      <li class="postsSlider__item">
+        {% include "@components/post/post.twig" %}
+      </li>
+      <li class="postsSlider__item">
+        {% include "@components/post/post.twig" %}
+      </li>
+      <li class="postsSlider__item">
+        {% include "@components/post/post.twig" %}
+      </li>
+      <li class="postsSlider__item">
+        {% include "@components/post/post.twig" %}
+      </li>
+    </ul>
+    <div class="postsSlider__nav">
+      <a href="#" class="btn btn-stroke"
+        >Zobrazit všechny články {% include "@images/arrow-right.svg" %}</a
+      >
+      <div class="postsSlider__btns">
+        <button class="postsSlider__btn postsSlider__btnprev">
+          <svg
+            width="20"
+            height="21"
+            viewBox="0 0 20 21"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4.1665 10.1051H15.8332M15.8332 10.1051L9.99984 4.27173M15.8332 10.1051L9.99984 15.9384"
+              stroke="white"
+            />
+          </svg>
+        </button>
+
+        <button class="postsSlider__btn postsSlider__btnnext">
+          <svg
+            width="20"
+            height="21"
+            viewBox="0 0 20 21"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4.1665 10.1051H15.8332M15.8332 10.1051L9.99984 4.27173M15.8332 10.1051L9.99984 15.9384"
+              stroke="white"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

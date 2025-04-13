@@ -1,0 +1,55 @@
+.scoreboard {
+  background: var(--color-light);
+  &__inner {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
+.scoreboardItem {
+  min-width: 320px;
+  max-width: 352px;
+  transition: all 0.3s;
+  padding: 12px 20px;
+  background: var(--color-light);
+  border-right: 2px solid var(--color-line);
+  display: block;
+  text-decoration: none;
+  scroll-snap-align: start;
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--color-line);
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+  &__team {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    img {
+      width: 24px;
+      height: 24px;
+      object-fit: contain;
+    }
+  }
+}
+a.scoreboardItem {
+  &:hover {
+    background: rgba(#e4e4e7, 0.4);
+  }
+}

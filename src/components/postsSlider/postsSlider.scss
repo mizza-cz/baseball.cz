@@ -1,0 +1,58 @@
+.postsSlider {
+  margin-bottom: 92px;
+  position: relative;
+
+  &__inner {
+    margin-left: -16px;
+    margin-right: -16px;
+  }
+  &__item {
+    padding: 0 16px;
+  }
+  .slick-list {
+    overflow: visible;
+  }
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 24px;
+  }
+  &__btns {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  &__btn {
+    border: 1px solid var(--color-primary);
+    border-radius: 6px;
+    margin: 0;
+    padding: 0;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: var(--color-light);
+    svg {
+      width: 32px;
+      height: 32px;
+      object-fit: contain;
+    }
+    svg path {
+      stroke: var(--color-primary);
+    }
+  }
+  &__btn.slick-disabled {
+    background-color: var(--color-primary);
+    svg path {
+      stroke: var(--color-light);
+    }
+  }
+  &__btnprev {
+    svg {
+      transform: rotate(-180deg);
+    }
+  }
+}

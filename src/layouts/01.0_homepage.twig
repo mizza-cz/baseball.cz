@@ -1,9 +1,247 @@
-{% extends "@components/base/base.twig" %}
+{% extends "@components/base/base.twig" %} {% set title = "01.0_homepage" %} {%
+block main %} {% include "@components/topstory/topstory.twig" %} {% include
+"@components/postsSlider/postsSlider.twig" %}
+<div class="mb-7">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-3 col-sm-6">
+        <a class="d-block w-100 h-100" href="#">
+          <img
+            loading="lazy"
+            srcset="
+              images/content/bans/hraj.png 772w,
+              images/content/bans/hraj.png 336w
+            "
+            sizes="
+                (min-width: 336w) 336w
+                
+              "
+            width="336"
+            height="120"
+            class="object-fit-cover w-100 h-100"
+            alt=""
+          />
+        </a>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <a class="d-block w-100 h-100" href="#">
+          <img
+            loading="lazy"
+            srcset="
+              images/content/bans/fanshop.jpg 772w,
+              images/content/babs/fanshop.jpg 336w
+            "
+            sizes="
+                  (min-width: 336w) 336w
+                  
+                "
+            width="336"
+            height="120"
+            class="object-fit-cover w-100 h-100"
+            alt=""
+          />
+        </a>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <a class="d-block w-100 h-100" href="#">
+          <img
+            loading="lazy"
+            srcset="
+              https://placehold.co/336x120?text=Národní+baseballový+program 772w,
+              https://placehold.co/336x120?text=Národní+baseballový+program 336w
+            "
+            sizes="
+                   (min-width: 336w) 336w
+                   
+                 "
+            width="336"
+            height="120"
+            class="object-fit-cover w-100 h-100"
+            alt=""
+          />
+        </a>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <a class="d-block w-100 h-100" href="#">
+          <img
+            loading="lazy"
+            srcset="
+              images/content/bans/fond.jpg 772w,
+              images/content/babs/fond.jpg 336w
+            "
+            sizes="
+                 (min-width: 336w) 336w
+                 
+               "
+            width="336"
+            height="120"
+            class="object-fit-cover w-100 h-100"
+            alt=""
+          />
+        </a>
+      </div>
+      <div class="col-lg-6">
+        <a class="d-block w-100 h-100" href="#">
+          <img
+            loading="lazy"
+            srcset="
+              https://placehold.co/704x120?text=Bannerová+pozice+(Asia+trip) 1408w,
+              https://placehold.co/704x120?text=Bannerová+pozice+(Asia+trip)  704w
+            "
+            sizes="
+                    (min-width: 704w) 704w
+                    
+                  "
+            width="704"
+            height="120"
+            class="object-fit-cover w-100 h-100"
+            alt=""
+          />
+        </a>
+      </div>
+      <div class="col-lg-6">
+        <a class="d-block w-100 h-100" href="#">
+          <img
+            loading="lazy"
+            srcset="
+              https://placehold.co/704x120?text=Bannerová+pozice+(Prague+baseball+week) 1408w,
+              https://placehold.co/704x120?text=Bannerová+pozice+(Prague+baseball+week)  704w
+            "
+            sizes="
+                 (min-width: 704w) 704w
+                 
+               "
+            width="704"
+            height="120"
+            class="object-fit-cover w-100 h-100"
+            alt=""
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+{% include "@components/action-section/action-section.twig" %}
+<div class="mb-7">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-3 col-sm-6">
+        <a class="d-block w-100 h-100" href="#">
+          <img
+            loading="lazy"
+            srcset="
+              https://placehold.co/336x120?text=Extraliga 772w,
+              https://placehold.co/336x120?text=Extraliga 336w
+            "
+            sizes="
+                 (min-width: 336w) 336w
+                 
+               "
+            width="336"
+            height="120"
+            class="object-fit-cover w-100 h-100"
+            alt=""
+          />
+        </a>
+      </div>
 
-{% set title = "01.0_homepage" %}
-
-{% block main %}
-
-Hello, World!
-
-{% endblock %}
+      <div class="col-lg-3 col-sm-6">
+        <a class="d-block w-100 h-100" href="#">
+          <img
+            loading="lazy"
+            srcset="
+              https://placehold.co/336x120?text=Mužská+reprezentace 772w,
+              https://placehold.co/336x120?text=Mužská+reprezentace 336w
+            "
+            sizes="
+                    (min-width: 336w) 336w
+                    
+                  "
+            width="336"
+            height="120"
+            class="object-fit-cover w-100 h-100"
+            alt=""
+          />
+        </a>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <a class="d-block w-100 h-100" href="#">
+          <img
+            loading="lazy"
+            srcset="
+              https://placehold.co/336x120?text=Fotobanka 772w,
+              https://placehold.co/336x120?text=Fotobanka 336w
+            "
+            sizes="
+                  (min-width: 336w) 336w
+                  
+                "
+            width="336"
+            height="120"
+            class="object-fit-cover w-100 h-100"
+            alt=""
+          />
+        </a>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <a class="d-block w-100 h-100" href="#">
+          <img
+            loading="lazy"
+            srcset="
+              https://placehold.co/336x120?text=Baseball+Czech+TV 772w,
+              https://placehold.co/336x120?text=Baseball+Czech+TV 336w
+            "
+            sizes="
+                 (min-width: 336w) 336w
+                 
+               "
+            width="336"
+            height="120"
+            class="object-fit-cover w-100 h-100"
+            alt=""
+          />
+        </a>
+      </div>
+      <div class="col-lg-6">
+        <a class="d-block w-100 h-100" href="#">
+          <img
+            loading="lazy"
+            srcset="
+              https://placehold.co/704x120?text=All+Star+Game 1408w,
+              https://placehold.co/704x120?text=All+Star+Game  704w
+            "
+            sizes="
+                     (min-width: 704w) 704w
+                     
+                   "
+            width="704"
+            height="120"
+            class="object-fit-cover w-100 h-100"
+            alt=""
+          />
+        </a>
+      </div>
+      <div class="col-lg-6">
+        <a class="d-block w-100 h-100" href="#">
+          <img
+            loading="lazy"
+            srcset="
+              https://placehold.co/704x120?text=ME+do+23+let 1408w,
+              https://placehold.co/704x120?text=ME+do+23+let  704w
+            "
+            sizes="
+                  (min-width: 704w) 704w
+                  
+                "
+            width="704"
+            height="120"
+            class="object-fit-cover w-100 h-100"
+            alt=""
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+{% include "@components/partners-section/hp-partners-section.twig" %} {%
+endblock %}
