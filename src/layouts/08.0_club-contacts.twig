@@ -1,35 +1,30 @@
-{% extends "@components/base/base.twig" %} {% set title = "07.0_nbp-calendar" %}
-{% block main %}
+{% extends "@components/base/base.twig" %} {% set title = "08.0_club-contacts"
+%} {% block main %}
 
 <div class="headerSection">
   <div class="container">
     <div class="headerSection__inner">
-      <h1 class="h1 text-primary">NBP</h1>
+      <div class="d-flex gap-20 align-items-center flex-wrap">
+        <img
+          src="images/content/kotlarka.png"
+          width="48"
+          height="48"
+          class="object-fit-contain"
+          alt="login"
+        />
+        <h1 class="h1 text-primary">Kotlářka Praha</h1>
+      </div>
+
       <div class="d-flex align-items-center gap-5 flex-wrap">
         <ul class="headerSection__menu">
           <li>
-            <a
-              href="https://mizza-cz.github.io/baseball.cz/build/06.0_nbp-overview.html"
-              class="headerSection__menu-link"
-            >
-              Přehled
-            </a>
+            <a href="" class="headerSection__menu-link"> Přehled </a>
           </li>
           <li>
-            <a
-              href="https://mizza-cz.github.io/baseball.cz/build/05.0_nbp-trainers.html"
-              class="headerSection__menu-link"
-            >
-              Pro trenéry
-            </a>
+            <a href="" class="headerSection__menu-link"> Hřiště </a>
           </li>
           <li>
-            <a
-              href="https://mizza-cz.github.io/baseball.cz/build/07.0_nbp-calendar.html"
-              class="headerSection__menu-link active"
-            >
-              Kalendář
-            </a>
+            <a href="" class="headerSection__menu-link active"> Kontakty </a>
           </li>
         </ul>
         <ul class="headerSection__social">
@@ -43,6 +38,16 @@
               {% include "@images/youtube-primary.svg" %}
             </a>
           </li>
+          <li>
+            <a href="#" target="_blank">
+              {% include "@images/insta-primary.svg" %}
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank">
+              {% include "@images/tiktok-primary.svg" %}
+            </a>
+          </li>
         </ul>
       </div>
     </div>
@@ -92,31 +97,31 @@
     </div>
   </div>
 </div>
-
-<div class="mb-7">
+<section class="mb-7">
   <div class="container">
     <div class="row g-5">
-      <div class="col-xl-4 col-lg-6">
-        {% include "@components/calendarItem/calendarItem.twig" %}
+      <div class="col-xl-4 col-md-6">
+        {% include "@components/contactItem/contactItem.twig" %}
       </div>
-      <div class="col-xl-4 col-lg-6">
-        {% include "@components/calendarItem/calendarItem.twig" %}
+      <div class="col-xl-4 col-md-6">
+        {% include "@components/contactItem/contactItem.twig" %}
       </div>
-      <div class="col-xl-4 col-lg-6">
-        {% include "@components/calendarItem/calendarItem.twig" %}
+      <div class="col-xl-4 col-md-6">
+        {% include "@components/contactItem/contactItem.twig" %}
       </div>
-      <div class="col-xl-4 col-lg-6">
-        {% include "@components/calendarItem/calendarItem.twig" %}
+      <div class="col-xl-4 col-md-6">
+        {% include "@components/contactItem/contactItem.twig" %}
       </div>
-      <div class="col-xl-4 col-lg-6">
-        {% include "@components/calendarItem/calendarItem.twig" %}
+      <div class="col-xl-4 col-md-6">
+        {% include "@components/contactItem/contactItem.twig" %}
       </div>
-      <div class="col-xl-4 col-lg-6">
-        {% include "@components/calendarItem/calendarItem.twig" %}
+      <div class="col-xl-4 col-md-6">
+        {% include "@components/contactItem/contactItem.twig" %}
       </div>
     </div>
   </div>
-</div>
+</section>
+
 <div class="mb-7">
   <div class="container">
     <div class="row g-5">
@@ -161,4 +166,4 @@
     </div>
   </div>
 </div>
-{% include "@components/partnersSlider/partnersSlider.twig" %} {% endblock %}
+{% endblock %}

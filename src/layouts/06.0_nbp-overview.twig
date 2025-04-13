@@ -8,15 +8,28 @@
       <div class="d-flex align-items-center gap-5 flex-wrap">
         <ul class="headerSection__menu">
           <li>
-            <a href="#" class="headerSection__menu-link"> Přehled </a>
+            <a
+              href="https://mizza-cz.github.io/baseball.cz/build/06.0_nbp-overview.html"
+              class="headerSection__menu-link active"
+            >
+              Přehled
+            </a>
           </li>
           <li>
-            <a href="#" class="headerSection__menu-link active">
+            <a
+              href="https://mizza-cz.github.io/baseball.cz/build/05.0_nbp-trainers.html"
+              class="headerSection__menu-link"
+            >
               Pro trenéry
             </a>
           </li>
           <li>
-            <a href="#" class="headerSection__menu-link"> Kalendář </a>
+            <a
+              href="https://mizza-cz.github.io/baseball.cz/build/07.0_nbp-calendar.html"
+              class="headerSection__menu-link"
+            >
+              Kalendář
+            </a>
           </li>
         </ul>
         <ul class="headerSection__social">
@@ -35,8 +48,115 @@
     </div>
   </div>
 </div>
-<div class="mb-7">
-  <div class="container">
+<div class="container">
+  <div class="mb-7">
+    <div class="row g-5">
+      <div class="col-lg-6">
+        <a class="d-block w-100 h-100" href="#">
+          <img
+            loading="lazy"
+            srcset="
+              https://placehold.co/704x120?text=704x120 1408w,
+              https://placehold.co/704x120?text=704x120  704w
+            "
+            sizes="
+                     (min-width: 704w) 704w
+                     
+                   "
+            width="704"
+            height="120"
+            class="object-fit-cover w-100 h-100"
+            alt=""
+          />
+        </a>
+      </div>
+      <div class="col-lg-6">
+        <a class="d-block w-100 h-100" href="#">
+          <img
+            loading="lazy"
+            srcset="
+              https://placehold.co/704x120?text=704x120 1408w,
+              https://placehold.co/704x120?text=704x120  704w
+            "
+            sizes="
+                  (min-width: 704w) 704w
+                  
+                "
+            width="704"
+            height="120"
+            class="object-fit-cover w-100 h-100"
+            alt=""
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="mb-7">
+    <div class="row g-5">
+      <div class="col-xl-3 col-sm-6">
+        {% include "@components/post/post.twig" %}
+      </div>
+      <div class="col-xl-3 col-sm-6">
+        {% include "@components/post/post.twig" %}
+      </div>
+      <div class="col-xl-3 col-sm-6">
+        {% include "@components/post/post.twig" %}
+      </div>
+      <div class="col-xl-3 col-sm-6">
+        {% include "@components/post/post.twig" %}
+      </div>
+    </div>
+    <a href="#" class="btn btn-stroke ms-auto mt-5"
+      >Zobrazit další články {% include "@images/arrow-right.svg" %}</a
+    >
+  </div>
+  <div class="mb-7">
+    <h2 class="h2 text-primary mb-3">Akce</h2>
+    <div class="row g-5">
+      <div class="col-xl-4 col-lg-6">
+        {% include "@components/calendarItem/calendarItem.twig" %}
+      </div>
+      <div class="col-xl-4 col-lg-6">
+        {% include "@components/calendarItem/calendarItem.twig" %}
+      </div>
+      <div class="col-xl-4 col-lg-6">
+        {% include "@components/calendarItem/calendarItem.twig" %}
+      </div>
+      <div class="col-xl-4 col-lg-6">
+        {% include "@components/calendarItem/calendarItem.twig" %}
+      </div>
+      <div class="col-xl-4 col-lg-6">
+        {% include "@components/calendarItem/calendarItem.twig" %}
+      </div>
+      <div class="col-xl-4 col-lg-6">
+        {% include "@components/calendarItem/calendarItem.twig" %}
+      </div>
+    </div>
+  </div>
+  <div class="mb-7">
+    <h3 class="h2 text-primary mb-3">Kontakty</h3>
+    <div class="row g-5">
+      <div class="col-xl-4 col-md-6">
+        {% include "@components/contactItem/contactItem.twig" %}
+      </div>
+      <div class="col-xl-4 col-md-6">
+        {% include "@components/contactItem/contactItem.twig" %}
+      </div>
+      <div class="col-xl-4 col-md-6">
+        {% include "@components/contactItem/contactItem.twig" %}
+      </div>
+      <div class="col-xl-4 col-md-6">
+        {% include "@components/contactItem/contactItem.twig" %}
+      </div>
+      <div class="col-xl-4 col-md-6">
+        {% include "@components/contactItem/contactItem.twig" %}
+      </div>
+      <div class="col-xl-4 col-md-6">
+        {% include "@components/contactItem/contactItem.twig" %}
+      </div>
+    </div>
+  </div>
+  <div class="mb-7">
     <div class="row g-5">
       <div class="col-lg-6">
         <a class="d-block w-100 h-100" href="#">
@@ -79,49 +199,5 @@
     </div>
   </div>
 </div>
-<div class="container">Overview content</div>
-<div class="mb-7">
-  <div class="container">
-    <div class="row g-5">
-      <div class="col-lg-6">
-        <a class="d-block w-100 h-100" href="#">
-          <img
-            loading="lazy"
-            srcset="
-              https://placehold.co/704x120?text=704x120 1408w,
-              https://placehold.co/704x120?text=704x120  704w
-            "
-            sizes="
-                     (min-width: 704w) 704w
-                     
-                   "
-            width="704"
-            height="120"
-            class="object-fit-cover w-100 h-100"
-            alt=""
-          />
-        </a>
-      </div>
-      <div class="col-lg-6">
-        <a class="d-block w-100 h-100" href="#">
-          <img
-            loading="lazy"
-            srcset="
-              https://placehold.co/704x120?text=704x120 1408w,
-              https://placehold.co/704x120?text=704x120  704w
-            "
-            sizes="
-                  (min-width: 704w) 704w
-                  
-                "
-            width="704"
-            height="120"
-            class="object-fit-cover w-100 h-100"
-            alt=""
-          />
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
+
 {% include "@components/partnersSlider/partnersSlider.twig" %} {% endblock %}
