@@ -41,6 +41,9 @@
     bottom: 24px;
     position: absolute;
     z-index: 2;
+    @include media-breakpoint-down(lg) {
+      padding: 0 24px;
+    }
   }
   .h4 {
     text-decoration: underline;
