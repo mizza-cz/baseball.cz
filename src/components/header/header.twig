@@ -54,11 +54,34 @@
     <a href="#" class="header__menu-link">
       <img src="images/ico/login.svg" width="40" height="40" alt="login" />
     </a>
-    <button class="header__menu-link searchBtn">
-      <img src="images/ico/search.svg" width="40" height="40" alt="login" />
+    <button class="header__menu-link header__search">
+      <img src="images/ico/search.svg" width="24" height="24" alt="login" />
     </button>
     <button class="c-header__opener js-header__opener" type="button">
       <span></span>
     </button>
+    <div id="mobile-search" class="searchBox">
+      <form>
+        <img
+          class="searchBox__icon"
+          src="images/ico/search.svg"
+          width="40"
+          height="40"
+          alt="login"
+        />
+        <input type="text" placeholder="Zadejte hledaný výraz..." required />
+        <button type="submit" class="btn">Hledat</button>
+      </form>
+      <div class="searchBox__close">
+        <img
+          class="searchBox__icon"
+          src="images/ico/close.svg"
+          width="40"
+          height="40"
+          alt="close"
+        />
+      </div>
+    </div>
   </div>
+  {% include "@components/menu/menu.twig" %}
 </header>

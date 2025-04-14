@@ -415,12 +415,174 @@
 				<a href="#" class="header__menu-link">
 					<img src="images/ico/login.svg" width="40" height="40" alt="login" />
 				</a>
-				<button class="header__menu-link searchBtn">
-					<img src="images/ico/search.svg" width="40" height="40" alt="login" />
+				<button class="header__menu-link header__search">
+					<img src="images/ico/search.svg" width="24" height="24" alt="login" />
 				</button>
 				<button class="c-header__opener js-header__opener" type="button">
 					<span></span>
 				</button>
+				<div id="mobile-search" class="searchBox">
+					<form>
+						<img class="searchBox__icon" src="images/ico/search.svg" width="40" height="40" alt="login" />
+						<input type="text" placeholder="Zadejte hledaný výraz..." required />
+						<button type="submit" class="btn">Hledat</button>
+					</form>
+					<div class="searchBox__close">
+						<img class="searchBox__icon" src="images/ico/close.svg" width="40" height="40" alt="close" />
+					</div>
+				</div>
+			</div>
+			<div class="menu">
+				<div class="menu__wrapper">
+					<div class="row g-5">
+						<div class="col-xl-3 col-lg-6">
+							<div class="accordion" id="">
+								<div class="accordion-item">
+									<h2 class="accordion-header" id="headingOne">
+										Organizace
+										<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+
+										</button>
+									</h2>
+									<div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne">
+										<ul class="menu__list">
+											<li>
+												<a href="#"> O asociaci </a>
+											</li>
+											<li>
+												<a href="#"> Výkonný výbor </a>
+											</li>
+											<li>
+												<a href="#"> Sekretariát </a>
+											</li>
+											<li>
+												<a href="#"> Komise </a>
+											</li>
+											<li>
+												<a href="#"> oddíly </a>
+											</li>
+											<li>
+												<a href="#"> Regiony </a>
+											</li>
+											<li>
+												<a href="#"> Media </a>
+											</li>
+											<li>
+												<a href="#"> Partneři </a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-3 col-lg-6">
+							<div class="accordion" id="">
+								<div class="accordion-item">
+									<h2 class="accordion-header" id="headingTwo">
+										Sport
+										<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo"></button>
+									</h2>
+									<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+										<ul class="menu__list">
+											<li>
+												<a href="#">NBP</a>
+											</li>
+											<li>
+												<a href="#">Rozhodčí</a>
+											</li>
+											<li>
+												<a href="#">Zapisovatelé</a>
+											</li>
+											<li>
+												<a href="#">Fond potřebným</a>
+											</li>
+											<li>
+												<a href="#">Síň slávy</a>
+											</li>
+											<li>
+												<a href="#">Klub homerunařů</a>
+											</li>
+											<li>
+												<a href="#">Česko hraje baseballl</a>
+											</li>
+											<li>
+												<a href="#">PBT</a>
+											</li>
+											<li>
+												<a href="#">ASG</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-xl-3 col-lg-6">
+							<div class="accordion" id="">
+								<div class="accordion-item">
+									<h2 class="accordion-header" id="headingThree">
+										Pro fanoušky
+										<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree"></button>
+									</h2>
+									<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
+										<ul class="menu__list">
+											<li>
+												<a href="#">Fanshop</a>
+											</li>
+											<li>
+												<a href="#">Vstupenky</a>
+											</li>
+											<li>
+												<a href="#">Newsletter</a>
+											</li>
+											<li>
+												<a href="#">Aplikace</a>
+											</li>
+											<li>
+												<a href="#">Fotobanka</a>
+											</li>
+											<li>
+												<a href="#">Zapoj se</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-3 col-lg-6">
+							<div class="accordion" id="">
+								<div class="accordion-item">
+									<h2 class="accordion-header" id="headingFour">
+										Za podpory
+										<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour"></button>
+									</h2>
+									<div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour">
+										<ul class="menu__list">
+											<li>
+												<a href="#">NSA</a>
+											</li>
+											<li>
+												<a href="#">ČOV</a>
+											</li>
+											<li>
+												<a href="#">ČUS</a>
+											</li>
+											<li>
+												<a href="#">Antidoping</a>
+											</li>
+											<li>
+												<a href="#">WBSC Europe</a>
+											</li>
+											<li>
+												<a href="#">WBSC</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</header>
 		<main class="main" aria-label="Hlavní obsah">
@@ -796,7 +958,7 @@
 								<a href="mailto:baseball@baseball.cz">baseball@baseball.cz</a>
 							</div>
 						</div>
-						<div class="footer__col">
+						<div class="footer__col d-none d-lg-block">
 							<div class="text-lg text-tertiary fw-bold mb-2">ČBA</div>
 
 							<div class="row gx-7">
@@ -840,7 +1002,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="footer__col">
+						<div class="footer__col d-none d-lg-block">
 							<div class="text-lg text-tertiary fw-bold mb-2">Soutěže</div>
 							<div class="row gx-7">
 								<div class="col-auto">
@@ -883,7 +1045,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="footer__col">
+						<div class="footer__col d-none d-lg-block">
 							<div class="text-lg text-tertiary fw-bold mb-2">Další</div>
 							<div class="row gx-7">
 								<div class="col-auto">
@@ -957,8 +1119,8 @@
 				</div>
 			</div>
 			<div class="container">
-				<div class="d-flex align-items-center justify-content-between gap-3 flex-wrap text-tertiary text-md py-5">
-					<div class="">
+				<div class="d-flex align-items-center justify-content-md-between justify-content-center gap-lg-3 gap-2 flex-md-row flex-column flex-wrap text-tertiary text-md py-lg-32 py-4">
+					<div class="text-md-start text-center">
 						© 2025 Česká baseballová asociace &
 						<a target="_blank" href="https://esportsmedia.cz/">eSports.cz s.r.o.</a>
 					</div>

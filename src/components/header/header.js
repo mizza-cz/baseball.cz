@@ -33,17 +33,21 @@ $(function () {
   });
 });
 
-(function () {
-  $(".header__search").click(function () {
-    $("#mobile-search, .header__search").toggleClass("active");
+// search
+const searchToggleBtn = document.querySelector(".header__search");
+const searchBox = document.getElementById("mobile-search");
+const closeBtn = searchBox?.querySelector(".searchBox__close");
+
+if (searchToggleBtn && searchBox) {
+  searchToggleBtn.addEventListener("click", function () {
+    searchBox.classList.toggle("active");
+    searchToggleBtn.classList.toggle("active");
   });
-})();
+}
 
-const subMenuBtn = document.getElementById("subMenuBtn");
-
-if (subMenuBtn) {
-  subMenuBtn.addEventListener("click", () => {
-    document.body.classList.toggle("openSubMenu");
-    subMenuBtn.classList.toggle("active");
+if (closeBtn && searchToggleBtn && searchBox) {
+  closeBtn.addEventListener("click", function () {
+    searchBox.classList.remove("active");
+    searchToggleBtn.classList.remove("active");
   });
 }
