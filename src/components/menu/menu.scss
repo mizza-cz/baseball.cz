@@ -66,6 +66,11 @@
     border-bottom: 1px solid var(--color-light);
     margin-bottom: 4px;
     position: relative;
+    display: block;
+    text-decoration-color: transparent;
+    &:hover {
+      text-decoration-color: inherit;
+    }
   }
 }
 

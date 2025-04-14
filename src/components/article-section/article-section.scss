@@ -8,7 +8,10 @@
     position: relative;
     aspect-ratio: 1072/710;
     width: 100%;
-
+    @include media-breakpoint-down(lg) {
+      min-height: 480px;
+      aspect-ratio: 336 / 336;
+    }
     &::before {
       content: "";
       position: absolute;
@@ -23,6 +26,9 @@
       position: absolute;
       bottom: 40px;
       padding: 0 80px;
+      @include media-breakpoint-down(lg) {
+        padding: 0 40px;
+      }
     }
   }
 }
