@@ -1,0 +1,16 @@
+.fieldItem {
+  height: 100%;
+  &__img {
+    width: 100%;
+    aspect-ratio: 549/344;
+    margin-bottom: 24px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .gap-40 {
+    gap: 12px 40px;
+  }
+}

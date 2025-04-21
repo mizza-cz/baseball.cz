@@ -1,0 +1,45 @@
+.form {
+  gap: 24px 32px;
+}
+.form-input {
+  position: relative;
+  display: block;
+  @include media-breakpoint-down(lg) {
+    width: 100%;
+  }
+  input {
+    width: 100%;
+    border: 1px solid var(--color-primary);
+    border-radius: 8px;
+    padding: 12px 24px 12px 64px;
+    color: var(--color-primary);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    width: 100%;
+    display: block;
+    width: 350px;
+    outline: none;
+    @include media-breakpoint-down(lg) {
+      width: 100%;
+    }
+    &::placeholder {
+      color: var(--color-primary);
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    left: 12px;
+    width: 24px;
+    height: 24px;
+    border: none;
+    outline: none;
+    top: 12px;
+    background-color: transparent;
+
+    svg path {
+      stroke: var(--color-primary);
+    }
+  }
+}
