@@ -1,73 +1,56 @@
-{% extends "@components/base/base.twig" %} {% set title = "08.0_club-contacts"
-%} {% block main %}
+{% extends "@components/base/base.twig" %} {% set title =
+"18.0_сompetition-table" %} {% block main %}
 
 <div class="headerSection">
   <div class="container">
     <div class="headerSection__inner">
       <div class="d-flex gap-20 align-items-center flex-wrap">
         <img
-          src="images/content/kotlarka.png"
+          src="images/content/extraliga.png"
           width="48"
           height="48"
           class="object-fit-contain"
           alt="login"
         />
-        <h1 class="h1 text-primary">Kotlářka Praha</h1>
+        <h1 class="h1 text-primary">Extraliga</h1>
+        <form>
+          <label class="o-select select-sm">
+            <select class="js-select">
+              <option>2025</option>
+              <option>2024</option>
+              <option>2023</option>
+              <option>2022</option>
+            </select>
+          </label>
+        </form>
       </div>
 
       <div class="d-flex align-items-center gap-5 flex-wrap">
         <ul class="headerSection__menu">
           <li>
-            <a
-              href="https://mizza-cz.github.io/baseball.cz/build/10.0_club.html"
-              class="headerSection__menu-link"
-            >
-              Přehled
-            </a>
+            <a href="" class="headerSection__menu-link"> Přehled </a>
           </li>
           <li>
-            <a
-              href="https://mizza-cz.github.io/baseball.cz/build/09.0_club-field.html"
-              class="headerSection__menu-link"
-            >
-              Hřiště
-            </a>
+            <a href="" class="headerSection__menu-link"> Rozpis & výsledky </a>
           </li>
           <li>
-            <a
-              href="https://mizza-cz.github.io/baseball.cz/build/08.0_club-contacts.html"
-              class="headerSection__menu-link active"
-            >
-              Kontakty
-            </a>
-          </li>
-        </ul>
-        <ul class="headerSection__social">
-          <li>
-            <a href="#" target="_blank">
-              {% include "@images/fb-primary.svg" %}
-            </a>
+            <a href="" class="headerSection__menu-link active"> Tabulka </a>
           </li>
           <li>
-            <a href="#" target="_blank">
-              {% include "@images/youtube-primary.svg" %}
-            </a>
+            <a href="" class="headerSection__menu-link"> Statistiky </a>
           </li>
           <li>
-            <a href="#" target="_blank">
-              {% include "@images/insta-primary.svg" %}
-            </a>
+            <a href="" class="headerSection__menu-link"> Týmy </a>
           </li>
           <li>
-            <a href="#" target="_blank">
-              {% include "@images/tiktok-primary.svg" %}
-            </a>
+            <a href="" class="headerSection__menu-link"> Soutěž </a>
           </li>
         </ul>
       </div>
     </div>
   </div>
 </div>
+
 <div class="mb-7">
   <div class="container">
     <div class="row g-5">
@@ -112,30 +95,32 @@
     </div>
   </div>
 </div>
-<section class="mb-7">
+<div class="mb-4">
   <div class="container">
-    <div class="row g-5">
-      <div class="col-xl-4 col-md-6">
-        {% include "@components/contactItem/contactItem.twig" %}
-      </div>
-      <div class="col-xl-4 col-md-6">
-        {% include "@components/contactItem/contactItem.twig" %}
-      </div>
-      <div class="col-xl-4 col-md-6">
-        {% include "@components/contactItem/contactItem.twig" %}
-      </div>
-      <div class="col-xl-4 col-md-6">
-        {% include "@components/contactItem/contactItem.twig" %}
-      </div>
-      <div class="col-xl-4 col-md-6">
-        {% include "@components/contactItem/contactItem.twig" %}
-      </div>
-      <div class="col-xl-4 col-md-6">
-        {% include "@components/contactItem/contactItem.twig" %}
+    <form class="d-flex align-items-center flex-wrap gap-3">
+      <label class="o-select select">
+        <select class="js-select">
+          <option>Základní část</option>
+        </select>
+      </label>
+      <label class="o-select select">
+        <select class="js-select">
+          <option>Celková tabulka</option>
+        </select>
+      </label>
+    </form>
+  </div>
+</div>
+<div class="mb-7">
+  <div class="container">
+    <div class="contentBox">
+      <div class="o-content">
+        {% include "@components/table-section/table-section.twig" %}
+     
       </div>
     </div>
   </div>
-</section>
+</div>
 
 <div class="mb-7">
   <div class="container">

@@ -118,24 +118,37 @@
     width: 100%;
   }
 }
-.hp-tabs-section {
+
+.select-sm {
+  .select2-container .select2-selection--single {
+    padding: 2px 26px 3px 12px;
+    border-radius: 4px;
+    border: 1px solid var(--color-tertiary);
+    height: auto;
+    min-width: fit-content;
+  }
+  .select2-container--default
+    .select2-selection--single
+    .select2-selection__rendered {
+    font-size: 12px;
+    line-height: 20px;
+    color: var(--color-tertiary);
+  }
   .select2-container--default
     .select2-selection--single
     .select2-selection__arrow {
+    width: 12px;
+    height: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 8px;
     b {
-      background-image: url("/assets/images/ico/chevron.svg");
+      width: 12px;
+      height: 12px;
+      position: relative;
+      background-image: url("../images/ico/chevron-tertiary.svg");
     }
-  }
-  .select2-container--default .select2-selection--single {
-    border: none !important;
-    background-color: transparent;
-  }
-
-  .select2-container--default.select2-container--open.select2-container--below
-    .select2-selection--multiple,
-  .select2-container--default.select2-container--open.select2-container--below
-    .select2-selection--single {
-    background-color: var(--color-light) !important;
   }
 }
 /*! purgecss end ignore */

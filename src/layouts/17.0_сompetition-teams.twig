@@ -1,0 +1,724 @@
+{% extends "@components/base/base.twig" %} {% set title =
+"17.0_сompetition-teams" %} {% block main %}
+
+<div class="headerSection">
+  <div class="container">
+    <div class="headerSection__inner">
+      <div class="d-flex gap-20 align-items-center flex-wrap">
+        <img
+          src="images/content/extraliga.png"
+          width="48"
+          height="48"
+          class="object-fit-contain"
+          alt="login"
+        />
+        <h1 class="h1 text-primary">Extraliga</h1>
+        <form>
+          <label class="o-select select-sm">
+            <select class="js-select">
+              <option>2025</option>
+              <option>2024</option>
+              <option>2023</option>
+              <option>2022</option>
+            </select>
+          </label>
+        </form>
+      </div>
+
+      <div class="d-flex align-items-center gap-5 flex-wrap">
+        <ul class="headerSection__menu">
+          <li>
+            <a href="" class="headerSection__menu-link"> Přehled </a>
+          </li>
+          <li>
+            <a href="" class="headerSection__menu-link"> Rozpis & výsledky </a>
+          </li>
+          <li>
+            <a href="" class="headerSection__menu-link"> Tabulka </a>
+          </li>
+          <li>
+            <a href="" class="headerSection__menu-link"> Statistiky </a>
+          </li>
+          <li>
+            <a href="" class="headerSection__menu-link active"> Týmy </a>
+          </li>
+          <li>
+            <a href="" class="headerSection__menu-link"> Soutěž </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="mb-7">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-6">
+        <a class="d-block w-100 h-100" href="#">
+          <img
+            loading="lazy"
+            srcset="
+              https://placehold.co/704x120?text=704x120 1408w,
+              https://placehold.co/704x120?text=704x120  704w
+            "
+            sizes="
+                     (min-width: 704w) 704w
+                     
+                   "
+            width="704"
+            height="120"
+            class="object-fit-cover w-100 h-100"
+            alt=""
+          />
+        </a>
+      </div>
+      <div class="col-lg-6">
+        <a class="d-block w-100 h-100" href="#">
+          <img
+            loading="lazy"
+            srcset="
+              https://placehold.co/704x120?text=704x120 1408w,
+              https://placehold.co/704x120?text=704x120  704w
+            "
+            sizes="
+                  (min-width: 704w) 704w
+                  
+                "
+            width="704"
+            height="120"
+            class="object-fit-cover w-100 h-100"
+            alt=""
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="mb-7">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-xl-3 col-lg-4 col-sm-6">
+        <div class="teamCard">
+          <img
+            src="images/content/club-4.png"
+            class="mb-3 object-fit-contain mx-auto"
+            width="104"
+            height="104"
+            alt="club"
+          />
+          <h3 class="h3 text-primary mb-3 text-center">Eagles Praha</h3>
+          <div class="teamCard__content">
+            <a
+              href="#"
+              class="d-flex gap-12 align-items-center mb-12 fw-bold text-lg linkDecoration"
+            >
+              <img src="images/ico/users.svg" width="20" height="20" alt="" />
+              Soupiska
+            </a>
+            <a
+              href="#"
+              class="d-flex gap-12 align-items-center mb-12 fw-bold text-lg linkDecoration"
+            >
+              <img
+                src="images/ico/calendar-black.svg"
+                width="20"
+                height="20"
+                alt=""
+              />
+              Zápasy
+            </a>
+            <div
+              class="d-flex align-items-center justify-content-between flex-wrap gap-12"
+            >
+              <a
+                href="#"
+                class="d-flex gap-12 align-items-center fw-bold text-lg linkDecoration"
+              >
+                <img src="images/ico/line.svg" width="20" height="20" alt="" />
+                Forma
+              </a>
+              <ul class="teamCard__results">
+                <li class="win"></li>
+                <li class="win"></li>
+                <li class="lose"></li>
+                <li class="win"></li>
+                <li class="lose"></li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-wrap align-items-center gap-3 justify-content-center mt-3"
+          >
+            <a class="text-tertiary text-sm" href="#">www.eagles.cz</a>
+            <div class="d-flex gap-2 align-items-center">
+              <a href="#" target="_blank" class="d-block">
+                <img
+                  src="images/ico/fb-primary.svg"
+                  alt=""
+                  width="20"
+                  height="20"
+                />
+              </a>
+              <a href="#" target="_blank" class="d-block">
+                <img
+                  src="images/ico/insta-primary.svg"
+                  alt=""
+                  width="20"
+                  height="20"
+                />
+              </a>
+              <a href="#" target="_blank" class="d-block">
+                <img
+                  src="images/ico/youtube-primary.svg"
+                  alt=""
+                  width="20"
+                  height="20"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-4 col-sm-6">
+        <div class="teamCard">
+          <img
+            src="images/content/club-4.png"
+            class="mb-3 object-fit-contain mx-auto"
+            width="104"
+            height="104"
+            alt="club"
+          />
+          <h3 class="h3 text-primary mb-3 text-center">
+            Eagles Eagles Eagles Eagles Praha
+          </h3>
+          <div class="teamCard__content">
+            <a
+              href="#"
+              class="d-flex gap-12 align-items-center mb-12 fw-bold text-lg linkDecoration"
+            >
+              <img src="images/ico/users.svg" width="20" height="20" alt="" />
+              Soupiska
+            </a>
+            <a
+              href="#"
+              class="d-flex gap-12 align-items-center mb-12 fw-bold text-lg linkDecoration"
+            >
+              <img
+                src="images/ico/calendar-black.svg"
+                width="20"
+                height="20"
+                alt=""
+              />
+              Zápasy
+            </a>
+            <div
+              class="d-flex align-items-center justify-content-between flex-wrap gap-12"
+            >
+              <a
+                href="#"
+                class="d-flex gap-12 align-items-center fw-bold text-lg linkDecoration"
+              >
+                <img src="images/ico/line.svg" width="20" height="20" alt="" />
+                Forma
+              </a>
+              <ul class="teamCard__results">
+                <li class="win"></li>
+                <li class="win"></li>
+                <li class="lose"></li>
+                <li class="win"></li>
+                <li class="lose"></li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-wrap align-items-center gap-3 justify-content-center mt-3"
+          >
+            <a class="text-tertiary text-sm" href="#">www.eagles.cz</a>
+            <div class="d-flex gap-2 align-items-center">
+              <a href="#" target="_blank" class="d-block">
+                <img
+                  src="images/ico/fb-primary.svg"
+                  alt=""
+                  width="20"
+                  height="20"
+                />
+              </a>
+              <a href="#" target="_blank" class="d-block">
+                <img
+                  src="images/ico/insta-primary.svg"
+                  alt=""
+                  width="20"
+                  height="20"
+                />
+              </a>
+              <a href="#" target="_blank" class="d-block">
+                <img
+                  src="images/ico/youtube-primary.svg"
+                  alt=""
+                  width="20"
+                  height="20"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-4 col-sm-6">
+        <div class="teamCard">
+          <img
+            src="images/content/club-4.png"
+            class="mb-3 object-fit-contain mx-auto"
+            width="104"
+            height="104"
+            alt="club"
+          />
+          <h3 class="h3 text-primary mb-3 text-center">Eagles Praha</h3>
+          <div class="teamCard__content">
+            <a
+              href="#"
+              class="d-flex gap-12 align-items-center mb-12 fw-bold text-lg linkDecoration"
+            >
+              <img src="images/ico/users.svg" width="20" height="20" alt="" />
+              Soupiska
+            </a>
+            <a
+              href="#"
+              class="d-flex gap-12 align-items-center mb-12 fw-bold text-lg linkDecoration"
+            >
+              <img
+                src="images/ico/calendar-black.svg"
+                width="20"
+                height="20"
+                alt=""
+              />
+              Zápasy
+            </a>
+            <div
+              class="d-flex align-items-center justify-content-between flex-wrap gap-12"
+            >
+              <a
+                href="#"
+                class="d-flex gap-12 align-items-center fw-bold text-lg linkDecoration"
+              >
+                <img src="images/ico/line.svg" width="20" height="20" alt="" />
+                Forma
+              </a>
+              <ul class="teamCard__results">
+                <li class="win"></li>
+                <li class="win"></li>
+                <li class="lose"></li>
+                <li class="win"></li>
+                <li class="lose"></li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-wrap align-items-center gap-3 justify-content-center mt-3"
+          >
+            <a class="text-tertiary text-sm" href="#">www.eagles.cz</a>
+            <div class="d-flex gap-2 align-items-center">
+              <a href="#" target="_blank" class="d-block">
+                <img
+                  src="images/ico/fb-primary.svg"
+                  alt=""
+                  width="20"
+                  height="20"
+                />
+              </a>
+              <a href="#" target="_blank" class="d-block">
+                <img
+                  src="images/ico/insta-primary.svg"
+                  alt=""
+                  width="20"
+                  height="20"
+                />
+              </a>
+              <a href="#" target="_blank" class="d-block">
+                <img
+                  src="images/ico/youtube-primary.svg"
+                  alt=""
+                  width="20"
+                  height="20"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-4 col-sm-6">
+        <div class="teamCard">
+          <img
+            src="images/content/club-4.png"
+            class="mb-3 object-fit-contain mx-auto"
+            width="104"
+            height="104"
+            alt="club"
+          />
+          <h3 class="h3 text-primary mb-3 text-center">Eagles Praha</h3>
+          <div class="teamCard__content">
+            <a
+              href="#"
+              class="d-flex gap-12 align-items-center mb-12 fw-bold text-lg linkDecoration"
+            >
+              <img src="images/ico/users.svg" width="20" height="20" alt="" />
+              Soupiska
+            </a>
+            <a
+              href="#"
+              class="d-flex gap-12 align-items-center mb-12 fw-bold text-lg linkDecoration"
+            >
+              <img
+                src="images/ico/calendar-black.svg"
+                width="20"
+                height="20"
+                alt=""
+              />
+              Zápasy
+            </a>
+            <div
+              class="d-flex align-items-center justify-content-between flex-wrap gap-12"
+            >
+              <a
+                href="#"
+                class="d-flex gap-12 align-items-center fw-bold text-lg linkDecoration"
+              >
+                <img src="images/ico/line.svg" width="20" height="20" alt="" />
+                Forma
+              </a>
+              <ul class="teamCard__results">
+                <li class="win"></li>
+                <li class="win"></li>
+                <li class="lose"></li>
+                <li class="win"></li>
+                <li class="lose"></li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-wrap align-items-center gap-3 justify-content-center mt-3"
+          >
+            <a class="text-tertiary text-sm" href="#">www.eagles.cz</a>
+            <div class="d-flex gap-2 align-items-center">
+              <a href="#" target="_blank" class="d-block">
+                <img
+                  src="images/ico/fb-primary.svg"
+                  alt=""
+                  width="20"
+                  height="20"
+                />
+              </a>
+              <a href="#" target="_blank" class="d-block">
+                <img
+                  src="images/ico/insta-primary.svg"
+                  alt=""
+                  width="20"
+                  height="20"
+                />
+              </a>
+              <a href="#" target="_blank" class="d-block">
+                <img
+                  src="images/ico/youtube-primary.svg"
+                  alt=""
+                  width="20"
+                  height="20"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-4 col-sm-6">
+        <div class="teamCard">
+          <img
+            src="images/content/club-4.png"
+            class="mb-3 object-fit-contain mx-auto"
+            width="104"
+            height="104"
+            alt="club"
+          />
+          <h3 class="h3 text-primary mb-3 text-center">Eagles Praha</h3>
+          <div class="teamCard__content">
+            <a
+              href="#"
+              class="d-flex gap-12 align-items-center mb-12 fw-bold text-lg linkDecoration"
+            >
+              <img src="images/ico/users.svg" width="20" height="20" alt="" />
+              Soupiska
+            </a>
+            <a
+              href="#"
+              class="d-flex gap-12 align-items-center mb-12 fw-bold text-lg linkDecoration"
+            >
+              <img
+                src="images/ico/calendar-black.svg"
+                width="20"
+                height="20"
+                alt=""
+              />
+              Zápasy
+            </a>
+            <div
+              class="d-flex align-items-center justify-content-between flex-wrap gap-12"
+            >
+              <a
+                href="#"
+                class="d-flex gap-12 align-items-center fw-bold text-lg linkDecoration"
+              >
+                <img src="images/ico/line.svg" width="20" height="20" alt="" />
+                Forma
+              </a>
+              <ul class="teamCard__results">
+                <li class="win"></li>
+                <li class="win"></li>
+                <li class="lose"></li>
+                <li class="win"></li>
+                <li class="lose"></li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-wrap align-items-center gap-3 justify-content-center mt-3"
+          >
+            <a class="text-tertiary text-sm" href="#">www.eagles.cz</a>
+            <div class="d-flex gap-2 align-items-center">
+              <a href="#" target="_blank" class="d-block">
+                <img
+                  src="images/ico/fb-primary.svg"
+                  alt=""
+                  width="20"
+                  height="20"
+                />
+              </a>
+              <a href="#" target="_blank" class="d-block">
+                <img
+                  src="images/ico/insta-primary.svg"
+                  alt=""
+                  width="20"
+                  height="20"
+                />
+              </a>
+              <a href="#" target="_blank" class="d-block">
+                <img
+                  src="images/ico/youtube-primary.svg"
+                  alt=""
+                  width="20"
+                  height="20"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-4 col-sm-6">
+        <div class="teamCard">
+          <img
+            src="images/content/club-4.png"
+            class="mb-3 object-fit-contain mx-auto"
+            width="104"
+            height="104"
+            alt="club"
+          />
+          <h3 class="h3 text-primary mb-3 text-center">Eagles Praha</h3>
+          <div class="teamCard__content">
+            <a
+              href="#"
+              class="d-flex gap-12 align-items-center mb-12 fw-bold text-lg linkDecoration"
+            >
+              <img src="images/ico/users.svg" width="20" height="20" alt="" />
+              Soupiska
+            </a>
+            <a
+              href="#"
+              class="d-flex gap-12 align-items-center mb-12 fw-bold text-lg linkDecoration"
+            >
+              <img
+                src="images/ico/calendar-black.svg"
+                width="20"
+                height="20"
+                alt=""
+              />
+              Zápasy
+            </a>
+            <div
+              class="d-flex align-items-center justify-content-between flex-wrap gap-12"
+            >
+              <a
+                href="#"
+                class="d-flex gap-12 align-items-center fw-bold text-lg linkDecoration"
+              >
+                <img src="images/ico/line.svg" width="20" height="20" alt="" />
+                Forma
+              </a>
+              <ul class="teamCard__results">
+                <li class="win"></li>
+                <li class="win"></li>
+                <li class="lose"></li>
+                <li class="win"></li>
+                <li class="lose"></li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-wrap align-items-center gap-3 justify-content-center mt-3"
+          >
+            <a class="text-tertiary text-sm" href="#">www.eagles.cz</a>
+            <div class="d-flex gap-2 align-items-center">
+              <a href="#" target="_blank" class="d-block">
+                <img
+                  src="images/ico/fb-primary.svg"
+                  alt=""
+                  width="20"
+                  height="20"
+                />
+              </a>
+              <a href="#" target="_blank" class="d-block">
+                <img
+                  src="images/ico/insta-primary.svg"
+                  alt=""
+                  width="20"
+                  height="20"
+                />
+              </a>
+              <a href="#" target="_blank" class="d-block">
+                <img
+                  src="images/ico/youtube-primary.svg"
+                  alt=""
+                  width="20"
+                  height="20"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-4 col-sm-6">
+        <div class="teamCard">
+          <img
+            src="images/content/club-4.png"
+            class="mb-3 object-fit-contain mx-auto"
+            width="104"
+            height="104"
+            alt="club"
+          />
+          <h3 class="h3 text-primary mb-3 text-center">Eagles Praha</h3>
+          <div class="teamCard__content">
+            <a
+              href="#"
+              class="d-flex gap-12 align-items-center mb-12 fw-bold text-lg linkDecoration"
+            >
+              <img src="images/ico/users.svg" width="20" height="20" alt="" />
+              Soupiska
+            </a>
+            <a
+              href="#"
+              class="d-flex gap-12 align-items-center mb-12 fw-bold text-lg linkDecoration"
+            >
+              <img
+                src="images/ico/calendar-black.svg"
+                width="20"
+                height="20"
+                alt=""
+              />
+              Zápasy
+            </a>
+            <div
+              class="d-flex align-items-center justify-content-between flex-wrap gap-12"
+            >
+              <a
+                href="#"
+                class="d-flex gap-12 align-items-center fw-bold text-lg linkDecoration"
+              >
+                <img src="images/ico/line.svg" width="20" height="20" alt="" />
+                Forma
+              </a>
+              <ul class="teamCard__results">
+                <li class="win"></li>
+                <li class="win"></li>
+                <li class="lose"></li>
+                <li class="win"></li>
+                <li class="lose"></li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-wrap align-items-center gap-3 justify-content-center mt-3"
+          >
+            <a class="text-tertiary text-sm" href="#">www.eagles.cz</a>
+            <div class="d-flex gap-2 align-items-center">
+              <a href="#" target="_blank" class="d-block">
+                <img
+                  src="images/ico/fb-primary.svg"
+                  alt=""
+                  width="20"
+                  height="20"
+                />
+              </a>
+              <a href="#" target="_blank" class="d-block">
+                <img
+                  src="images/ico/insta-primary.svg"
+                  alt=""
+                  width="20"
+                  height="20"
+                />
+              </a>
+              <a href="#" target="_blank" class="d-block">
+                <img
+                  src="images/ico/youtube-primary.svg"
+                  alt=""
+                  width="20"
+                  height="20"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="mb-7">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-6">
+        <a class="d-block w-100 h-100" href="#">
+          <img
+            loading="lazy"
+            srcset="
+              https://placehold.co/704x120?text=704x120 1408w,
+              https://placehold.co/704x120?text=704x120  704w
+            "
+            sizes="
+                     (min-width: 704w) 704w
+                     
+                   "
+            width="704"
+            height="120"
+            class="object-fit-cover w-100 h-100"
+            alt=""
+          />
+        </a>
+      </div>
+      <div class="col-lg-6">
+        <a class="d-block w-100 h-100" href="#">
+          <img
+            loading="lazy"
+            srcset="
+              https://placehold.co/704x120?text=704x120 1408w,
+              https://placehold.co/704x120?text=704x120  704w
+            "
+            sizes="
+                  (min-width: 704w) 704w
+                  
+                "
+            width="704"
+            height="120"
+            class="object-fit-cover w-100 h-100"
+            alt=""
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+{% include "@components/partnersSlider/partnersSlider.twig" %} {% endblock %}

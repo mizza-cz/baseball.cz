@@ -1,0 +1,36 @@
+.tableHistory .table-responsive {
+  margin: 0;
+  table {
+    @include media-breakpoint-down(md) {
+      min-width: max-content !important;
+    }
+  }
+  th {
+    background-color: var(--color-light);
+    border-bottom: 2px solid var(--color-line);
+    color: var(--color-primary);
+    text-transform: capitalize;
+  }
+  th,
+  td {
+    white-space: nowrap;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0;
+    min-width: 120px;
+    padding: 16px 0px;
+    @include media-breakpoint-down(md) {
+      min-width: fit-content;
+      width: auto !important;
+    }
+    &:not(:last-child) {
+      padding-right: 40px !important;
+      @include media-breakpoint-down(md) {
+        padding-right: 24px !important;
+      }
+    }
+    img {
+      vertical-align: middle;
+    }
+  }
+}

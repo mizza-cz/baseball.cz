@@ -1,52 +1,49 @@
-{% extends "@components/base/base.twig" %} {% set title = "10.0_club" %} {%
-block main %}
+{% extends "@components/base/base.twig" %} {% set title = "16.0_сompetition" %}
+{% block main %}
 
 <div class="headerSection">
   <div class="container">
     <div class="headerSection__inner">
       <div class="d-flex gap-20 align-items-center flex-wrap">
         <img
-          src="images/content/kotlarka.png"
+          src="images/content/extraliga.png"
           width="48"
           height="48"
           class="object-fit-contain"
           alt="login"
         />
-        <h1 class="h1 text-primary">Kotlářka Praha</h1>
+        <h1 class="h1 text-primary">Extraliga</h1>
+        <form>
+          <label class="o-select select-sm">
+            <select class="js-select">
+              <option>2025</option>
+              <option>2024</option>
+              <option>2023</option>
+              <option>2022</option>
+            </select>
+          </label>
+        </form>
       </div>
 
       <div class="d-flex align-items-center gap-5 flex-wrap">
         <ul class="headerSection__menu">
           <li>
-            <a href="https://mizza-cz.github.io/baseball.cz/build/10.0_club.html" class="headerSection__menu-link active"> Přehled </a>
+            <a href="" class="headerSection__menu-link"> Přehled </a>
           </li>
           <li>
-            <a href="https://mizza-cz.github.io/baseball.cz/build/09.0_club-field.html" class="headerSection__menu-link"> Hřiště </a>
+            <a href="" class="headerSection__menu-link"> Rozpis & výsledky </a>
           </li>
           <li>
-            <a href="https://mizza-cz.github.io/baseball.cz/build/08.0_club-contacts.html" class="headerSection__menu-link"> Kontakty </a>
-          </li>
-        </ul>
-        <ul class="headerSection__social">
-          <li>
-            <a href="#" target="_blank">
-              {% include "@images/fb-primary.svg" %}
-            </a>
+            <a href="" class="headerSection__menu-link"> Tabulka </a>
           </li>
           <li>
-            <a href="#" target="_blank">
-              {% include "@images/youtube-primary.svg" %}
-            </a>
+            <a href="" class="headerSection__menu-link"> Statistiky </a>
           </li>
           <li>
-            <a href="#" target="_blank">
-              {% include "@images/insta-primary.svg" %}
-            </a>
+            <a href="" class="headerSection__menu-link"> Týmy </a>
           </li>
           <li>
-            <a href="#" target="_blank">
-              {% include "@images/tiktok-primary.svg" %}
-            </a>
+            <a href="" class="headerSection__menu-link active"> Soutěž </a>
           </li>
         </ul>
       </div>
@@ -65,9 +62,9 @@ block main %}
               https://placehold.co/704x120?text=704x120  704w
             "
             sizes="
-                  (min-width: 704w) 704w
-                  
-                "
+                     (min-width: 704w) 704w
+                     
+                   "
             width="704"
             height="120"
             class="object-fit-cover w-100 h-100"
@@ -97,120 +94,10 @@ block main %}
     </div>
   </div>
 </div>
-<div class="mb-7">
-  <div class="container">
-    <div
-      class="contentBox d-flex justify-content-between align-items-center flex-wrap-reverse gap-5"
-    >
-      <div class="d-flex flex-column gap-12">
-        <div class="d-flex gap-12 flex-wrap text-lg align-items-center">
-          <img
-            src="images/ico/calendar-black.svg"
-            width="24"
-            height="24"
-            class="object-fit-cover"
-            alt=""
-          />
-          <div class="text-nowrap fw-bold">Rok založení:</div>
-          1990
-        </div>
-        <div class="d-flex gap-12 flex-wrap text-lg align-items-center">
-          <img
-            src="images/ico/marker-black.svg"
-            width="24"
-            height="24"
-            class="object-fit-cover"
-            alt=""
-          />
-          <div class="text-nowrap fw-bold">Sídlo klubu:</div>
-          Pálkařská 225, 140 00 Praha 4
-        </div>
-        <div class="d-flex gap-12 flex-wrap text-lg align-items-center">
-          <img
-            src="images/ico/user.svg"
-            width="24"
-            height="24"
-            class="object-fit-cover"
-            alt=""
-          />
-          <div class="text-nowrap fw-bold">Předseda klubu:</div>
-          Pavla Cihlářová
-        </div>
-        <div class="d-flex gap-12 flex-wrap text-lg align-items-center">
-          <img
-            src="images/ico/share.svg"
-            width="24"
-            height="24"
-            class="object-fit-cover"
-            alt=""
-          />
-          <div class="text-nowrap fw-bold">Web:</div>
-          <a href="www.kotlarka.com" class="text-tertiary">www.kotlarka.com</a>
-        </div>
-        <div class="d-flex gap-12 flex-wrap text-lg align-items-center">
-          <img
-            src="images/ico/mail.svg"
-            width="24"
-            height="24"
-            class="object-fit-cover"
-            alt=""
-          />
-          <div class="text-nowrap fw-bold">E-mail:</div>
-          <a href="mailto:cihlarova@kotlarka.com" class="text-tertiary"
-            >cihlarova@kotlarka.com</a
-          >
-        </div>
-        <div class="d-flex gap-12 flex-wrap text-lg align-items-center">
-          <img
-            src="images/ico/marker-black.svg"
-            width="24"
-            height="24"
-            class="object-fit-cover"
-            alt=""
-          />
-          <div class="text-nowrap fw-bold">Telefon:</div>
-          <a href="tel:+420244466667" class="text-tertiary">244 466 667</a>
-        </div>
-      </div>
-      <div class="d-flex gap-64 align-items-center justify-content-center">
-        <picture>
-          <source
-            media="(max-width: 768px)"
-            srcset="images/content/club-2.png"
-            width="100"
-            height="100"
-          />
-          <img
-            src="images/content/club-2.png"
-            alt="logo"
-            width="160"
-            height="160"
-            style="object-fit: contain"
-          />
-        </picture>
-        <picture>
-          <source
-            media="(max-width: 768px)"
-            srcset="images/content/kotlarka.png"
-            width="100"
-            height="100"
-          />
-          <img
-            src="images/content/kotlarka.png"
-            alt="logo"
-            width="160"
-            height="160"
-            style="object-fit: contain"
-          />
-        </picture>
-      </div>
-    </div>
-  </div>
-</div>
 <section class="subPage">
   <div class="container">
     <div class="contentBox">
-      <h2 class="h1 text-primary mb-5">Historie klubu</h2>
+      <h2 class="h1 text-primary mb-5">Soutěž</h2>
       <div class="o-content">
         <p>
           <strong>

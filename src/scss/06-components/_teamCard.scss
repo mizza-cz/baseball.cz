@@ -1,0 +1,38 @@
+.teamCard {
+  padding: 32px 40px;
+  border: 1px solid var(--color-line);
+  box-shadow: var(--shadow-4xl);
+  height: 100%;
+  @include media-breakpoint-down(md) {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  &__content {
+    padding: 16px 0;
+    border-top: 1px solid var(--color-line);
+    border-bottom: 1px solid var(--color-line);
+  }
+  &__results {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .win,
+  .lose {
+    width: 16px;
+    height: 16px;
+  }
+}
+.win,
+.lose {
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.win {
+  background-image: url("../images/ico/win.svg");
+}
+.lose {
+  background-image: url("../images/ico/lose.svg");
+}
