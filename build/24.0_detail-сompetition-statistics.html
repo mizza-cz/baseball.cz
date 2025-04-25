@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8" />
-	<title>19.0_detail-сompetition-table - Česká baseballová asociace </title>
+	<title>24.0_detail-сompetition-statistics - Česká baseballová asociace </title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
 	<meta name="format-detection" content="telephone=no" />
 
@@ -681,10 +681,10 @@
 									<a href="" class="headerSection__menu-link"> Rozpis & výsledky </a>
 								</li>
 								<li>
-									<a href="" class="headerSection__menu-link active"> Tabulky </a>
+									<a href="" class="headerSection__menu-link"> Tabulky </a>
 								</li>
 								<li>
-									<a href="" class="headerSection__menu-link"> Statistiky </a>
+									<a href="" class="headerSection__menu-link active"> Statistiky </a>
 								</li>
 								<li>
 									<a href="" class="headerSection__menu-link"> Pořadí </a>
@@ -694,7 +694,6 @@
 					</div>
 				</div>
 			</div>
-
 			<div class="mb-7">
 				<div class="container">
 					<div class="row g-5">
@@ -725,225 +724,548 @@
 			</div>
 			<div class="mb-4">
 				<div class="container">
-					<form class="d-flex align-items-center flex-wrap gap-3">
-						<label class="o-select select">
-							<select class="js-select">
-								<option>Skupina A</option>
-								<option>Skupina B</option>
-								<option>Skupina C</option>
-							</select>
-						</label>
-						<label class="o-select select">
-							<select class="js-select">
-								<option>Celková tabulka</option>
-							</select>
-						</label>
+					<form class="form d-flex align-items-center flex-wrap gap-4 justify-content-between">
+						<div class="d-flex align-items-center flex-wrap gap-3">
+							<label class="o-select select">
+								<select class="js-select">
+									<option>Všechny kategorie</option>
+									<option>kategorie B</option>
+									<option>kategorie C</option>
+								</select>
+							</label>
+							<label class="o-select select">
+								<select class="js-select">
+									<option>Všechny kluby</option>
+									<option>kategorie B</option>
+									<option>kategorie C</option>
+								</select>
+							</label>
+							<label class="o-select select">
+								<select class="js-select">
+									<option>Pálkaři</option>
+									<option>kategorie B</option>
+									<option>kategorie C</option>
+								</select>
+							</label>
+							<label class="o-select select">
+								<select class="js-select">
+									<option>Top statistiky</option>
+									<option>kategorie B</option>
+									<option>kategorie C</option>
+								</select>
+							</label>
+						</div>
+						<div class="radio-group">
+							<label class="radio-label">
+								<input type="radio" name="line" value="/nad-carou" checked />
+								Nad čarou
+							</label>
+							<label class="radio-label">
+								<input type="radio" name="line" value="/pod-carou" />
+								Pod čarou
+							</label>
+						</div>
 					</form>
 				</div>
 			</div>
-			<div class="mb-7">
+			<section class="subPage">
 				<div class="container">
 					<div class="contentBox">
 						<div class="o-content">
-							<div class="table-section">
+							<div class="statistics-section">
 								<table>
 									<thead>
 										<tr>
-											<th class="text-start">#</th>
-											<th class="text-start">Tým</th>
-											<th class="text-center">Z</th>
-											<th class="text-center">W</th>
-											<th class="text-center">L</th>
-											<th class="text-center">Skóre</th>
-											<th class="text-center">%</th>
-											<th class="text-center">-</th>
-											<th class="text-center">Posledních 5 zápasů</th>
+											<th class="">Hráč</th>
+											<th class="text-center">Tým</th>
+											<th class="text-center">A</th>
+											<th class="text-center">B</th>
+											<th class="text-center">R</th>
+											<th class="text-center bg-line">2B</th>
+											<th class="text-center">3B</th>
+											<th class="text-center">HR</th>
+											<th class="text-center">RBI</th>
+											<th class="text-center">TB</th>
+											<th class="text-center">AVG</th>
+											<th class="text-center">SLG</th>
+											<th class="text-center">OBP</th>
+											<th class="text-center">OPS</th>
+											<th class="text-center">BB</th>
+											<th class="text-center">HBP</th>
+											<th class="text-center">SO</th>
+											<th class="text-center">GDP</th>
+											<th class="text-center">SF</th>
+											<th class="text-center">SH</th>
+											<th class="text-center">SB</th>
+											<th class="text-center">CS</th>
 										</tr>
 									</thead>
 									<tbody>
 										<tr>
-											<td>1.</td>
-											<td class="h4 fw-bold text-primary w-xl-100 w-auto">
-												<a href="#" class="linkDecoration d-block">
-													<img src="images/content/club-4.png" width="56" height="56" class="object-fit-contain d-inline vertical-middle me-md-4 mr-12" alt="" />Eagles Praha
-												</a>
+											<td>
+												<a href="#" class="text-primary fw-bold linkDecoration">Rabinowitz Jake</a>
 											</td>
-											<td class="text-center">35</td>
+											<td class="text-center">
+												<img src="images/content/club-4.png" width="24" height="24" class="object-fit-contain d-inline vertical-middle me-2" alt="" />
+												EAG
+											</td>
 											<td class="text-center">25</td>
 											<td class="text-center">10</td>
-											<td class="text-center">222:102</td>
-											<td class="text-center">0.714</td>
-											<td class="text-center">-</td>
-											<td>
-												<ul class="d-flex gap-12 justify-content-center">
-													<li class="win"></li>
-													<li class="win"></li>
-													<li class="lose"></li>
-													<li class="win"></li>
-													<li class="lose"></li>
-												</ul>
-											</td>
+											<td class="text-center">10</td>
+											<td class="text-center bg-line">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">.215</td>
+											<td class="text-center">.387</td>
+											<td class="text-center">.284</td>
+											<td class="text-center">.671</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
 										</tr>
 										<tr>
-											<td>2.</td>
-											<td class="h4 fw-bold text-primary w-xl-100 w-auto">
-												<a href="#" class="linkDecoration d-block">
-													<img src="images/content/club-4.png" width="56" height="56" class="object-fit-contain d-inline vertical-middle me-md-4 mr-12" alt="" />Eagles Praha
-												</a>
+											<td>
+												<a href="#" class="text-primary fw-bold linkDecoration">Rabinowitz Jake</a>
 											</td>
-											<td class="text-center">35</td>
+											<td class="text-center">
+												<img src="images/content/club-4.png" width="24" height="24" class="object-fit-contain d-inline vertical-middle me-2" alt="" />
+												EAG
+											</td>
 											<td class="text-center">25</td>
 											<td class="text-center">10</td>
-											<td class="text-center">222:102</td>
-											<td class="text-center">0.714</td>
-											<td class="text-center">-</td>
-											<td>
-												<ul class="d-flex gap-12 justify-content-center">
-													<li class="win"></li>
-													<li class="win"></li>
-													<li class="lose"></li>
-													<li class="win"></li>
-													<li class="lose"></li>
-												</ul>
-											</td>
+											<td class="text-center">10</td>
+											<td class="text-center bg-line">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">.215</td>
+											<td class="text-center">.387</td>
+											<td class="text-center">.284</td>
+											<td class="text-center">.671</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
 										</tr>
 										<tr>
-											<td>3.</td>
-											<td class="h4 fw-bold text-primary w-xl-100 w-auto">
-												<a href="#" class="linkDecoration d-block">
-													<img src="images/content/club-4.png" width="56" height="56" class="object-fit-contain d-inline vertical-middle me-md-4 mr-12" alt="" />Eagles Praha
-												</a>
+											<td>
+												<a href="#" class="text-primary fw-bold linkDecoration">Rabinowitz Jake</a>
 											</td>
-											<td class="text-center">35</td>
+											<td class="text-center">
+												<img src="images/content/club-4.png" width="24" height="24" class="object-fit-contain d-inline vertical-middle me-2" alt="" />
+												EAG
+											</td>
 											<td class="text-center">25</td>
 											<td class="text-center">10</td>
-											<td class="text-center">222:102</td>
-											<td class="text-center">0.714</td>
-											<td class="text-center">-</td>
-											<td>
-												<ul class="d-flex gap-12 justify-content-center">
-													<li class="win"></li>
-													<li class="win"></li>
-													<li class="lose"></li>
-													<li class="win"></li>
-													<li class="lose"></li>
-												</ul>
-											</td>
+											<td class="text-center">10</td>
+											<td class="text-center bg-line">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">.215</td>
+											<td class="text-center">.387</td>
+											<td class="text-center">.284</td>
+											<td class="text-center">.671</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
 										</tr>
 										<tr>
-											<td>4.</td>
-											<td class="h4 fw-bold text-primary w-xl-100 w-auto">
-												<a href="#" class="linkDecoration d-block">
-													<img src="images/content/club-4.png" width="56" height="56" class="object-fit-contain d-inline vertical-middle me-md-4 mr-12" alt="" />Eagles Praha
-												</a>
+											<td>
+												<a href="#" class="text-primary fw-bold linkDecoration">Rabinowitz Jake</a>
 											</td>
-											<td class="text-center">35</td>
+											<td class="text-center">
+												<img src="images/content/club-4.png" width="24" height="24" class="object-fit-contain d-inline vertical-middle me-2" alt="" />
+												EAG
+											</td>
 											<td class="text-center">25</td>
 											<td class="text-center">10</td>
-											<td class="text-center">222:102</td>
-											<td class="text-center">0.714</td>
-											<td class="text-center">-</td>
-											<td>
-												<ul class="d-flex gap-12 justify-content-center">
-													<li class="win"></li>
-													<li class="win"></li>
-													<li class="lose"></li>
-													<li class="win"></li>
-													<li class="lose"></li>
-												</ul>
-											</td>
+											<td class="text-center">10</td>
+											<td class="text-center bg-line">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">.215</td>
+											<td class="text-center">.387</td>
+											<td class="text-center">.284</td>
+											<td class="text-center">.671</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
 										</tr>
 										<tr>
-											<td>5.</td>
-											<td class="h4 fw-bold text-primary w-xl-100 w-auto">
-												<a href="#" class="linkDecoration d-block">
-													<img src="images/content/club-4.png" width="56" height="56" class="object-fit-contain d-inline vertical-middle me-md-4 mr-12" alt="" />Eagles Praha
-												</a>
+											<td>
+												<a href="#" class="text-primary fw-bold linkDecoration">Rabinowitz Jake</a>
 											</td>
-											<td class="text-center">35</td>
+											<td class="text-center">
+												<img src="images/content/club-4.png" width="24" height="24" class="object-fit-contain d-inline vertical-middle me-2" alt="" />
+												EAG
+											</td>
 											<td class="text-center">25</td>
 											<td class="text-center">10</td>
-											<td class="text-center">222:102</td>
-											<td class="text-center">0.714</td>
-											<td class="text-center">-</td>
-											<td>
-												<ul class="d-flex gap-12 justify-content-center">
-													<li class="win"></li>
-													<li class="win"></li>
-													<li class="lose"></li>
-													<li class="win"></li>
-													<li class="lose"></li>
-												</ul>
-											</td>
-										</tr>
-										<tr class="active">
-											<td>6.</td>
-											<td class="h4 fw-bold text-primary w-xl-100 w-auto">
-												<a href="#" class="linkDecoration d-block">
-													<img src="images/content/club-4.png" width="56" height="56" class="object-fit-contain d-inline vertical-middle me-md-4 mr-12" alt="" />Eagles Praha
-												</a>
-											</td>
-											<td class="text-center">35</td>
-											<td class="text-center">25</td>
 											<td class="text-center">10</td>
-											<td class="text-center">222:102</td>
-											<td class="text-center">0.714</td>
-											<td class="text-center">-</td>
-											<td>
-												<ul class="d-flex gap-12 justify-content-center">
-													<li class="win"></li>
-													<li class="win"></li>
-													<li class="lose"></li>
-													<li class="win"></li>
-													<li class="lose"></li>
-												</ul>
-											</td>
+											<td class="text-center bg-line">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">.215</td>
+											<td class="text-center">.387</td>
+											<td class="text-center">.284</td>
+											<td class="text-center">.671</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
 										</tr>
 										<tr>
-											<td>7.</td>
-											<td class="h4 fw-bold text-primary w-xl-100 w-auto">
-												<a href="#" class="linkDecoration d-block">
-													<img src="images/content/club-4.png" width="56" height="56" class="object-fit-contain d-inline vertical-middle me-md-4 mr-12" alt="" />Eagles Praha
-												</a>
+											<td>
+												<a href="#" class="text-primary fw-bold linkDecoration">Rabinowitz Jake</a>
 											</td>
-											<td class="text-center">35</td>
+											<td class="text-center">
+												<img src="images/content/club-4.png" width="24" height="24" class="object-fit-contain d-inline vertical-middle me-2" alt="" />
+												EAG
+											</td>
 											<td class="text-center">25</td>
 											<td class="text-center">10</td>
-											<td class="text-center">222:102</td>
-											<td class="text-center">0.714</td>
-											<td class="text-center">-</td>
-											<td>
-												<ul class="d-flex gap-12 justify-content-center">
-													<li class="win"></li>
-													<li class="win"></li>
-													<li class="lose"></li>
-													<li class="win"></li>
-													<li class="lose"></li>
-												</ul>
-											</td>
+											<td class="text-center">10</td>
+											<td class="text-center bg-line">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">.215</td>
+											<td class="text-center">.387</td>
+											<td class="text-center">.284</td>
+											<td class="text-center">.671</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
 										</tr>
 										<tr>
-											<td>8.</td>
-											<td class="h4 fw-bold text-primary w-xl-100 w-auto">
-												<a href="#" class="linkDecoration d-block">
-													<img src="images/content/club-4.png" width="56" height="56" class="object-fit-contain d-inline vertical-middle me-md-4 mr-12" alt="" />Eagles Praha
-												</a>
+											<td>
+												<a href="#" class="text-primary fw-bold linkDecoration">Rabinowitz Jake</a>
 											</td>
-											<td class="text-center">35</td>
+											<td class="text-center">
+												<img src="images/content/club-4.png" width="24" height="24" class="object-fit-contain d-inline vertical-middle me-2" alt="" />
+												EAG
+											</td>
 											<td class="text-center">25</td>
 											<td class="text-center">10</td>
-											<td class="text-center">222:102</td>
-											<td class="text-center">0.714</td>
-											<td class="text-center">-</td>
+											<td class="text-center">10</td>
+											<td class="text-center bg-line">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">.215</td>
+											<td class="text-center">.387</td>
+											<td class="text-center">.284</td>
+											<td class="text-center">.671</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+										</tr>
+										<tr>
 											<td>
-												<ul class="d-flex gap-12 justify-content-center">
-													<li class="win"></li>
-													<li class="win"></li>
-													<li class="lose"></li>
-													<li class="win"></li>
-													<li class="lose"></li>
-												</ul>
+												<a href="#" class="text-primary fw-bold linkDecoration">Rabinowitz Jake</a>
 											</td>
+											<td class="text-center">
+												<img src="images/content/club-4.png" width="24" height="24" class="object-fit-contain d-inline vertical-middle me-2" alt="" />
+												EAG
+											</td>
+											<td class="text-center">25</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center bg-line">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">.215</td>
+											<td class="text-center">.387</td>
+											<td class="text-center">.284</td>
+											<td class="text-center">.671</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+										</tr>
+										<tr>
+											<td>
+												<a href="#" class="text-primary fw-bold linkDecoration">Rabinowitz Jake</a>
+											</td>
+											<td class="text-center">
+												<img src="images/content/club-4.png" width="24" height="24" class="object-fit-contain d-inline vertical-middle me-2" alt="" />
+												EAG
+											</td>
+											<td class="text-center">25</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center bg-line">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">.215</td>
+											<td class="text-center">.387</td>
+											<td class="text-center">.284</td>
+											<td class="text-center">.671</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+										</tr>
+										<tr>
+											<td>
+												<a href="#" class="text-primary fw-bold linkDecoration">Rabinowitz Jake</a>
+											</td>
+											<td class="text-center">
+												<img src="images/content/club-4.png" width="24" height="24" class="object-fit-contain d-inline vertical-middle me-2" alt="" />
+												EAG
+											</td>
+											<td class="text-center">25</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center bg-line">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">.215</td>
+											<td class="text-center">.387</td>
+											<td class="text-center">.284</td>
+											<td class="text-center">.671</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+										</tr>
+
+										<tr>
+											<td>
+												<a href="#" class="text-primary fw-bold linkDecoration">Rabinowitz Jake</a>
+											</td>
+											<td class="text-center">
+												<img src="images/content/club-4.png" width="24" height="24" class="object-fit-contain d-inline vertical-middle me-2" alt="" />
+												EAG
+											</td>
+											<td class="text-center">25</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center bg-line">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">.215</td>
+											<td class="text-center">.387</td>
+											<td class="text-center">.284</td>
+											<td class="text-center">.671</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+										</tr>
+										<tr>
+											<td>
+												<a href="#" class="text-primary fw-bold linkDecoration">Rabinowitz Jake</a>
+											</td>
+											<td class="text-center">
+												<img src="images/content/club-4.png" width="24" height="24" class="object-fit-contain d-inline vertical-middle me-2" alt="" />
+												EAG
+											</td>
+											<td class="text-center">25</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center bg-line">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">.215</td>
+											<td class="text-center">.387</td>
+											<td class="text-center">.284</td>
+											<td class="text-center">.671</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+										</tr>
+										<tr>
+											<td>
+												<a href="#" class="text-primary fw-bold linkDecoration">Rabinowitz Jake</a>
+											</td>
+											<td class="text-center">
+												<img src="images/content/club-4.png" width="24" height="24" class="object-fit-contain d-inline vertical-middle me-2" alt="" />
+												EAG
+											</td>
+											<td class="text-center">25</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center bg-line">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">.215</td>
+											<td class="text-center">.387</td>
+											<td class="text-center">.284</td>
+											<td class="text-center">.671</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+										</tr>
+										<tr>
+											<td>
+												<a href="#" class="text-primary fw-bold linkDecoration">Rabinowitz Jake</a>
+											</td>
+											<td class="text-center">
+												<img src="images/content/club-4.png" width="24" height="24" class="object-fit-contain d-inline vertical-middle me-2" alt="" />
+												EAG
+											</td>
+											<td class="text-center">25</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center bg-line">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">.215</td>
+											<td class="text-center">.387</td>
+											<td class="text-center">.284</td>
+											<td class="text-center">.671</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+										</tr>
+
+										<tr>
+											<td>
+												<a href="#" class="text-primary fw-bold linkDecoration">Rabinowitz Jake</a>
+											</td>
+											<td class="text-center">
+												<img src="images/content/club-4.png" width="24" height="24" class="object-fit-contain d-inline vertical-middle me-2" alt="" />
+												EAG
+											</td>
+											<td class="text-center">25</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center bg-line">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">.215</td>
+											<td class="text-center">.387</td>
+											<td class="text-center">.284</td>
+											<td class="text-center">.671</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+										</tr>
+										<tr>
+											<td>
+												<a href="#" class="text-primary fw-bold linkDecoration">Rabinowitz Jake</a>
+											</td>
+											<td class="text-center">
+												<img src="images/content/club-4.png" width="24" height="24" class="object-fit-contain d-inline vertical-middle me-2" alt="" />
+												EAG
+											</td>
+											<td class="text-center">25</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center bg-line">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">.215</td>
+											<td class="text-center">.387</td>
+											<td class="text-center">.284</td>
+											<td class="text-center">.671</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
+											<td class="text-center">10</td>
 										</tr>
 									</tbody>
 								</table>
@@ -951,7 +1273,7 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</section>
 
 			<div class="mb-7">
 				<div class="container">

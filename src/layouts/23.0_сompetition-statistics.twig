@@ -1,0 +1,199 @@
+{% extends "@components/base/base.twig" %} {% set title =
+"23.0_сompetition-statistics" %} {% block main %}
+
+<div class="headerSection">
+  <div class="container">
+    <div class="headerSection__inner">
+      <div class="d-flex gap-20 align-items-center flex-wrap">
+        <img
+          src="images/content/extraliga.png"
+          width="48"
+          height="48"
+          class="object-fit-contain"
+          alt="login"
+        />
+        <h1 class="h1 text-primary">Extraliga</h1>
+        <form>
+          <label class="o-select select-sm">
+            <select class="js-select">
+              <option>2025</option>
+              <option>2024</option>
+              <option>2023</option>
+              <option>2022</option>
+            </select>
+          </label>
+        </form>
+      </div>
+
+      <div class="d-flex align-items-center gap-5 flex-wrap">
+        <ul class="headerSection__menu">
+          <li>
+            <a href="" class="headerSection__menu-link"> Přehled </a>
+          </li>
+          <li>
+            <a href="" class="headerSection__menu-link"> Rozpis & výsledky </a>
+          </li>
+          <li>
+            <a href="" class="headerSection__menu-link"> Tabulka </a>
+          </li>
+          <li>
+            <a href="" class="headerSection__menu-link active"> Statistiky </a>
+          </li>
+          <li>
+            <a href="" class="headerSection__menu-link"> Týmy </a>
+          </li>
+          <li>
+            <a href="" class="headerSection__menu-link"> Soutěž </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="mb-7">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-6">
+        <a class="d-block w-100 h-100" href="#">
+          <img
+            loading="lazy"
+            srcset="
+              https://placehold.co/704x120?text=704x120 1408w,
+              https://placehold.co/704x120?text=704x120  704w
+            "
+            sizes="
+                     (min-width: 704w) 704w
+                     
+                   "
+            width="704"
+            height="120"
+            class="object-fit-cover w-100 h-100"
+            alt=""
+          />
+        </a>
+      </div>
+      <div class="col-lg-6">
+        <a class="d-block w-100 h-100" href="#">
+          <img
+            loading="lazy"
+            srcset="
+              https://placehold.co/704x120?text=704x120 1408w,
+              https://placehold.co/704x120?text=704x120  704w
+            "
+            sizes="
+                  (min-width: 704w) 704w
+                  
+                "
+            width="704"
+            height="120"
+            class="object-fit-cover w-100 h-100"
+            alt=""
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="mb-4">
+  <div class="container">
+    <form
+      class="form d-flex align-items-center flex-wrap gap-4 justify-content-between"
+    >
+      <div class="d-flex align-items-center flex-wrap gap-3">
+        <label class="o-select select">
+          <select class="js-select">
+            <option>Všechny kategorie</option>
+            <option>kategorie B</option>
+            <option>kategorie C</option>
+          </select>
+        </label>
+        <label class="o-select select">
+          <select class="js-select">
+            <option>Všechny kluby</option>
+            <option>kategorie B</option>
+            <option>kategorie C</option>
+          </select>
+        </label>
+        <label class="o-select select">
+          <select class="js-select">
+            <option>Pálkaři</option>
+            <option>kategorie B</option>
+            <option>kategorie C</option>
+          </select>
+        </label>
+        <label class="o-select select">
+          <select class="js-select">
+            <option>Top statistiky</option>
+            <option>kategorie B</option>
+            <option>kategorie C</option>
+          </select>
+        </label>
+      </div>
+      <div class="radio-group">
+        <label class="radio-label">
+          <input type="radio" name="line" value="/nad-carou" checked />
+          Nad čarou
+        </label>
+        <label class="radio-label">
+          <input type="radio" name="line" value="/pod-carou" />
+          Pod čarou
+        </label>
+      </div>
+    </form>
+  </div>
+</div>
+<section class="subPage">
+  <div class="container">
+    <div class="contentBox">
+      <div class="o-content">
+        {% include "@components/statistics-section/statistics-section.twig" %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="mb-7">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-6">
+        <a class="d-block w-100 h-100" href="#">
+          <img
+            loading="lazy"
+            srcset="
+              https://placehold.co/704x120?text=704x120 1408w,
+              https://placehold.co/704x120?text=704x120  704w
+            "
+            sizes="
+                     (min-width: 704w) 704w
+                     
+                   "
+            width="704"
+            height="120"
+            class="object-fit-cover w-100 h-100"
+            alt=""
+          />
+        </a>
+      </div>
+      <div class="col-lg-6">
+        <a class="d-block w-100 h-100" href="#">
+          <img
+            loading="lazy"
+            srcset="
+              https://placehold.co/704x120?text=704x120 1408w,
+              https://placehold.co/704x120?text=704x120  704w
+            "
+            sizes="
+                  (min-width: 704w) 704w
+                  
+                "
+            width="704"
+            height="120"
+            class="object-fit-cover w-100 h-100"
+            alt=""
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+{% include "@components/partnersSlider/partnersSlider.twig" %} {% endblock %}

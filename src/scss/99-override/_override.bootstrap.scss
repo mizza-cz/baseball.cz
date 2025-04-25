@@ -67,6 +67,13 @@
   padding-right: 40px !important;
 }
 
+.pe-12 {
+  padding-right: 12px !important;
+}
+.px-12 {
+  padding-left: 12px !important;
+  padding-right: 12px !important;
+}
 .text-light {
   color: var(--color-light) !important;
 }
@@ -104,5 +111,7 @@
 .m-0 {
   margin: 0 !important;
 }
+.bg-line {
+  background-color: var(--color-line) !important;
+}
 /*! purgecss end ignore */
- 
