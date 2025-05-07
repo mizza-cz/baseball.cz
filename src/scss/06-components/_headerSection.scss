@@ -32,6 +32,11 @@
     letter-spacing: 0.1em;
     text-transform: uppercase;
     text-decoration-color: transparent;
+    @include media-breakpoint-down(lg) {
+      font-size: 0.75rem;
+      line-height: 1.5;
+      padding: 9px 12px 8px;
+    }
     &:hover {
       text-decoration-color: inherit;
     }
