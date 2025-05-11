@@ -1,0 +1,119 @@
+.matchItem {
+  display: flex;
+  align-items: center;
+  gap: 0 40px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--color-line);
+  @include media-breakpoint-down(xxl) {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 16px 0;
+    padding: 24px 16px;
+  }
+  @include media-breakpoint-down(md) {
+    border-right: none !important;
+  }
+  &:nth-child(odd) {
+    @include media-breakpoint-down(xxl) {
+      border-right: 1px solid var(--color-line);
+    }
+  }
+  &__content {
+    display: flex;
+    gap: 0 40px;
+    @include media-breakpoint-down(xxl) {
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 16px 0;
+    }
+  }
+  &__date {
+    min-width: 110px;
+    @include media-breakpoint-down(xxl) {
+      width: 100%;
+      min-width: auto;
+    }
+  }
+  &__teams {
+    width: 100%;
+    white-space: nowrap;
+    @include media-breakpoint-down(xxl) {
+      width: auto;
+      flex-direction: column;
+    }
+  }
+  &__results {
+    display: block;
+    min-width: 80px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+  }
+  &__links {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    min-width: 228px;
+    justify-content: flex-end;
+    @include media-breakpoint-down(xxl) {
+      width: 100%;
+      min-width: auto;
+    }
+  }
+  &__location {
+    min-width: 228px;
+    @include media-breakpoint-down(xxl) {
+      min-width: auto;
+    }
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+    text-decoration: none;
+
+    &:hover {
+      &::before {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 1px;
+      transition: all 0.3s;
+      opacity: 1;
+      visibility: visible;
+      bottom: 0;
+    }
+    svg {
+      width: 20px;
+      height: 20px;
+      object-fit: contain;
+      display: block;
+    }
+  }
+}
+
+.matchItem__link.text-secondary {
+  &::before {
+    background-color: var(--color-secondary);
+  }
+}
+
+.matchItem__link.text-primary {
+  &::before {
+    background-color: var(--color-primary);
+  }
+}
