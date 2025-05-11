@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8" />
-	<title>24.0_detail-сompetition-statistics - Česká baseballová asociace </title>
+	<title>17.0_сompetition-teams - Česká baseballová asociace </title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
 	<meta name="format-detection" content="telephone=no" />
 
@@ -668,8 +668,18 @@
 				<div class="container">
 					<div class="headerSection__inner">
 						<div class="d-flex gap-20 align-items-center flex-wrap">
-							<h1 class="h1 text-primary">MČR U15</h1>
-							<div class="text-lg text-primary">25. 6. – 28. 6. Blansko</div>
+							<img src="images/content/extraliga.png" width="48" height="48" class="object-fit-contain" alt="login" />
+							<h1 class="h1 text-primary">Extraliga</h1>
+							<form>
+								<label class="o-select select-sm">
+									<select class="js-select">
+										<option>2025</option>
+										<option>2024</option>
+										<option>2023</option>
+										<option>2022</option>
+									</select>
+								</label>
+							</form>
 						</div>
 
 						<div class="d-flex align-items-center gap-5 flex-wrap">
@@ -678,16 +688,21 @@
 									<a href="" class="headerSection__menu-link"> Přehled </a>
 								</li>
 								<li>
-									<a href="" class="headerSection__menu-link"> Rozpis & výsledky </a>
+									<a href="" class="headerSection__menu-link active">
+										Rozpis & výsledky
+									</a>
 								</li>
 								<li>
-									<a href="" class="headerSection__menu-link"> Tabulky </a>
+									<a href="" class="headerSection__menu-link"> Tabulka </a>
 								</li>
 								<li>
-									<a href="" class="headerSection__menu-link active"> Statistiky </a>
+									<a href="" class="headerSection__menu-link"> Statistiky </a>
 								</li>
 								<li>
-									<a href="" class="headerSection__menu-link"> Pořadí </a>
+									<a href="" class="headerSection__menu-link"> Týmy </a>
+								</li>
+								<li>
+									<a href="" class="headerSection__menu-link"> Soutěž </a>
 								</li>
 							</ul>
 						</div>
@@ -728,552 +743,501 @@
 						<div class="d-flex align-items-center flex-wrap gap-3">
 							<label class="o-select select">
 								<select class="js-select">
-									<option>Všechny kategorie</option>
-									<option>kategorie B</option>
-									<option>kategorie C</option>
+									<option>Všechny části</option>
+									<option>část 1</option>
+									<option>část 2</option>
 								</select>
 							</label>
 							<label class="o-select select">
 								<select class="js-select">
-									<option>Všechny kluby</option>
-									<option>kategorie B</option>
-									<option>kategorie C</option>
+									<option>Všechny měsíce</option>
+									<option>Leden</option>
+									<option>Únor</option>
+									<option>Duben</option>
 								</select>
 							</label>
 							<label class="o-select select">
 								<select class="js-select">
-									<option>Pálkaři</option>
-									<option>kategorie B</option>
-									<option>kategorie C</option>
-								</select>
-							</label>
-							<label class="o-select select">
-								<select class="js-select">
-									<option>Top statistiky</option>
-									<option>kategorie B</option>
-									<option>kategorie C</option>
+									<option>Všechny týmy</option>
+									<option>tým 1</option>
+									<option>tým 2</option>
 								</select>
 							</label>
 						</div>
 						<div class="radio-group">
 							<label class="radio-label">
-								<input type="radio" name="line" value="/nad-carou" checked />
-								Nad čarou
+								<input type="radio" name="line" value="/vsechny" checked />
+								Všechny zápasy
 							</label>
 							<label class="radio-label">
-								<input type="radio" name="line" value="/pod-carou" />
-								Pod čarou
+								<input type="radio" name="line" value="/budouci" />
+								Pouze budoucí
+							</label>
+							<label class="radio-label">
+								<input type="radio" name="line" value="/odehrany" />
+								Pouze odehrané
 							</label>
 						</div>
 					</form>
 				</div>
 			</div>
-			<section class="subPage">
+			<div class="mb-7">
 				<div class="container">
-					<div class="contentBox">
-						<div class="o-content">
-							<div class="statistics-section">
-								<table>
-									<thead>
-										<tr>
-											<th class="">Hráč</th>
-											<th class="text-center">Tým</th>
-											<th class="text-center">A</th>
-											<th class="text-center">B</th>
-											<th class="text-center">R</th>
-											<th class="text-center bg-line">2B</th>
-											<th class="text-center">3B</th>
-											<th class="text-center">HR</th>
-											<th class="text-center">RBI</th>
-											<th class="text-center">TB</th>
-											<th class="text-center">AVG</th>
-											<th class="text-center">SLG</th>
-											<th class="text-center">OBP</th>
-											<th class="text-center">OPS</th>
-											<th class="text-center">BB</th>
-											<th class="text-center">HBP</th>
-											<th class="text-center">SO</th>
-											<th class="text-center">GDP</th>
-											<th class="text-center">SF</th>
-											<th class="text-center">SH</th>
-											<th class="text-center">SB</th>
-											<th class="text-center">CS</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>
-												<a href="#" class="text-primary fw-bold linkDecoration">Rabinowitz Jake</a>
-											</td>
-											<td class="text-center">
-												<img src="images/content/club-4.png" width="24" height="24" class="object-fit-contain d-inline vertical-middle me-2" alt="" />
-												EAG
-											</td>
-											<td class="text-center">25</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center bg-line">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">.215</td>
-											<td class="text-center">.387</td>
-											<td class="text-center">.284</td>
-											<td class="text-center">.671</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-										</tr>
-										<tr>
-											<td>
-												<a href="#" class="text-primary fw-bold linkDecoration">Rabinowitz Jake</a>
-											</td>
-											<td class="text-center">
-												<img src="images/content/club-4.png" width="24" height="24" class="object-fit-contain d-inline vertical-middle me-2" alt="" />
-												EAG
-											</td>
-											<td class="text-center">25</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center bg-line">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">.215</td>
-											<td class="text-center">.387</td>
-											<td class="text-center">.284</td>
-											<td class="text-center">.671</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-										</tr>
-										<tr>
-											<td>
-												<a href="#" class="text-primary fw-bold linkDecoration">Rabinowitz Jake</a>
-											</td>
-											<td class="text-center">
-												<img src="images/content/club-4.png" width="24" height="24" class="object-fit-contain d-inline vertical-middle me-2" alt="" />
-												EAG
-											</td>
-											<td class="text-center">25</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center bg-line">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">.215</td>
-											<td class="text-center">.387</td>
-											<td class="text-center">.284</td>
-											<td class="text-center">.671</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-										</tr>
-										<tr>
-											<td>
-												<a href="#" class="text-primary fw-bold linkDecoration">Rabinowitz Jake</a>
-											</td>
-											<td class="text-center">
-												<img src="images/content/club-4.png" width="24" height="24" class="object-fit-contain d-inline vertical-middle me-2" alt="" />
-												EAG
-											</td>
-											<td class="text-center">25</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center bg-line">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">.215</td>
-											<td class="text-center">.387</td>
-											<td class="text-center">.284</td>
-											<td class="text-center">.671</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-										</tr>
-										<tr>
-											<td>
-												<a href="#" class="text-primary fw-bold linkDecoration">Rabinowitz Jake</a>
-											</td>
-											<td class="text-center">
-												<img src="images/content/club-4.png" width="24" height="24" class="object-fit-contain d-inline vertical-middle me-2" alt="" />
-												EAG
-											</td>
-											<td class="text-center">25</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center bg-line">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">.215</td>
-											<td class="text-center">.387</td>
-											<td class="text-center">.284</td>
-											<td class="text-center">.671</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-										</tr>
-										<tr>
-											<td>
-												<a href="#" class="text-primary fw-bold linkDecoration">Rabinowitz Jake</a>
-											</td>
-											<td class="text-center">
-												<img src="images/content/club-4.png" width="24" height="24" class="object-fit-contain d-inline vertical-middle me-2" alt="" />
-												EAG
-											</td>
-											<td class="text-center">25</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center bg-line">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">.215</td>
-											<td class="text-center">.387</td>
-											<td class="text-center">.284</td>
-											<td class="text-center">.671</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-										</tr>
-										<tr>
-											<td>
-												<a href="#" class="text-primary fw-bold linkDecoration">Rabinowitz Jake</a>
-											</td>
-											<td class="text-center">
-												<img src="images/content/club-4.png" width="24" height="24" class="object-fit-contain d-inline vertical-middle me-2" alt="" />
-												EAG
-											</td>
-											<td class="text-center">25</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center bg-line">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">.215</td>
-											<td class="text-center">.387</td>
-											<td class="text-center">.284</td>
-											<td class="text-center">.671</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-										</tr>
-										<tr>
-											<td>
-												<a href="#" class="text-primary fw-bold linkDecoration">Rabinowitz Jake</a>
-											</td>
-											<td class="text-center">
-												<img src="images/content/club-4.png" width="24" height="24" class="object-fit-contain d-inline vertical-middle me-2" alt="" />
-												EAG
-											</td>
-											<td class="text-center">25</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center bg-line">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">.215</td>
-											<td class="text-center">.387</td>
-											<td class="text-center">.284</td>
-											<td class="text-center">.671</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-										</tr>
-										<tr>
-											<td>
-												<a href="#" class="text-primary fw-bold linkDecoration">Rabinowitz Jake</a>
-											</td>
-											<td class="text-center">
-												<img src="images/content/club-4.png" width="24" height="24" class="object-fit-contain d-inline vertical-middle me-2" alt="" />
-												EAG
-											</td>
-											<td class="text-center">25</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center bg-line">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">.215</td>
-											<td class="text-center">.387</td>
-											<td class="text-center">.284</td>
-											<td class="text-center">.671</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-										</tr>
-										<tr>
-											<td>
-												<a href="#" class="text-primary fw-bold linkDecoration">Rabinowitz Jake</a>
-											</td>
-											<td class="text-center">
-												<img src="images/content/club-4.png" width="24" height="24" class="object-fit-contain d-inline vertical-middle me-2" alt="" />
-												EAG
-											</td>
-											<td class="text-center">25</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center bg-line">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">.215</td>
-											<td class="text-center">.387</td>
-											<td class="text-center">.284</td>
-											<td class="text-center">.671</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-										</tr>
-
-										<tr>
-											<td>
-												<a href="#" class="text-primary fw-bold linkDecoration">Rabinowitz Jake</a>
-											</td>
-											<td class="text-center">
-												<img src="images/content/club-4.png" width="24" height="24" class="object-fit-contain d-inline vertical-middle me-2" alt="" />
-												EAG
-											</td>
-											<td class="text-center">25</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center bg-line">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">.215</td>
-											<td class="text-center">.387</td>
-											<td class="text-center">.284</td>
-											<td class="text-center">.671</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-										</tr>
-										<tr>
-											<td>
-												<a href="#" class="text-primary fw-bold linkDecoration">Rabinowitz Jake</a>
-											</td>
-											<td class="text-center">
-												<img src="images/content/club-4.png" width="24" height="24" class="object-fit-contain d-inline vertical-middle me-2" alt="" />
-												EAG
-											</td>
-											<td class="text-center">25</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center bg-line">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">.215</td>
-											<td class="text-center">.387</td>
-											<td class="text-center">.284</td>
-											<td class="text-center">.671</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-										</tr>
-										<tr>
-											<td>
-												<a href="#" class="text-primary fw-bold linkDecoration">Rabinowitz Jake</a>
-											</td>
-											<td class="text-center">
-												<img src="images/content/club-4.png" width="24" height="24" class="object-fit-contain d-inline vertical-middle me-2" alt="" />
-												EAG
-											</td>
-											<td class="text-center">25</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center bg-line">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">.215</td>
-											<td class="text-center">.387</td>
-											<td class="text-center">.284</td>
-											<td class="text-center">.671</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-										</tr>
-										<tr>
-											<td>
-												<a href="#" class="text-primary fw-bold linkDecoration">Rabinowitz Jake</a>
-											</td>
-											<td class="text-center">
-												<img src="images/content/club-4.png" width="24" height="24" class="object-fit-contain d-inline vertical-middle me-2" alt="" />
-												EAG
-											</td>
-											<td class="text-center">25</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center bg-line">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">.215</td>
-											<td class="text-center">.387</td>
-											<td class="text-center">.284</td>
-											<td class="text-center">.671</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-										</tr>
-
-										<tr>
-											<td>
-												<a href="#" class="text-primary fw-bold linkDecoration">Rabinowitz Jake</a>
-											</td>
-											<td class="text-center">
-												<img src="images/content/club-4.png" width="24" height="24" class="object-fit-contain d-inline vertical-middle me-2" alt="" />
-												EAG
-											</td>
-											<td class="text-center">25</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center bg-line">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">.215</td>
-											<td class="text-center">.387</td>
-											<td class="text-center">.284</td>
-											<td class="text-center">.671</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-										</tr>
-										<tr>
-											<td>
-												<a href="#" class="text-primary fw-bold linkDecoration">Rabinowitz Jake</a>
-											</td>
-											<td class="text-center">
-												<img src="images/content/club-4.png" width="24" height="24" class="object-fit-contain d-inline vertical-middle me-2" alt="" />
-												EAG
-											</td>
-											<td class="text-center">25</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center bg-line">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">.215</td>
-											<td class="text-center">.387</td>
-											<td class="text-center">.284</td>
-											<td class="text-center">.671</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-											<td class="text-center">10</td>
-										</tr>
-									</tbody>
-								</table>
+					<section class="matches-section">
+						<div class="matchItem">
+							<div class="text-md fw-bold matchItem__date">
+								pá 12. 4. 2025
+								<div class="">19:00</div>
+							</div>
+							<div class="d-flex gap-20 align-items-center matchItem__teams">
+								<div class="d-flex gap-12 align-items-center">
+									<img src="images/content/club-1.png" width="48" height="48" class="object-fit-contain" alt="club" />
+									<img src="images/content/club-2.png" width="48" height="48" class="object-fit-contain" alt="club" />
+								</div>
+								<div class="h4 fw-bold text-primary d-flex align-items-center gap-2">
+									Eagles Praha
+									<span class="text-tertiary">×</span>
+									Kotlářka Praha
+								</div>
+							</div>
+							<div class="matchItem__content">
+								<a href="#" class="text-primary fw-bold linkDecoration matchItem__results">11:13</a>
+								<div class="d-flex align-items-center gap-2 text-md text-tertiary matchItem__location">
+									<img src="images/ico/marker.svg" width="20 " height="20" class="object-fit-contain" alt="marker" />
+									Hřiště Krč, Praha
+								</div>
+								<ul class="matchItem__links text-md">
+									<li>
+										<a href="#" target="_blank">
+											<img src="images/content/ct.png" width="71" height="16" class="object-fit-contain" alt="ct-sport" />
+										</a>
+									</li>
+									<li>
+										<a href="#" class="matchItem__link text-secondary">
+											<svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M7.917 7.971c0-.398 0-.596.083-.708a.417.417 0 01.304-.165c.138-.01.305.097.64.312l3.934 2.53c.29.186.435.28.485.398a.417.417 0 010 .324c-.05.119-.195.212-.485.399L8.944 13.59c-.335.215-.502.322-.64.312A.416.416 0 018 13.737c-.083-.111-.083-.31-.083-.708V7.97z" stroke="#C22532" />
+												<path d="M2.5 7c0-1.4 0-2.1.272-2.635a2.5 2.5 0 011.093-1.093C4.4 3 5.1 3 6.5 3h7c1.4 0 2.1 0 2.635.272a2.5 2.5 0 011.092 1.093C17.5 4.9 17.5 5.6 17.5 7v7c0 1.4 0 2.1-.273 2.635a2.5 2.5 0 01-1.092 1.092C15.6 18 14.9 18 13.5 18h-7c-1.4 0-2.1 0-2.635-.273a2.5 2.5 0 01-1.093-1.092C2.5 16.1 2.5 15.4 2.5 14V7z" stroke="#C22532" />
+											</svg> TV
+										</a>
+									</li>
+									<li>
+										<a href="#" class="matchItem__link text-primary">
+											<svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M17.5 18H3.833c-.466 0-.7 0-.878-.09a.833.833 0 01-.364-.365c-.091-.178-.091-.412-.091-.878V3m14.167 4.167L13.4 10.652c-.124.132-.186.198-.26.232a.417.417 0 01-.211.037c-.082-.008-.162-.05-.323-.133l-2.714-1.41c-.16-.083-.241-.125-.323-.132a.417.417 0 00-.21.036c-.075.034-.137.1-.26.232L5.832 13" stroke="#000" stroke-width="1.66" />
+											</svg> PBP
+										</a>
+									</li>
+								</ul>
 							</div>
 						</div>
-					</div>
+						<div class="matchItem">
+							<div class="text-md fw-bold matchItem__date">
+								pá 12. 4. 2025
+								<div class="">19:00</div>
+							</div>
+							<div class="d-flex gap-20 align-items-center matchItem__teams">
+								<div class="d-flex gap-12 align-items-center">
+									<img src="images/content/club-1.png" width="48" height="48" class="object-fit-contain" alt="club" />
+									<img src="images/content/club-2.png" width="48" height="48" class="object-fit-contain" alt="club" />
+								</div>
+								<div class="h4 fw-bold text-primary d-flex align-items-center gap-2">
+									Cardion Hroši Brno
+									<span class="text-tertiary">×</span>
+									Draci Brno
+								</div>
+							</div>
+							<div class="matchItem__content">
+								<a href="#" class="text-primary fw-bold linkDecoration matchItem__results">1:1</a>
+								<div class="d-flex align-items-center gap-2 text-md text-tertiary matchItem__location">
+									<img src="images/ico/marker.svg" width="20 " height="20" class="object-fit-contain" alt="marker" />
+									Hroši, Brno
+								</div>
+								<ul class="matchItem__links text-md">
+									<li>
+										<a href="#" target="_blank">
+											<img src="images/content/ct.png" width="71" height="16" class="object-fit-contain" alt="ct-sport" />
+										</a>
+									</li>
+									<li>
+										<a href="#" class="matchItem__link text-secondary">
+											<svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M7.917 7.971c0-.398 0-.596.083-.708a.417.417 0 01.304-.165c.138-.01.305.097.64.312l3.934 2.53c.29.186.435.28.485.398a.417.417 0 010 .324c-.05.119-.195.212-.485.399L8.944 13.59c-.335.215-.502.322-.64.312A.416.416 0 018 13.737c-.083-.111-.083-.31-.083-.708V7.97z" stroke="#C22532" />
+												<path d="M2.5 7c0-1.4 0-2.1.272-2.635a2.5 2.5 0 011.093-1.093C4.4 3 5.1 3 6.5 3h7c1.4 0 2.1 0 2.635.272a2.5 2.5 0 011.092 1.093C17.5 4.9 17.5 5.6 17.5 7v7c0 1.4 0 2.1-.273 2.635a2.5 2.5 0 01-1.092 1.092C15.6 18 14.9 18 13.5 18h-7c-1.4 0-2.1 0-2.635-.273a2.5 2.5 0 01-1.093-1.092C2.5 16.1 2.5 15.4 2.5 14V7z" stroke="#C22532" />
+											</svg> TV
+										</a>
+									</li>
+									<li>
+										<a href="#" class="matchItem__link text-primary">
+											<svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M17.5 18H3.833c-.466 0-.7 0-.878-.09a.833.833 0 01-.364-.365c-.091-.178-.091-.412-.091-.878V3m14.167 4.167L13.4 10.652c-.124.132-.186.198-.26.232a.417.417 0 01-.211.037c-.082-.008-.162-.05-.323-.133l-2.714-1.41c-.16-.083-.241-.125-.323-.132a.417.417 0 00-.21.036c-.075.034-.137.1-.26.232L5.832 13" stroke="#000" stroke-width="1.66" />
+											</svg> PBP
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="matchItem">
+							<div class="text-md fw-bold matchItem__date">
+								pá 12. 4. 2025
+								<div class="">19:00</div>
+							</div>
+							<div class="d-flex gap-20 align-items-center matchItem__teams">
+								<div class="d-flex gap-12 align-items-center">
+									<img src="images/content/club-1.png" width="48" height="48" class="object-fit-contain" alt="club" />
+									<img src="images/content/club-2.png" width="48" height="48" class="object-fit-contain" alt="club" />
+								</div>
+								<div class="h4 fw-bold text-primary d-flex align-items-center gap-2">
+									Eagles Praha
+									<span class="text-tertiary">×</span>
+									Kotlářka Praha
+								</div>
+							</div>
+							<div class="matchItem__content">
+								<a href="#" class="text-primary fw-bold linkDecoration matchItem__results">11:13</a>
+								<div class="d-flex align-items-center gap-2 text-md text-tertiary matchItem__location">
+									<img src="images/ico/marker.svg" width="20 " height="20" class="object-fit-contain" alt="marker" />
+									Hřiště Krč, Praha
+								</div>
+								<ul class="matchItem__links text-md">
+									<li>
+										<a href="#" target="_blank">
+											<img src="images/content/ct.png" width="71" height="16" class="object-fit-contain" alt="ct-sport" />
+										</a>
+									</li>
+									<li>
+										<a href="#" class="matchItem__link text-secondary">
+											<svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M7.917 7.971c0-.398 0-.596.083-.708a.417.417 0 01.304-.165c.138-.01.305.097.64.312l3.934 2.53c.29.186.435.28.485.398a.417.417 0 010 .324c-.05.119-.195.212-.485.399L8.944 13.59c-.335.215-.502.322-.64.312A.416.416 0 018 13.737c-.083-.111-.083-.31-.083-.708V7.97z" stroke="#C22532" />
+												<path d="M2.5 7c0-1.4 0-2.1.272-2.635a2.5 2.5 0 011.093-1.093C4.4 3 5.1 3 6.5 3h7c1.4 0 2.1 0 2.635.272a2.5 2.5 0 011.092 1.093C17.5 4.9 17.5 5.6 17.5 7v7c0 1.4 0 2.1-.273 2.635a2.5 2.5 0 01-1.092 1.092C15.6 18 14.9 18 13.5 18h-7c-1.4 0-2.1 0-2.635-.273a2.5 2.5 0 01-1.093-1.092C2.5 16.1 2.5 15.4 2.5 14V7z" stroke="#C22532" />
+											</svg> TV
+										</a>
+									</li>
+									<li>
+										<a href="#" class="matchItem__link text-primary">
+											<svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M17.5 18H3.833c-.466 0-.7 0-.878-.09a.833.833 0 01-.364-.365c-.091-.178-.091-.412-.091-.878V3m14.167 4.167L13.4 10.652c-.124.132-.186.198-.26.232a.417.417 0 01-.211.037c-.082-.008-.162-.05-.323-.133l-2.714-1.41c-.16-.083-.241-.125-.323-.132a.417.417 0 00-.21.036c-.075.034-.137.1-.26.232L5.832 13" stroke="#000" stroke-width="1.66" />
+											</svg> PBP
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="matchItem">
+							<div class="text-md fw-bold matchItem__date">
+								pá 12. 4. 2025
+								<div class="">19:00</div>
+							</div>
+							<div class="d-flex gap-20 align-items-center matchItem__teams">
+								<div class="d-flex gap-12 align-items-center">
+									<img src="images/content/club-1.png" width="48" height="48" class="object-fit-contain" alt="club" />
+									<img src="images/content/club-2.png" width="48" height="48" class="object-fit-contain" alt="club" />
+								</div>
+								<div class="h4 fw-bold text-primary d-flex align-items-center gap-2">
+									Cardion Hroši Brno
+									<span class="text-tertiary">×</span>
+									Draci Brno
+								</div>
+							</div>
+							<div class="matchItem__content">
+								<a href="#" class="text-primary fw-bold linkDecoration matchItem__results">1:1</a>
+								<div class="d-flex align-items-center gap-2 text-md text-tertiary matchItem__location">
+									<img src="images/ico/marker.svg" width="20 " height="20" class="object-fit-contain" alt="marker" />
+									Hroši, Brno
+								</div>
+								<ul class="matchItem__links text-md">
+									<li>
+										<a href="#" class="matchItem__link text-secondary">
+											<svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M7.917 7.971c0-.398 0-.596.083-.708a.417.417 0 01.304-.165c.138-.01.305.097.64.312l3.934 2.53c.29.186.435.28.485.398a.417.417 0 010 .324c-.05.119-.195.212-.485.399L8.944 13.59c-.335.215-.502.322-.64.312A.416.416 0 018 13.737c-.083-.111-.083-.31-.083-.708V7.97z" stroke="#C22532" />
+												<path d="M2.5 7c0-1.4 0-2.1.272-2.635a2.5 2.5 0 011.093-1.093C4.4 3 5.1 3 6.5 3h7c1.4 0 2.1 0 2.635.272a2.5 2.5 0 011.092 1.093C17.5 4.9 17.5 5.6 17.5 7v7c0 1.4 0 2.1-.273 2.635a2.5 2.5 0 01-1.092 1.092C15.6 18 14.9 18 13.5 18h-7c-1.4 0-2.1 0-2.635-.273a2.5 2.5 0 01-1.093-1.092C2.5 16.1 2.5 15.4 2.5 14V7z" stroke="#C22532" />
+											</svg> TV
+										</a>
+									</li>
+									<li>
+										<a href="#" class="matchItem__link text-primary">
+											<svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M17.5 18H3.833c-.466 0-.7 0-.878-.09a.833.833 0 01-.364-.365c-.091-.178-.091-.412-.091-.878V3m14.167 4.167L13.4 10.652c-.124.132-.186.198-.26.232a.417.417 0 01-.211.037c-.082-.008-.162-.05-.323-.133l-2.714-1.41c-.16-.083-.241-.125-.323-.132a.417.417 0 00-.21.036c-.075.034-.137.1-.26.232L5.832 13" stroke="#000" stroke-width="1.66" />
+											</svg> PBP
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="matchItem">
+							<div class="text-md fw-bold matchItem__date">
+								pá 12. 4. 2025
+								<div class="">19:00</div>
+							</div>
+							<div class="d-flex gap-20 align-items-center matchItem__teams">
+								<div class="d-flex gap-12 align-items-center">
+									<img src="images/content/club-1.png" width="48" height="48" class="object-fit-contain" alt="club" />
+									<img src="images/content/club-2.png" width="48" height="48" class="object-fit-contain" alt="club" />
+								</div>
+								<div class="h4 fw-bold text-primary d-flex align-items-center gap-2">
+									Eagles Praha
+									<span class="text-tertiary">×</span>
+									Kotlářka Praha
+								</div>
+							</div>
+							<div class="matchItem__content">
+								<a href="#" class="text-primary fw-bold linkDecoration matchItem__results"></a>
+								<div class="d-flex align-items-center gap-2 text-md text-tertiary matchItem__location">
+									<img src="images/ico/marker.svg" width="20 " height="20" class="object-fit-contain" alt="marker" />
+									Hřiště Krč, Praha
+								</div>
+								<ul class="matchItem__links text-md">
+									<li>
+										<a href="#" target="_blank">
+											<img src="images/content/ct.png" width="71" height="16" class="object-fit-contain" alt="ct-sport" />
+										</a>
+									</li>
+									<li>
+										<a href="#" class="matchItem__link text-secondary">
+											<svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M7.917 7.971c0-.398 0-.596.083-.708a.417.417 0 01.304-.165c.138-.01.305.097.64.312l3.934 2.53c.29.186.435.28.485.398a.417.417 0 010 .324c-.05.119-.195.212-.485.399L8.944 13.59c-.335.215-.502.322-.64.312A.416.416 0 018 13.737c-.083-.111-.083-.31-.083-.708V7.97z" stroke="#C22532" />
+												<path d="M2.5 7c0-1.4 0-2.1.272-2.635a2.5 2.5 0 011.093-1.093C4.4 3 5.1 3 6.5 3h7c1.4 0 2.1 0 2.635.272a2.5 2.5 0 011.092 1.093C17.5 4.9 17.5 5.6 17.5 7v7c0 1.4 0 2.1-.273 2.635a2.5 2.5 0 01-1.092 1.092C15.6 18 14.9 18 13.5 18h-7c-1.4 0-2.1 0-2.635-.273a2.5 2.5 0 01-1.093-1.092C2.5 16.1 2.5 15.4 2.5 14V7z" stroke="#C22532" />
+											</svg> TV
+										</a>
+									</li>
+									<li>
+										<a href="#" class="matchItem__link text-primary">
+											<svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M17.5 18H3.833c-.466 0-.7 0-.878-.09a.833.833 0 01-.364-.365c-.091-.178-.091-.412-.091-.878V3m14.167 4.167L13.4 10.652c-.124.132-.186.198-.26.232a.417.417 0 01-.211.037c-.082-.008-.162-.05-.323-.133l-2.714-1.41c-.16-.083-.241-.125-.323-.132a.417.417 0 00-.21.036c-.075.034-.137.1-.26.232L5.832 13" stroke="#000" stroke-width="1.66" />
+											</svg> PBP
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="matchItem">
+							<div class="text-md fw-bold matchItem__date">
+								pá 12. 4. 2025
+								<div class="">19:00</div>
+							</div>
+							<div class="d-flex gap-20 align-items-center matchItem__teams">
+								<div class="d-flex gap-12 align-items-center">
+									<img src="images/content/club-1.png" width="48" height="48" class="object-fit-contain" alt="club" />
+									<img src="images/content/club-2.png" width="48" height="48" class="object-fit-contain" alt="club" />
+								</div>
+								<div class="h4 fw-bold text-primary d-flex align-items-center gap-2">
+									Eagles Praha
+									<span class="text-tertiary">×</span>
+									Kotlářka Praha
+								</div>
+							</div>
+							<div class="matchItem__content">
+								<a href="#" class="text-primary fw-bold linkDecoration matchItem__results">11:13</a>
+								<div class="d-flex align-items-center gap-2 text-md text-tertiary matchItem__location">
+									<img src="images/ico/marker.svg" width="20 " height="20" class="object-fit-contain" alt="marker" />
+									Hřiště Krč, Praha
+								</div>
+								<ul class="matchItem__links text-md">
+									<li>
+										<a href="#" class="matchItem__link text-secondary">
+											<svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M7.917 7.971c0-.398 0-.596.083-.708a.417.417 0 01.304-.165c.138-.01.305.097.64.312l3.934 2.53c.29.186.435.28.485.398a.417.417 0 010 .324c-.05.119-.195.212-.485.399L8.944 13.59c-.335.215-.502.322-.64.312A.416.416 0 018 13.737c-.083-.111-.083-.31-.083-.708V7.97z" stroke="#C22532" />
+												<path d="M2.5 7c0-1.4 0-2.1.272-2.635a2.5 2.5 0 011.093-1.093C4.4 3 5.1 3 6.5 3h7c1.4 0 2.1 0 2.635.272a2.5 2.5 0 011.092 1.093C17.5 4.9 17.5 5.6 17.5 7v7c0 1.4 0 2.1-.273 2.635a2.5 2.5 0 01-1.092 1.092C15.6 18 14.9 18 13.5 18h-7c-1.4 0-2.1 0-2.635-.273a2.5 2.5 0 01-1.093-1.092C2.5 16.1 2.5 15.4 2.5 14V7z" stroke="#C22532" />
+											</svg> TV
+										</a>
+									</li>
+									<li>
+										<a href="#" class="matchItem__link text-primary">
+											<svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M17.5 18H3.833c-.466 0-.7 0-.878-.09a.833.833 0 01-.364-.365c-.091-.178-.091-.412-.091-.878V3m14.167 4.167L13.4 10.652c-.124.132-.186.198-.26.232a.417.417 0 01-.211.037c-.082-.008-.162-.05-.323-.133l-2.714-1.41c-.16-.083-.241-.125-.323-.132a.417.417 0 00-.21.036c-.075.034-.137.1-.26.232L5.832 13" stroke="#000" stroke-width="1.66" />
+											</svg> PBP
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="matchItem">
+							<div class="text-md fw-bold matchItem__date">
+								pá 12. 4. 2025
+								<div class="">19:00</div>
+							</div>
+							<div class="d-flex gap-20 align-items-center matchItem__teams">
+								<div class="d-flex gap-12 align-items-center">
+									<img src="images/content/club-1.png" width="48" height="48" class="object-fit-contain" alt="club" />
+									<img src="images/content/club-2.png" width="48" height="48" class="object-fit-contain" alt="club" />
+								</div>
+								<div class="h4 fw-bold text-primary d-flex align-items-center gap-2">
+									Eagles Praha
+									<span class="text-tertiary">×</span>
+									Kotlářka Praha
+								</div>
+							</div>
+							<div class="matchItem__content">
+								<a href="#" class="text-primary fw-bold linkDecoration matchItem__results">11:13</a>
+								<div class="d-flex align-items-center gap-2 text-md text-tertiary matchItem__location">
+									<img src="images/ico/marker.svg" width="20 " height="20" class="object-fit-contain" alt="marker" />
+									Hřiště Krč, Praha
+								</div>
+								<ul class="matchItem__links text-md">
+									<li>
+										<a href="#" target="_blank">
+											<img src="images/content/ct.png" width="71" height="16" class="object-fit-contain" alt="ct-sport" />
+										</a>
+									</li>
+									<li>
+										<a href="#" class="matchItem__link text-secondary">
+											<svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M7.917 7.971c0-.398 0-.596.083-.708a.417.417 0 01.304-.165c.138-.01.305.097.64.312l3.934 2.53c.29.186.435.28.485.398a.417.417 0 010 .324c-.05.119-.195.212-.485.399L8.944 13.59c-.335.215-.502.322-.64.312A.416.416 0 018 13.737c-.083-.111-.083-.31-.083-.708V7.97z" stroke="#C22532" />
+												<path d="M2.5 7c0-1.4 0-2.1.272-2.635a2.5 2.5 0 011.093-1.093C4.4 3 5.1 3 6.5 3h7c1.4 0 2.1 0 2.635.272a2.5 2.5 0 011.092 1.093C17.5 4.9 17.5 5.6 17.5 7v7c0 1.4 0 2.1-.273 2.635a2.5 2.5 0 01-1.092 1.092C15.6 18 14.9 18 13.5 18h-7c-1.4 0-2.1 0-2.635-.273a2.5 2.5 0 01-1.093-1.092C2.5 16.1 2.5 15.4 2.5 14V7z" stroke="#C22532" />
+											</svg> TV
+										</a>
+									</li>
+									<li>
+										<a href="#" class="matchItem__link text-primary">
+											<svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M17.5 18H3.833c-.466 0-.7 0-.878-.09a.833.833 0 01-.364-.365c-.091-.178-.091-.412-.091-.878V3m14.167 4.167L13.4 10.652c-.124.132-.186.198-.26.232a.417.417 0 01-.211.037c-.082-.008-.162-.05-.323-.133l-2.714-1.41c-.16-.083-.241-.125-.323-.132a.417.417 0 00-.21.036c-.075.034-.137.1-.26.232L5.832 13" stroke="#000" stroke-width="1.66" />
+											</svg> PBP
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="matchItem">
+							<div class="text-md fw-bold matchItem__date">
+								pá 12. 4. 2025
+								<div class="">19:00</div>
+							</div>
+							<div class="d-flex gap-20 align-items-center matchItem__teams">
+								<div class="d-flex gap-12 align-items-center">
+									<img src="images/content/club-1.png" width="48" height="48" class="object-fit-contain" alt="club" />
+									<img src="images/content/club-2.png" width="48" height="48" class="object-fit-contain" alt="club" />
+								</div>
+								<div class="h4 fw-bold text-primary d-flex align-items-center gap-2">
+									Eagles Praha
+									<span class="text-tertiary">×</span>
+									Kotlářka Praha
+								</div>
+							</div>
+							<div class="matchItem__content">
+								<a href="#" class="text-primary fw-bold linkDecoration matchItem__results">11:13</a>
+								<div class="d-flex align-items-center gap-2 text-md text-tertiary matchItem__location">
+									<img src="images/ico/marker.svg" width="20 " height="20" class="object-fit-contain" alt="marker" />
+									Hřiště Krč, Praha
+								</div>
+								<ul class="matchItem__links text-md">
+									<li>
+										<a href="#" target="_blank">
+											<img src="images/content/ct.png" width="71" height="16" class="object-fit-contain" alt="ct-sport" />
+										</a>
+									</li>
+									<li>
+										<a href="#" class="matchItem__link text-secondary">
+											<svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M7.917 7.971c0-.398 0-.596.083-.708a.417.417 0 01.304-.165c.138-.01.305.097.64.312l3.934 2.53c.29.186.435.28.485.398a.417.417 0 010 .324c-.05.119-.195.212-.485.399L8.944 13.59c-.335.215-.502.322-.64.312A.416.416 0 018 13.737c-.083-.111-.083-.31-.083-.708V7.97z" stroke="#C22532" />
+												<path d="M2.5 7c0-1.4 0-2.1.272-2.635a2.5 2.5 0 011.093-1.093C4.4 3 5.1 3 6.5 3h7c1.4 0 2.1 0 2.635.272a2.5 2.5 0 011.092 1.093C17.5 4.9 17.5 5.6 17.5 7v7c0 1.4 0 2.1-.273 2.635a2.5 2.5 0 01-1.092 1.092C15.6 18 14.9 18 13.5 18h-7c-1.4 0-2.1 0-2.635-.273a2.5 2.5 0 01-1.093-1.092C2.5 16.1 2.5 15.4 2.5 14V7z" stroke="#C22532" />
+											</svg> TV
+										</a>
+									</li>
+									<li>
+										<a href="#" class="matchItem__link text-primary">
+											<svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M17.5 18H3.833c-.466 0-.7 0-.878-.09a.833.833 0 01-.364-.365c-.091-.178-.091-.412-.091-.878V3m14.167 4.167L13.4 10.652c-.124.132-.186.198-.26.232a.417.417 0 01-.211.037c-.082-.008-.162-.05-.323-.133l-2.714-1.41c-.16-.083-.241-.125-.323-.132a.417.417 0 00-.21.036c-.075.034-.137.1-.26.232L5.832 13" stroke="#000" stroke-width="1.66" />
+											</svg> PBP
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="matchItem">
+							<div class="text-md fw-bold matchItem__date">
+								pá 12. 4. 2025
+								<div class="">19:00</div>
+							</div>
+							<div class="d-flex gap-20 align-items-center matchItem__teams">
+								<div class="d-flex gap-12 align-items-center">
+									<img src="images/content/club-1.png" width="48" height="48" class="object-fit-contain" alt="club" />
+									<img src="images/content/club-2.png" width="48" height="48" class="object-fit-contain" alt="club" />
+								</div>
+								<div class="h4 fw-bold text-primary d-flex align-items-center gap-2">
+									Eagles Praha
+									<span class="text-tertiary">×</span>
+									Kotlářka Praha
+								</div>
+							</div>
+							<div class="matchItem__content">
+								<a href="#" class="text-primary fw-bold linkDecoration matchItem__results">11:13</a>
+								<div class="d-flex align-items-center gap-2 text-md text-tertiary matchItem__location">
+									<img src="images/ico/marker.svg" width="20 " height="20" class="object-fit-contain" alt="marker" />
+									Hřiště Krč, Praha
+								</div>
+								<ul class="matchItem__links text-md">
+									<li>
+										<a href="#" target="_blank">
+											<img src="images/content/ct.png" width="71" height="16" class="object-fit-contain" alt="ct-sport" />
+										</a>
+									</li>
+									<li>
+										<a href="#" class="matchItem__link text-secondary">
+											<svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M7.917 7.971c0-.398 0-.596.083-.708a.417.417 0 01.304-.165c.138-.01.305.097.64.312l3.934 2.53c.29.186.435.28.485.398a.417.417 0 010 .324c-.05.119-.195.212-.485.399L8.944 13.59c-.335.215-.502.322-.64.312A.416.416 0 018 13.737c-.083-.111-.083-.31-.083-.708V7.97z" stroke="#C22532" />
+												<path d="M2.5 7c0-1.4 0-2.1.272-2.635a2.5 2.5 0 011.093-1.093C4.4 3 5.1 3 6.5 3h7c1.4 0 2.1 0 2.635.272a2.5 2.5 0 011.092 1.093C17.5 4.9 17.5 5.6 17.5 7v7c0 1.4 0 2.1-.273 2.635a2.5 2.5 0 01-1.092 1.092C15.6 18 14.9 18 13.5 18h-7c-1.4 0-2.1 0-2.635-.273a2.5 2.5 0 01-1.093-1.092C2.5 16.1 2.5 15.4 2.5 14V7z" stroke="#C22532" />
+											</svg> TV
+										</a>
+									</li>
+									<li>
+										<a href="#" class="matchItem__link text-primary">
+											<svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M17.5 18H3.833c-.466 0-.7 0-.878-.09a.833.833 0 01-.364-.365c-.091-.178-.091-.412-.091-.878V3m14.167 4.167L13.4 10.652c-.124.132-.186.198-.26.232a.417.417 0 01-.211.037c-.082-.008-.162-.05-.323-.133l-2.714-1.41c-.16-.083-.241-.125-.323-.132a.417.417 0 00-.21.036c-.075.034-.137.1-.26.232L5.832 13" stroke="#000" stroke-width="1.66" />
+											</svg> PBP
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="matchItem">
+							<div class="text-md fw-bold matchItem__date">
+								pá 12. 4. 2025
+								<div class="">19:00</div>
+							</div>
+							<div class="d-flex gap-20 align-items-center matchItem__teams">
+								<div class="d-flex gap-12 align-items-center">
+									<img src="images/content/club-1.png" width="48" height="48" class="object-fit-contain" alt="club" />
+									<img src="images/content/club-2.png" width="48" height="48" class="object-fit-contain" alt="club" />
+								</div>
+								<div class="h4 fw-bold text-primary d-flex align-items-center gap-2">
+									Eagles Praha
+									<span class="text-tertiary">×</span>
+									Kotlářka Praha
+								</div>
+							</div>
+							<div class="matchItem__content">
+								<a href="#" class="text-primary fw-bold linkDecoration matchItem__results">11:13</a>
+								<div class="d-flex align-items-center gap-2 text-md text-tertiary matchItem__location">
+									<img src="images/ico/marker.svg" width="20 " height="20" class="object-fit-contain" alt="marker" />
+									Hřiště Krč, Praha
+								</div>
+								<ul class="matchItem__links text-md">
+									<li>
+										<a href="#" target="_blank">
+											<img src="images/content/ct.png" width="71" height="16" class="object-fit-contain" alt="ct-sport" />
+										</a>
+									</li>
+									<li>
+										<a href="#" class="matchItem__link text-secondary">
+											<svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M7.917 7.971c0-.398 0-.596.083-.708a.417.417 0 01.304-.165c.138-.01.305.097.64.312l3.934 2.53c.29.186.435.28.485.398a.417.417 0 010 .324c-.05.119-.195.212-.485.399L8.944 13.59c-.335.215-.502.322-.64.312A.416.416 0 018 13.737c-.083-.111-.083-.31-.083-.708V7.97z" stroke="#C22532" />
+												<path d="M2.5 7c0-1.4 0-2.1.272-2.635a2.5 2.5 0 011.093-1.093C4.4 3 5.1 3 6.5 3h7c1.4 0 2.1 0 2.635.272a2.5 2.5 0 011.092 1.093C17.5 4.9 17.5 5.6 17.5 7v7c0 1.4 0 2.1-.273 2.635a2.5 2.5 0 01-1.092 1.092C15.6 18 14.9 18 13.5 18h-7c-1.4 0-2.1 0-2.635-.273a2.5 2.5 0 01-1.093-1.092C2.5 16.1 2.5 15.4 2.5 14V7z" stroke="#C22532" />
+											</svg> TV
+										</a>
+									</li>
+									<li>
+										<a href="#" class="matchItem__link text-primary">
+											<svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M17.5 18H3.833c-.466 0-.7 0-.878-.09a.833.833 0 01-.364-.365c-.091-.178-.091-.412-.091-.878V3m14.167 4.167L13.4 10.652c-.124.132-.186.198-.26.232a.417.417 0 01-.211.037c-.082-.008-.162-.05-.323-.133l-2.714-1.41c-.16-.083-.241-.125-.323-.132a.417.417 0 00-.21.036c-.075.034-.137.1-.26.232L5.832 13" stroke="#000" stroke-width="1.66" />
+											</svg> PBP
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</section>
 				</div>
-			</section>
+			</div>
 
 			<div class="mb-7">
 				<div class="container">
