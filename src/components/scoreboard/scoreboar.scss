@@ -1,5 +1,8 @@
 .scoreboard {
   background: var(--color-light);
+  position: relative;
+  z-index: 11;
+  overflow-x: hidden;
   &__inner {
     display: flex;
     flex-wrap: nowrap;
