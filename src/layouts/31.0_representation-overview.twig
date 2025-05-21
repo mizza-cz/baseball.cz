@@ -1,0 +1,492 @@
+{% extends "@components/base/base.twig" %} {% set title =
+"31.0_representation-overview" %} {% block main %}
+
+<div class="headerSection">
+  <div class="container">
+    <div class="headerSection__inner">
+      <div class="d-flex gap-20 align-items-center flex-wrap">
+        <img
+          src="images/content/club-3.png"
+          width="48"
+          height="48"
+          class="object-fit-contain"
+          alt="login"
+        />
+        <h1 class="h1 text-primary">Mužská reprezentace</h1>
+      </div>
+
+      <div class="d-flex align-items-center gap-5 flex-wrap">
+        <ul class="headerSection__menu">
+          <li>
+            <a href="" class="headerSection__menu-link active"> Přehled </a>
+          </li>
+          <li>
+            <a href="" class="headerSection__menu-link"> Rozpis & výsledky </a>
+          </li>
+          <li>
+            <a href="" class="headerSection__menu-link"> Soupiska </a>
+          </li>
+          <li>
+            <a href="" class="headerSection__menu-link"> Realizační tým </a>
+          </li>
+          <li>
+            <a href="" class="headerSection__menu-link"> Historie </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section-representation">
+  <div class="mb-7">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-6">
+          <a class="d-block w-100 h-100" href="#">
+            <img
+              loading="lazy"
+              srcset="
+                https://placehold.co/704x120?text=704x120 1408w,
+                https://placehold.co/704x120?text=704x120  704w
+              "
+              sizes="
+                     (min-width: 704w) 704w
+                     
+                   "
+              width="704"
+              height="120"
+              class="object-fit-cover w-100 h-100"
+              alt=""
+            />
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <a class="d-block w-100 h-100" href="#">
+            <img
+              loading="lazy"
+              srcset="
+                https://placehold.co/704x120?text=704x120 1408w,
+                https://placehold.co/704x120?text=704x120  704w
+              "
+              sizes="
+                  (min-width: 704w) 704w
+                  
+                "
+              width="704"
+              height="120"
+              class="object-fit-cover w-100 h-100"
+              alt=""
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- posts  -->
+  <div class="mb-7">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-xl-3 col-sm-6">
+          {% include "@components/post/post.twig" %}
+        </div>
+        <div class="col-xl-3 col-sm-6">
+          {% include "@components/post/post.twig" %}
+        </div>
+        <div class="col-xl-3 col-sm-6">
+          {% include "@components/post/post.twig" %}
+        </div>
+        <div class="col-xl-3 col-sm-6">
+          {% include "@components/post/post.twig" %}
+        </div>
+      </div>
+      <a href="#" class="btn btn-stroke d-flex mt-5 ms-auto">
+        Zobrazit další akce {% include "@images/arrow-right.svg" %}
+      </a>
+    </div>
+  </div>
+  <!-- posts end  -->
+  <!-- matches  -->
+  <div class="mb-7 matches-section matches-section-sm">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-xl-6">
+          <div class="calendarItem boxShadow">
+            <div class="matchItem-sm flex-wrap">
+              <div class="matchItem-sm__head">
+                <div
+                  class="d-flex align-items-center gap-40 justify-content-sm-start justify-content-center text-md fw-bold"
+                >
+                  <div>pá 12. 4. 2025, 19:00 hod.</div>
+                  <div class="text-primary">ME mužů, Itálie</div>
+                </div>
+                <div
+                  class="d-flex align-items-center gap-2 text-sm text-tertiary matchItem__location"
+                >
+                  <img
+                    src="images/ico/marker.svg"
+                    width="20 "
+                    height="20"
+                    class="object-fit-contain"
+                    alt="marker"
+                  />
+                  Settimo Torinese, Itálie
+                </div>
+              </div>
+
+              <div
+                class="d-flex justify-content-between align-items-center w-100 flex-wrap gap-3 flex-sm-row flex-column"
+              >
+                <div
+                  class="d-flex gap-20 align-items-center flex-sm-row flex-column"
+                >
+                  <div class="d-flex gap-3 align-items-center">
+                    <img
+                      src="images/ico/cz.svg"
+                      width="48"
+                      height="48"
+                      class="object-fit-contain"
+                      alt="club"
+                    />
+                    <img
+                      src="images/ico/sved.svg"
+                      width="48"
+                      height="48"
+                      class="object-fit-contain"
+                      alt="club"
+                    />
+                  </div>
+                  <div
+                    class="h4 fw-bold text-primary d-flex align-items-center gap-2"
+                  >
+                    Česko
+                    <span class="text-tertiary h4">×</span>
+                    Švédsko
+                  </div>
+                </div>
+                <div class="matchItem__content">
+                  <a href="#" class="text-primary fw-bold linkDecoration h2">
+                    11:13
+                  </a>
+                  <ul class="matchItem__links text-md">
+                    <li>
+                      <a href="#" class="matchItem__link text-secondary">
+                        {% include "@images/play-live.svg" %} TV
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="matchItem__link text-primary">
+                        {% include "@images/line.svg" %} PBP
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-6">
+          <div class="calendarItem boxShadow">
+            <div class="matchItem-sm flex-wrap">
+              <div class="matchItem-sm__head">
+                <div
+                  class="d-flex align-items-center gap-40 justify-content-sm-start justify-content-center text-md fw-bold"
+                >
+                  <div>pá 12. 4. 2025, 19:00 hod.</div>
+                  <div class="text-primary">ME mužů, Itálie</div>
+                </div>
+                <div
+                  class="d-flex align-items-center gap-2 text-sm text-tertiary matchItem__location"
+                >
+                  <img
+                    src="images/ico/marker.svg"
+                    width="20 "
+                    height="20"
+                    class="object-fit-contain"
+                    alt="marker"
+                  />
+                  Settimo Torinese, Itálie
+                </div>
+              </div>
+
+              <div
+                class="d-flex justify-content-between align-items-center w-100 flex-wrap gap-3 flex-sm-row flex-column"
+              >
+                <div
+                  class="d-flex gap-20 align-items-center flex-sm-row flex-column"
+                >
+                  <div class="d-flex gap-3 align-items-center">
+                    <img
+                      src="images/ico/cz.svg"
+                      width="48"
+                      height="48"
+                      class="object-fit-contain"
+                      alt="club"
+                    />
+                    <img
+                      src="images/ico/sved.svg"
+                      width="48"
+                      height="48"
+                      class="object-fit-contain"
+                      alt="club"
+                    />
+                  </div>
+                  <div
+                    class="h4 fw-bold text-primary d-flex align-items-center gap-2"
+                  >
+                    Česko
+                    <span class="text-tertiary h4">×</span>
+                    Švédsko
+                  </div>
+                </div>
+                <div class="matchItem__content">
+                  <a href="#" class="text-primary fw-bold linkDecoration h2">
+                    11:13
+                  </a>
+                  <ul class="matchItem__links text-md">
+                    <li>
+                      <a href="#" class="matchItem__link text-secondary">
+                        {% include "@images/play-live.svg" %} TV
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="matchItem__link text-primary">
+                        {% include "@images/line.svg" %} PBP
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn btn-stroke d-flex mt-5 ms-auto">
+        Kompletní rozpis a výsledky {% include "@images/arrow-right.svg" %}
+      </a>
+    </div>
+  </div>
+
+  <!-- matches end  -->
+  <!-- akce  -->
+  <div class="mb-7">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-4">
+          <div class="calendarItem boxShadow">
+            <div class="d-flex gap-5 align-items-center mb-5">
+              <img
+                loading="lazy"
+                srcset="images/content/logo-calendar.png 92w"
+                sizes="
+    (min-width: 92px) 92px
+    
+  "
+                width="92"
+                height="56"
+                alt="logo"
+              />
+              <h3 class="text-primary h4">Název akce / události</h3>
+            </div>
+
+            <ul class="calendarItem__list gap-1">
+              <li>
+                <span>Termín akce:</span>
+                6. - 8.12.2024
+              </li>
+
+              <li><span>Místo:</span> Nymburk</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="calendarItem boxShadow">
+            <div class="d-flex gap-5 align-items-center mb-5">
+              <img
+                loading="lazy"
+                srcset="images/content/logo-calendar.png 92w"
+                sizes="
+    (min-width: 92px) 92px
+    
+  "
+                width="92"
+                height="56"
+                alt="logo"
+              />
+              <h3 class="text-primary h4">Název akce / události</h3>
+            </div>
+
+            <ul class="calendarItem__list gap-1">
+              <li>
+                <span>Termín akce:</span>
+                6. - 8.12.2024
+              </li>
+
+              <li><span>Místo:</span> Nymburk</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="calendarItem boxShadow">
+            <div class="d-flex gap-5 align-items-center mb-5">
+              <img
+                loading="lazy"
+                srcset="images/content/logo-calendar.png 92w"
+                sizes="
+    (min-width: 92px) 92px
+    
+  "
+                width="92"
+                height="56"
+                alt="logo"
+              />
+              <h3 class="text-primary h4">Název akce / události</h3>
+            </div>
+
+            <ul class="calendarItem__list gap-1">
+              <li>
+                <span>Termín akce:</span>
+                6. - 8.12.2024
+              </li>
+
+              <li><span>Místo:</span> Nymburk</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn btn-stroke d-flex mt-5 ms-auto">
+        Zobrazit další akce {% include "@images/arrow-right.svg" %}
+      </a>
+    </div>
+  </div>
+  <!-- akce end  -->
+
+  <div class="mb-7">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-xl-3 col-mg-6">
+          <a class="d-block w-100 h-100" href="#">
+            <img
+              loading="lazy"
+              srcset="https://placehold.co/336x120?text=336x120 336w"
+              sizes="
+                     (min-width: 336w) 336w
+                     
+                   "
+              width="336"
+              height="120"
+              class="object-fit-cover w-100 h-100"
+              alt=""
+            />
+          </a>
+        </div>
+        <div class="col-xl-3 col-mg-6">
+          <a class="d-block w-100 h-100" href="#">
+            <img
+              loading="lazy"
+              srcset="https://placehold.co/336x120?text=336x120 336w"
+              sizes="
+                     (min-width: 336w) 336w
+                     
+                   "
+              width="336"
+              height="120"
+              class="object-fit-cover w-100 h-100"
+              alt=""
+            />
+          </a>
+        </div>
+        <div class="col-xl-3 col-mg-6">
+          <a class="d-block w-100 h-100" href="#">
+            <img
+              loading="lazy"
+              srcset="https://placehold.co/336x120?text=336x120 336w"
+              sizes="
+                     (min-width: 336w) 336w
+                     
+                   "
+              width="336"
+              height="120"
+              class="object-fit-cover w-100 h-100"
+              alt=""
+            />
+          </a>
+        </div>
+        <div class="col-xl-3 col-mg-6">
+          <a class="d-block w-100 h-100" href="#">
+            <img
+              loading="lazy"
+              srcset="https://placehold.co/336x120?text=336x120 336w"
+              sizes="
+                     (min-width: 336w) 336w
+                     
+                   "
+              width="336"
+              height="120"
+              class="object-fit-cover w-100 h-100"
+              alt=""
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- videos  -->
+
+  <div class="mb-7">
+    {% include "@components/videos-section/videos-section.twig" %}
+  </div>
+
+  <!-- videos end -->
+
+  <div class="mb-7">
+    {% include "@components/shop-section/shop-section.twig" %}
+  </div>
+</div>
+
+<div class="mb-7">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-6">
+        <a class="d-block w-100 h-100" href="#">
+          <img
+            loading="lazy"
+            srcset="
+              https://placehold.co/704x120?text=704x120 1408w,
+              https://placehold.co/704x120?text=704x120  704w
+            "
+            sizes="
+                     (min-width: 704w) 704w
+                     
+                   "
+            width="704"
+            height="120"
+            class="object-fit-cover w-100 h-100"
+            alt=""
+          />
+        </a>
+      </div>
+      <div class="col-lg-6">
+        <a class="d-block w-100 h-100" href="#">
+          <img
+            loading="lazy"
+            srcset="
+              https://placehold.co/704x120?text=704x120 1408w,
+              https://placehold.co/704x120?text=704x120  704w
+            "
+            sizes="
+                  (min-width: 704w) 704w
+                  
+                "
+            width="704"
+            height="120"
+            class="object-fit-cover w-100 h-100"
+            alt=""
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% include "@components/partnersSlider/partnersSlider.twig" %} {% endblock %}

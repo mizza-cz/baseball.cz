@@ -1,0 +1,702 @@
+{% extends "@components/base/base.twig" %} {% set title =
+"30.0_сompetition-overview" %} {% block main %}
+
+<div class="headerSection">
+  <div class="container">
+    <div class="headerSection__inner">
+      <div class="d-flex gap-20 align-items-center flex-wrap">
+        <img
+          src="images/content/extraliga.png"
+          width="24"
+          height="24"
+          class="object-fit-contain"
+          alt="login"
+        />
+        <h1 class="h1 text-primary">Extraliga</h1>
+        <form>
+          <label class="o-select select-sm">
+            <select class="js-select">
+              <option>2025</option>
+              <option>2024</option>
+              <option>2023</option>
+              <option>2022</option>
+            </select>
+          </label>
+        </form>
+      </div>
+
+      <div class="d-flex align-items-center gap-5 flex-wrap">
+        <ul class="headerSection__menu">
+          <li>
+            <a href="" class="headerSection__menu-link"> Přehled </a>
+          </li>
+          <li>
+            <a href="" class="headerSection__menu-link active">
+              Rozpis & výsledky
+            </a>
+          </li>
+          <li>
+            <a href="" class="headerSection__menu-link"> Tabulka </a>
+          </li>
+          <li>
+            <a href="" class="headerSection__menu-link"> Statistiky </a>
+          </li>
+          <li>
+            <a href="" class="headerSection__menu-link"> Týmy </a>
+          </li>
+          <li>
+            <a href="" class="headerSection__menu-link"> Soutěž </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- banners  -->
+<div class="mb-7">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-6">
+        <a class="d-block w-100 h-100" href="#">
+          <img
+            loading="lazy"
+            srcset="
+              https://placehold.co/704x120?text=704x120 1408w,
+              https://placehold.co/704x120?text=704x120  704w
+            "
+            sizes="
+                     (min-width: 704w) 704w
+                     
+                   "
+            width="704"
+            height="120"
+            class="object-fit-cover w-100 h-100"
+            alt=""
+          />
+        </a>
+      </div>
+      <div class="col-lg-6">
+        <a class="d-block w-100 h-100" href="#">
+          <img
+            loading="lazy"
+            srcset="
+              https://placehold.co/704x120?text=704x120 1408w,
+              https://placehold.co/704x120?text=704x120  704w
+            "
+            sizes="
+                  (min-width: 704w) 704w
+                  
+                "
+            width="704"
+            height="120"
+            class="object-fit-cover w-100 h-100"
+            alt=""
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- banners end  -->
+
+<!-- matches / table board  -->
+
+<div class="mb-7">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-6">
+        <div class="teamCard">
+          <h2 class="h3 mb-3 text-primary">Aktuální zápasy</h2>
+          <section class="matches-section matches-section-sm">
+            <div class="matchItem-sm flex-wrap">
+              <div
+                class="d-flex align-items-center gap-20 w-100 mb-sm-1 mb-3 justify-content-sm-start justify-content-center"
+              >
+                <div class="text-xs text-tertiary">pá 12. 4. 2025, 19:00</div>
+                <a href="#" target="_blank" class="d-block">
+                  <img
+                    src="images/content/ct.png"
+                    width="54"
+                    height="12"
+                    class="object-fit-contain"
+                    alt="ct-sport"
+                  />
+                </a>
+              </div>
+              <div
+                class="d-flex justify-content-between align-items-center w-100 flex-wrap gap-3 flex-sm-row flex-column"
+              >
+                <div
+                  class="d-flex gap-20 align-items-center flex-sm-row flex-column"
+                >
+                  <div class="d-flex gap-1 align-items-center">
+                    <img
+                      src="images/content/club-1.png"
+                      width="24"
+                      height="24"
+                      class="object-fit-contain"
+                      alt="club"
+                    />
+                    <img
+                      src="images/content/club-2.png"
+                      width="24"
+                      height="24"
+                      class="object-fit-contain"
+                      alt="club"
+                    />
+                  </div>
+                  <div
+                    class="text-md fw-bold text-primary d-flex align-items-center gap-2"
+                  >
+                    Eagles Praha
+                    <span class="text-tertiary h4">×</span>
+                    Kotlářka Praha
+                  </div>
+                </div>
+                <div class="matchItem__content">
+                  <a href="#" class="text-primary fw-bold linkDecoration h4">
+                    11:13
+                  </a>
+                  <a href="#" class="matchItem__link text-primary">
+                    {% include "@images/line.svg" %} PBP
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="matchItem-sm flex-wrap">
+              <div
+                class="d-flex align-items-center gap-20 w-100 mb-sm-1 mb-3 justify-content-sm-start justify-content-center"
+              >
+                <div class="text-xs text-tertiary">pá 12. 4. 2025, 19:00</div>
+                <a href="#" target="_blank" class="d-block">
+                  <img
+                    src="images/content/ct.png"
+                    width="54"
+                    height="12"
+                    class="object-fit-contain"
+                    alt="ct-sport"
+                  />
+                </a>
+              </div>
+              <div
+                class="d-flex justify-content-between align-items-center w-100 flex-wrap gap-3 flex-sm-row flex-column"
+              >
+                <div
+                  class="d-flex gap-20 align-items-center flex-sm-row flex-column"
+                >
+                  <div class="d-flex gap-1 align-items-center">
+                    <img
+                      src="images/content/club-1.png"
+                      width="24"
+                      height="24"
+                      class="object-fit-contain"
+                      alt="club"
+                    />
+                    <img
+                      src="images/content/club-2.png"
+                      width="24"
+                      height="24"
+                      class="object-fit-contain"
+                      alt="club"
+                    />
+                  </div>
+                  <div
+                    class="text-md fw-bold text-primary d-flex align-items-center gap-2"
+                  >
+                    Eagles Praha
+                    <span class="text-tertiary h4">×</span>
+                    Kotlářka Praha
+                  </div>
+                </div>
+                <div class="matchItem__content">
+                  <a href="#" class="text-primary fw-bold linkDecoration h4">
+                    11:13
+                  </a>
+                  <a href="#" class="matchItem__link text-primary">
+                    {% include "@images/line.svg" %} PBP
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="matchItem-sm flex-wrap">
+              <div
+                class="d-flex align-items-center gap-20 w-100 mb-sm-1 mb-3 justify-content-sm-start justify-content-center"
+              >
+                <div class="text-xs text-tertiary">pá 12. 4. 2025, 19:00</div>
+                <a href="#" target="_blank" class="d-block">
+                  <img
+                    src="images/content/ct.png"
+                    width="54"
+                    height="12"
+                    class="object-fit-contain"
+                    alt="ct-sport"
+                  />
+                </a>
+              </div>
+              <div
+                class="d-flex justify-content-between align-items-center w-100 flex-wrap gap-3 flex-sm-row flex-column"
+              >
+                <div
+                  class="d-flex gap-20 align-items-center flex-sm-row flex-column"
+                >
+                  <div class="d-flex gap-1 align-items-center">
+                    <img
+                      src="images/content/club-1.png"
+                      width="24"
+                      height="24"
+                      class="object-fit-contain"
+                      alt="club"
+                    />
+                    <img
+                      src="images/content/club-2.png"
+                      width="24"
+                      height="24"
+                      class="object-fit-contain"
+                      alt="club"
+                    />
+                  </div>
+                  <div
+                    class="text-md fw-bold text-primary d-flex align-items-center gap-2"
+                  >
+                    Eagles Praha
+                    <span class="text-tertiary h4">×</span>
+                    Kotlářka Praha
+                  </div>
+                </div>
+                <div class="matchItem__content">
+                  <a href="#" class="text-primary fw-bold linkDecoration h4">
+                    11:13
+                  </a>
+                  <a href="#" class="matchItem__link text-primary">
+                    {% include "@images/line.svg" %} PBP
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="matchItem-sm flex-wrap">
+              <div
+                class="d-flex align-items-center gap-20 w-100 mb-sm-1 mb-3 justify-content-sm-start justify-content-center"
+              >
+                <div class="text-xs text-tertiary">pá 12. 4. 2025, 19:00</div>
+                <a href="#" target="_blank" class="d-block">
+                  <img
+                    src="images/content/ct.png"
+                    width="54"
+                    height="12"
+                    class="object-fit-contain"
+                    alt="ct-sport"
+                  />
+                </a>
+              </div>
+              <div
+                class="d-flex justify-content-between align-items-center w-100 flex-wrap gap-3 flex-sm-row flex-column"
+              >
+                <div
+                  class="d-flex gap-20 align-items-center flex-sm-row flex-column"
+                >
+                  <div class="d-flex gap-1 align-items-center">
+                    <img
+                      src="images/content/club-1.png"
+                      width="24"
+                      height="24"
+                      class="object-fit-contain"
+                      alt="club"
+                    />
+                    <img
+                      src="images/content/club-2.png"
+                      width="24"
+                      height="24"
+                      class="object-fit-contain"
+                      alt="club"
+                    />
+                  </div>
+                  <div
+                    class="text-md fw-bold text-primary d-flex align-items-center gap-2"
+                  >
+                    Eagles Praha
+                    <span class="text-tertiary h4">×</span>
+                    Kotlářka Praha
+                  </div>
+                </div>
+                <div class="matchItem__content">
+                  <a href="#" class="text-primary fw-bold linkDecoration h4">
+                    11:13
+                  </a>
+                  <a href="#" class="matchItem__link text-primary">
+                    {% include "@images/line.svg" %} PBP
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="matchItem-sm flex-wrap">
+              <div
+                class="d-flex align-items-center gap-20 w-100 mb-sm-1 mb-3 justify-content-sm-start justify-content-center"
+              >
+                <div class="text-xs text-tertiary">pá 12. 4. 2025, 19:00</div>
+                <a href="#" target="_blank" class="d-block">
+                  <img
+                    src="images/content/ct.png"
+                    width="54"
+                    height="12"
+                    class="object-fit-contain"
+                    alt="ct-sport"
+                  />
+                </a>
+              </div>
+              <div
+                class="d-flex justify-content-between align-items-center w-100 flex-wrap gap-3 flex-sm-row flex-column"
+              >
+                <div
+                  class="d-flex gap-20 align-items-center flex-sm-row flex-column"
+                >
+                  <div class="d-flex gap-1 align-items-center">
+                    <img
+                      src="images/content/club-1.png"
+                      width="24"
+                      height="24"
+                      class="object-fit-contain"
+                      alt="club"
+                    />
+                    <img
+                      src="images/content/club-2.png"
+                      width="24"
+                      height="24"
+                      class="object-fit-contain"
+                      alt="club"
+                    />
+                  </div>
+                  <div
+                    class="text-md fw-bold text-primary d-flex align-items-center gap-2"
+                  >
+                    Eagles Praha
+                    <span class="text-tertiary h4">×</span>
+                    Kotlářka Praha
+                  </div>
+                </div>
+                <div class="matchItem__content">
+                  <a href="#" class="text-primary fw-bold linkDecoration h4">
+                    11:13
+                  </a>
+                  <a href="#" class="matchItem__link text-primary">
+                    {% include "@images/line.svg" %} PBP
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div class="col-lg-6 order-lg-0 order-2">
+        <div class="teamCard">
+          <h2 class="h3 mb-3 text-primary">Tabulka</h2>
+          <div class="table-section table-section-sm">
+            <div class="o-content">
+              <table>
+                <thead>
+                  <tr>
+                    <th class="text-start">#</th>
+                    <th class="text-start">Tým</th>
+                    <th class="text-center">Z</th>
+                    <th class="text-center">W</th>
+                    <th class="text-center">L</th>
+                    <th class="text-center">Skóre</th>
+                    <th class="text-center">%</th>
+                    <th class="text-center">-</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1.</td>
+                    <td class="h4 fw-bold text-primary w-xl-100 w-auto">
+                      <a href="#" class="linkDecoration d-block">
+                        <img
+                          src="images/content/club-4.png"
+                          width="20"
+                          height="20"
+                          class="object-fit-contain d-inline vertical-middle me-md-4 mr-12"
+                          alt=""
+                        />Eagles Praha
+                      </a>
+                    </td>
+                    <td class="text-center">35</td>
+                    <td class="text-center">25</td>
+                    <td class="text-center">10</td>
+                    <td class="text-center">222:102</td>
+                    <td class="text-center">0.714</td>
+                    <td class="text-center">-</td>
+                  </tr>
+                  <tr>
+                    <td>2.</td>
+                    <td class="h4 fw-bold text-primary w-xl-100 w-auto">
+                      <a href="#" class="linkDecoration d-block">
+                        <img
+                          src="images/content/club-4.png"
+                          width="20"
+                          height="20"
+                          class="object-fit-contain d-inline vertical-middle me-md-4 mr-12"
+                          alt=""
+                        />Eagles Praha
+                      </a>
+                    </td>
+                    <td class="text-center">35</td>
+                    <td class="text-center">25</td>
+                    <td class="text-center">10</td>
+                    <td class="text-center">222:102</td>
+                    <td class="text-center">0.714</td>
+                    <td class="text-center">-</td>
+                  </tr>
+                  <tr>
+                    <td>3.</td>
+                    <td class="h4 fw-bold text-primary w-xl-100 w-auto">
+                      <a href="#" class="linkDecoration d-block">
+                        <img
+                          src="images/content/club-4.png"
+                          width="20"
+                          height="20"
+                          class="object-fit-contain d-inline vertical-middle me-md-4 mr-12"
+                          alt=""
+                        />Eagles Praha
+                      </a>
+                    </td>
+                    <td class="text-center">35</td>
+                    <td class="text-center">25</td>
+                    <td class="text-center">10</td>
+                    <td class="text-center">222:102</td>
+                    <td class="text-center">0.714</td>
+                    <td class="text-center">-</td>
+                  </tr>
+                  <tr>
+                    <td>4.</td>
+                    <td class="h4 fw-bold text-primary w-xl-100 w-auto">
+                      <a href="#" class="linkDecoration d-block">
+                        <img
+                          src="images/content/club-4.png"
+                          width="20"
+                          height="20"
+                          class="object-fit-contain d-inline vertical-middle me-md-4 mr-12"
+                          alt=""
+                        />Eagles Praha
+                      </a>
+                    </td>
+                    <td class="text-center">35</td>
+                    <td class="text-center">25</td>
+                    <td class="text-center">10</td>
+                    <td class="text-center">222:102</td>
+                    <td class="text-center">0.714</td>
+                    <td class="text-center">-</td>
+                  </tr>
+                  <tr>
+                    <td>5.</td>
+                    <td class="h4 fw-bold text-primary w-xl-100 w-auto">
+                      <a href="#" class="linkDecoration d-block">
+                        <img
+                          src="images/content/club-4.png"
+                          width="20"
+                          height="20"
+                          class="object-fit-contain d-inline vertical-middle me-md-4 mr-12"
+                          alt=""
+                        />Eagles Praha
+                      </a>
+                    </td>
+                    <td class="text-center">35</td>
+                    <td class="text-center">25</td>
+                    <td class="text-center">10</td>
+                    <td class="text-center">222:102</td>
+                    <td class="text-center">0.714</td>
+                    <td class="text-center">-</td>
+                  </tr>
+                  <tr class="active">
+                    <td>6.</td>
+                    <td class="h4 fw-bold text-primary w-xl-100 w-auto">
+                      <a href="#" class="linkDecoration d-block">
+                        <img
+                          src="images/content/club-4.png"
+                          width="20"
+                          height="20"
+                          class="object-fit-contain d-inline vertical-middle me-md-4 mr-12"
+                          alt=""
+                        />Eagles Praha
+                      </a>
+                    </td>
+                    <td class="text-center">35</td>
+                    <td class="text-center">25</td>
+                    <td class="text-center">10</td>
+                    <td class="text-center">222:102</td>
+                    <td class="text-center">0.714</td>
+                    <td class="text-center">-</td>
+                  </tr>
+                  <tr>
+                    <td>7.</td>
+                    <td class="h4 fw-bold text-primary w-xl-100 w-auto">
+                      <a href="#" class="linkDecoration d-block">
+                        <img
+                          src="images/content/club-4.png"
+                          width="20"
+                          height="20"
+                          class="object-fit-contain d-inline vertical-middle me-md-4 mr-12"
+                          alt=""
+                        />Eagles Praha
+                      </a>
+                    </td>
+                    <td class="text-center">35</td>
+                    <td class="text-center">25</td>
+                    <td class="text-center">10</td>
+                    <td class="text-center">222:102</td>
+                    <td class="text-center">0.714</td>
+                    <td class="text-center">-</td>
+                  </tr>
+                  <tr>
+                    <td>8.</td>
+                    <td class="h4 fw-bold text-primary w-xl-100 w-auto">
+                      <a href="#" class="linkDecoration d-block">
+                        <img
+                          src="images/content/club-4.png"
+                          width="20"
+                          height="20"
+                          class="object-fit-contain d-inline vertical-middle me-md-4 mr-12"
+                          alt=""
+                        />Eagles Praha
+                      </a>
+                    </td>
+                    <td class="text-center">35</td>
+                    <td class="text-center">25</td>
+                    <td class="text-center">10</td>
+                    <td class="text-center">222:102</td>
+                    <td class="text-center">0.714</td>
+                    <td class="text-center">-</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <a href="#" class="btn btn-stroke d-flex ms-auto">
+          Kompletní rozpis a výsledky {% include "@images/arrow-right.svg" %}
+        </a>
+      </div>
+      <div class="col-lg-6 order-lg-0 order-3">
+        <a href="#" class="btn btn-stroke d-flex ms-auto">
+          Kompletní tabulka {% include "@images/arrow-right.svg" %}
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- matches / table board  end  -->
+
+<!-- videos  -->
+
+<div class="mb-7">
+  {% include "@components/videos-section/videos-section.twig" %}
+</div>
+
+<!-- videos end -->
+
+<!-- posts  -->
+<div class="mb-7">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-xl-3 col-sm-6">
+        {% include "@components/post/post.twig" %}
+      </div>
+      <div class="col-xl-3 col-sm-6">
+        {% include "@components/post/post.twig" %}
+      </div>
+      <div class="col-xl-3 col-sm-6">
+        {% include "@components/post/post.twig" %}
+      </div>
+      <div class="col-xl-3 col-sm-6">
+        {% include "@components/post/post.twig" %}
+      </div>
+    </div>
+    <a href="#" class="btn btn-stroke d-flex mt-5 ms-auto">
+      Zobrazit další články {% include "@images/arrow-right.svg" %}
+    </a>
+  </div>
+</div>
+<!-- posts end  -->
+
+<!-- banners  -->
+<div class="mb-7">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-6">
+        <a class="d-block w-100 h-100" href="#">
+          <img
+            loading="lazy"
+            srcset="
+              https://placehold.co/704x120?text=704x120 1408w,
+              https://placehold.co/704x120?text=704x120  704w
+            "
+            sizes="
+                     (min-width: 704w) 704w
+                     
+                   "
+            width="704"
+            height="120"
+            class="object-fit-cover w-100 h-100"
+            alt=""
+          />
+        </a>
+      </div>
+      <div class="col-lg-6">
+        <a class="d-block w-100 h-100" href="#">
+          <img
+            loading="lazy"
+            srcset="
+              https://placehold.co/704x120?text=704x120 1408w,
+              https://placehold.co/704x120?text=704x120  704w
+            "
+            sizes="
+                  (min-width: 704w) 704w
+                  
+                "
+            width="704"
+            height="120"
+            class="object-fit-cover w-100 h-100"
+            alt=""
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- banners end  -->
+<div class="mb-7">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-xl-4 col-md-6">
+        {% include "@components/overviewStats/overviewStats.twig" %}
+      </div>
+      <div class="col-xl-4 col-md-6">
+        {% include "@components/overviewStats/overviewStats.twig" %}
+      </div>
+      <div class="col-xl-4 col-md-6">
+        {% include "@components/overviewStats/overviewStats.twig" %}
+      </div>
+      <div class="col-xl-4 col-md-6">
+        {% include "@components/overviewStats/overviewStats.twig" %}
+      </div>
+      <div class="col-xl-4 col-md-6">
+        {% include "@components/overviewStats/overviewStats.twig" %}
+      </div>
+      <div class="col-xl-4 col-md-6">
+        {% include "@components/overviewStats/overviewStats.twig" %}
+      </div>
+      <div class="col-xl-4 col-md-6">
+        {% include "@components/overviewStats/overviewStats.twig" %}
+      </div>
+      <div class="col-xl-4 col-md-6">
+        {% include "@components/overviewStats/overviewStats.twig" %}
+      </div>
+    </div>
+    <a href="#" class="btn btn-stroke d-flex mt-5 ms-auto">
+      Další statistiky {% include "@images/arrow-right.svg" %}
+    </a>
+  </div>
+</div>
+
+{% include "@components/partnersSlider/partnersSlider.twig" %} {% endblock %}

@@ -32,6 +32,9 @@
 .border-1 {
   border: 1px solid var(--color-line);
 }
+.text-dark {
+  color: var(--color-dark) !important;
+}
 
 .py-5 {
   padding-top: 32px !important;

@@ -50,5 +50,52 @@
   .active td {
     border-bottom: 4px solid var(--color-primary);
   }
- 
+}
+
+.table-section-sm.table-section .table-responsive {
+  td img {
+    width: 20px;
+    height: 20px;
+  }
+  th:first-child,
+  td:first-child {
+    min-width: 32px !important;
+    padding-left: 0 !important;
+  }
+  th:last-child,
+  td:last-child {
+    padding-right: 0 !important;
+    min-width: 32px !important;
+  }
+  td {
+    border-bottom: none;
+  }
+  tr.active td {
+    border-bottom: 2px solid var(--color-primary);
+  }
+  td,
+  th {
+    padding: 8px 12px !important;
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: 0%;
+    min-width: 48px;
+  }
+}
+
+.table-tab {
+  gap: 16px;
+  .nav-link {
+    padding: 0;
+    cursor: pointer;
+    text-decoration: underline;
+    transition: all 0.3s;
+    text-decoration-color: transparent;
+    &:hover {
+      text-decoration-color: inherit;
+    }
+  }
+  .nav-link.active {
+    text-decoration-color: inherit;
+  }
 }

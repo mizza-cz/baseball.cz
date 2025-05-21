@@ -25,3 +25,16 @@
     }
   }
 }
+
+.section-representation {
+  .calendarItem__list {
+    span {
+      min-width: 100px;
+    }
+    li {
+      @include media-breakpoint-down(sm) {
+        flex-direction: row;
+      }
+    }
+  }
+}
