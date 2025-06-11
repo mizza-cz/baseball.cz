@@ -694,45 +694,45 @@
 				<div class="container">
 					<div class="d-flex gap-4 align-items-center justify-content-between flex-wrap mb-5">
 						<h1 class="h1 text-primary">Archiv článků</h1>
-						<form class="d-flex align-items-center flex-wrap w-100 w-lg-auto form">
+						<form method="get" action="/news/" class="d-flex align-items-center flex-wrap w-100 w-lg-auto form">
 							<label class="o-select select">
-								<select class="js-select">
+								<select name="kategorie" class="js-select">
 									<option>Vyberte kategorii</option>
-									<option>Aktuální zprávy</option>
-									<option>Rozhovory</option>
-									<option>Reportáže</option>
-									<option>Mládež</option>
-									<option>Tiskové zprávy</option>
-									<option>Soutěže a akce pro fanoušky</option>
-									<option>Preview k zápasu</option>
-									<option>Ohlasy po utkání</option>
-									<option>Sledge – článek</option>
-									<option>Sledge – reportáž</option>
-									<option>Historie</option>
-									<option>Fan Club</option>
+									<option value="aktualni-zpravy">Aktuální zprávy</option>
+									<option value="rozhovory">Rozhovory</option>
+									<option value="reportaze">Reportáže</option>
+									<option value="mladez">Mládež</option>
+									<option value="tiskove-zpravy">Tiskové zprávy</option>
+									<option value="souteze-akce">Soutěže a akce pro fanoušky</option>
+									<option value="preview-k-zaoasu">Preview k zápasu</option>
+									<option value="ohlasy-po-utkani">Ohlasy po utkání</option>
+									<option value="sledge-clanek">Sledge – článek</option>
+									<option value="sledge-reportaz">Sledge – reportáž</option>
+									<option value="historie">Historie</option>
+									<option value="fan-club">Fan Club</option>
 								</select>
 							</label>
 							<label class="o-select select">
-								<select class="js-select">
+								<select name="soutez" class="js-select">
 									<option>Vyberte soutěž</option>
-									<option>Aktuální zprávy</option>
-									<option>Rozhovory</option>
-									<option>Reportáže</option>
-									<option>Mládež</option>
-									<option>Tiskové zprávy</option>
-									<option>Soutěže a akce pro fanoušky</option>
-									<option>Preview k zápasu</option>
-									<option>Ohlasy po utkání</option>
-									<option>Sledge – článek</option>
-									<option>Sledge – reportáž</option>
-									<option>Historie</option>
-									<option>Fan Club</option>
+									<option value="aktualni-zpravy">Aktuální zprávy</option>
+									<option value="rozhovory">Rozhovory</option>
+									<option value="reportaze">Reportáže</option>
+									<option value="mladez">Mládež</option>
+									<option value="tiskove-zpravy">Tiskové zprávy</option>
+									<option value="souteze-akce">Soutěže a akce pro fanoušky</option>
+									<option value="preview-k-zaoasu">Preview k zápasu</option>
+									<option value="ohlasy-po-utkani">Ohlasy po utkání</option>
+									<option value="sledge-clanek">Sledge – článek</option>
+									<option value="sledge-reportaz">Sledge – reportáž</option>
+									<option value="historie">Historie</option>
+									<option value="fan-club">Fan Club</option>
 								</select>
 							</label>
 							<div class="d-flex gap-4 align-items-center flex-sm-row flex-column w-100 w-lg-auto">
 								<div class="form-input">
-									<input type="text" placeholder="Zadejte hledaný výraz..." />
-									<button class="form-input__btn">
+									<input name="search" type="text" placeholder="Zadejte hledaný výraz..." />
+									<button type="submit" class="form-input__btn">
 										<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
 											<path d="M21 21.5l-4.35-4.35M19 11.5a8 8 0 11-16 0 8 8 0 0116 0z" stroke="#fff" stroke-width="1.25" />
 										</svg> </button>
