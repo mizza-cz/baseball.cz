@@ -767,46 +767,49 @@
 			</div>
 			<div class="mb-4">
 				<div class="container">
-					<form class="form d-flex align-items-center flex-wrap gap-4 justify-content-between">
+
+					<form method="get" action="/29.0_сompetition-matches.html" class="form d-flex align-items-center flex-wrap gap-4 justify-content-between">
 						<div class="d-flex align-items-center flex-wrap gap-3">
 							<label class="o-select select">
-								<select class="js-select">
-									<option>Všechny části</option>
-									<option>část 1</option>
-									<option>část 2</option>
+								<select name="part" class="js-select" onchange="this.form.submit()">
+									<option value="">Všechny části</option>
+									<option value="1" ${part=='1' ? 'selected' : '' }>část 1</option>
+									<option value="2" ${part=='2' ? 'selected' : '' }>část 2</option>
 								</select>
 							</label>
 							<label class="o-select select">
-								<select class="js-select">
-									<option>Všechny měsíce</option>
-									<option>Leden</option>
-									<option>Únor</option>
-									<option>Duben</option>
+								<select name="month" class="js-select" onchange="this.form.submit()">
+									<option value="">Všechny měsíce</option>
+									<option value="Leden" ${month=='1' ? 'selected' : '' }>Leden</option>
+									<option value="Únor" ${month=='2' ? 'selected' : '' }>Únor</option>
+									<option value="Duben" ${month=='4' ? 'selected' : '' }>Duben</option>
 								</select>
 							</label>
 							<label class="o-select select">
-								<select class="js-select">
-									<option>Všechny týmy</option>
-									<option>tým 1</option>
-									<option>tým 2</option>
+								<select name="team" class="js-select" onchange="this.form.submit()">
+									<option value="">Všechny týmy</option>
+									<option value="tym-1" ${team=='1' ? 'selected' : '' }>tým 1</option>
+									<option value="tym-2" ${team=='2' ? 'selected' : '' }>tým 2</option>
 								</select>
 							</label>
 						</div>
+
 						<div class="radio-group">
 							<label class="radio-label">
-								<input type="radio" name="line" value="/vsechny" checked />
+								<input type="radio" name="line" value="vsechny" checked ${line=='vsechny' ? 'checked' : '' } onchange="this.form.submit()" />
 								Všechny zápasy
 							</label>
 							<label class="radio-label">
-								<input type="radio" name="line" value="/budouci" />
+								<input type="radio" name="line" value="budouci" ${line=='budouci' ? 'checked' : '' } onchange="this.form.submit()" />
 								Pouze budoucí
 							</label>
 							<label class="radio-label">
-								<input type="radio" name="line" value="/odehrany" />
+								<input type="radio" name="line" value="odehrany" ${line=='odehrany' ? 'checked' : '' } onchange="this.form.submit()" />
 								Pouze odehrané
 							</label>
 						</div>
 					</form>
+
 				</div>
 			</div>
 			<div class="mb-7">
