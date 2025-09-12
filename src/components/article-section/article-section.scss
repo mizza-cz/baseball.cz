@@ -1,9 +1,7 @@
 .article-section {
-  margin-bottom: 48px;
+  margin-bottom: 32px;
   margin-top: 32px;
-  @include media-breakpoint-down(lg) {
-    margin-bottom: 32px;
-  }
+
   &__item {
     position: relative;
     aspect-ratio: 1072/710;

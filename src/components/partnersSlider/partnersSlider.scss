@@ -1,12 +1,9 @@
 .partnersSlider {
-  margin-bottom: 48px;
-  padding-top: 48px;
+  margin-bottom: 32px;
+  padding-top: 32px;
   border-top: 1px solid var(--color-line);
   overflow-x: hidden;
-  @include media-breakpoint-down(lg) {
-    padding-top: 32px;
-    margin-bottom: 32px;
-  }
+
   .slick-list {
     margin: 0 -6px;
   }

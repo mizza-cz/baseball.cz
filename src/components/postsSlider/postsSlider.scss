@@ -1,10 +1,7 @@
 .postsSlider {
-  margin-bottom: 92px;
+  margin-bottom: 32px;
   position: relative;
   overflow-y: hidden;
-  @include media-breakpoint-down(lg) {
-    margin-bottom: 32px;
-  }
   z-index: 4;
   &__inner {
     margin-left: -16px;

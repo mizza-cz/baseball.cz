@@ -1,8 +1,5 @@
 .action-section {
-  margin-bottom: 48px;
-  @include media-breakpoint-down(lg) {
-    margin-bottom: 32px;
-  }
+  margin-bottom: 32px;
   &__item {
     display: flex;
     height: 100%;
