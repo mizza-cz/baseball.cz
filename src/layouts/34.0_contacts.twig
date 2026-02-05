@@ -1,0 +1,194 @@
+{% extends "@components/base/base.twig" %} {% set title = "34.0_contacts" %} {%
+block main %}
+
+<div class="headerSection">
+  <div class="container">
+    <div class="headerSection__inner">
+      <h1 class="h1 text-primary">Kontakty</h1>
+
+      <ul class="headerSection__menu">
+        <li>
+          <a href="#" class="headerSection__menu-link"> Předsednictvo </a>
+        </li>
+        <li>
+          <a href="#" class="headerSection__menu-link"> Sekretariát </a>
+        </li>
+        <li>
+          <a href="#" class="headerSection__menu-link active"> Komise </a>
+        </li>
+        <li>
+          <a href="#" class="headerSection__menu-link"> Kluby </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="mb-5">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-6">
+        <a class="d-block w-100 h-100" href="#">
+          <img
+            loading="lazy"
+            srcset="
+              https://placehold.co/704x120?text=704x120 1408w,
+              https://placehold.co/704x120?text=704x120  704w
+            "
+            sizes="
+                     (min-width: 704w) 704w
+                     
+                   "
+            width="704"
+            height="120"
+            class="object-fit-cover w-100 h-100"
+            alt=""
+          />
+        </a>
+      </div>
+      <div class="col-lg-6">
+        <a class="d-block w-100 h-100" href="#">
+          <img
+            loading="lazy"
+            srcset="
+              https://placehold.co/704x120?text=704x120 1408w,
+              https://placehold.co/704x120?text=704x120  704w
+            "
+            sizes="
+                  (min-width: 704w) 704w
+                  
+                "
+            width="704"
+            height="120"
+            class="object-fit-cover w-100 h-100"
+            alt=""
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<section class="mb-5">
+  <div class="container">
+    <form
+      method="get"
+      action="/news/"
+      class="d-flex align-items-center flex-wrap w-100 w-lg-auto form mb-4"
+    >
+      <label class="o-select select">
+        <select name="kategorie" class="js-select">
+          <option>Vyberte kategorii</option>
+          <option value="aktualni-zpravy">Aktuální zprávy</option>
+          <option value="rozhovory">Rozhovory</option>
+          <option value="reportaze">Reportáže</option>
+          <option value="mladez">Mládež</option>
+          <option value="tiskove-zpravy">Tiskové zprávy</option>
+          <option value="souteze-akce">Soutěže a akce pro fanoušky</option>
+          <option value="preview-k-zaoasu">Preview k zápasu</option>
+          <option value="ohlasy-po-utkani">Ohlasy po utkání</option>
+          <option value="sledge-clanek">Sledge – článek</option>
+          <option value="sledge-reportaz">Sledge – reportáž</option>
+          <option value="historie">Historie</option>
+          <option value="fan-club">Fan Club</option>
+        </select>
+      </label>
+      <label class="o-select select">
+        <select name="soutez" class="js-select">
+          <option>Vyberte soutěž</option>
+          <option value="aktualni-zpravy">Aktuální zprávy</option>
+          <option value="rozhovory">Rozhovory</option>
+          <option value="reportaze">Reportáže</option>
+          <option value="mladez">Mládež</option>
+          <option value="tiskove-zpravy">Tiskové zprávy</option>
+          <option value="souteze-akce">Soutěže a akce pro fanoušky</option>
+          <option value="preview-k-zaoasu">Preview k zápasu</option>
+          <option value="ohlasy-po-utkani">Ohlasy po utkání</option>
+          <option value="sledge-clanek">Sledge – článek</option>
+          <option value="sledge-reportaz">Sledge – reportáž</option>
+          <option value="historie">Historie</option>
+          <option value="fan-club">Fan Club</option>
+        </select>
+      </label>
+      <div
+        class="d-flex gap-4 align-items-center flex-sm-row flex-column w-100 w-lg-auto"
+      >
+        <div class="form-input">
+          <input
+            name="search"
+            type="text"
+            placeholder="Zadejte hledaný výraz..."
+          />
+          <button type="submit" class="form-input__btn">
+            {% include "@images/search.svg" %}
+          </button>
+        </div>
+        <button class="btn btn-primary w-sm-auto w-100">Hledat</button>
+      </div>
+    </form>
+    <div class="row g-5">
+      <div class="col-xl-4 col-md-6">
+        {% include "@components/contactItem/contactItem.twig" %}
+      </div>
+      <div class="col-xl-4 col-md-6">
+        {% include "@components/contactItem/contactItem.twig" %}
+      </div>
+      <div class="col-xl-4 col-md-6">
+        {% include "@components/contactItem/contactItem.twig" %}
+      </div>
+      <div class="col-xl-4 col-md-6">
+        {% include "@components/contactItem/contactItem.twig" %}
+      </div>
+      <div class="col-xl-4 col-md-6">
+        {% include "@components/contactItem/contactItem.twig" %}
+      </div>
+      <div class="col-xl-4 col-md-6">
+        {% include "@components/contactItem/contactItem.twig" %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="mb-5">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-6">
+        <a class="d-block w-100 h-100" href="#">
+          <img
+            loading="lazy"
+            srcset="
+              https://placehold.co/704x120?text=704x120 1408w,
+              https://placehold.co/704x120?text=704x120  704w
+            "
+            sizes="
+                     (min-width: 704w) 704w
+                     
+                   "
+            width="704"
+            height="120"
+            class="object-fit-cover w-100 h-100"
+            alt=""
+          />
+        </a>
+      </div>
+      <div class="col-lg-6">
+        <a class="d-block w-100 h-100" href="#">
+          <img
+            loading="lazy"
+            srcset="
+              https://placehold.co/704x120?text=704x120 1408w,
+              https://placehold.co/704x120?text=704x120  704w
+            "
+            sizes="
+                  (min-width: 704w) 704w
+                  
+                "
+            width="704"
+            height="120"
+            class="object-fit-cover w-100 h-100"
+            alt=""
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+{% include "@components/partnersSlider/partnersSlider.twig" %} {% endblock %}
