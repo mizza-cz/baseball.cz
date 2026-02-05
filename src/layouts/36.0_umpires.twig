@@ -1,0 +1,265 @@
+{% extends "@components/base/base.twig" %} {% set title = "36.0_umpires" %} {%
+block main %}
+
+<div class="headerSection">
+  <div class="container">
+    <div class="headerSection__inner">
+      <h1 class="h1 text-primary">Rozhodčí</h1>
+      <div class="d-flex align-items-center gap-5 flex-wrap">
+        <ul class="headerSection__menu">
+          <li>
+            <a
+              href="https://mizza-cz.github.io/baseball.cz/build/10.0_club.html"
+              class="headerSection__menu-link active"
+            >
+              Přehled
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://mizza-cz.github.io/baseball.cz/build/09.0_club-field.html"
+              class="headerSection__menu-link"
+            >
+              Seznam rozhodčích
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://mizza-cz.github.io/baseball.cz/build/08.0_club-contacts.html"
+              class="headerSection__menu-link"
+            >
+              Nominace
+            </a>
+          </li>
+        </ul>
+        <ul class="headerSection__social">
+          <li>
+            <a href="#" target="_blank">
+              {% include "@images/fb-primary.svg" %}
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="mb-5">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-6">
+        <a class="d-block w-100 h-100" href="#">
+          <img
+            loading="lazy"
+            srcset="
+              https://placehold.co/704x120?text=704x120 1408w,
+              https://placehold.co/704x120?text=704x120  704w
+            "
+            sizes="
+                     (min-width: 704w) 704w
+                     
+                   "
+            width="704"
+            height="120"
+            class="object-fit-cover w-100 h-100"
+            alt=""
+          />
+        </a>
+      </div>
+      <div class="col-lg-6">
+        <a class="d-block w-100 h-100" href="#">
+          <img
+            loading="lazy"
+            srcset="
+              https://placehold.co/704x120?text=704x120 1408w,
+              https://placehold.co/704x120?text=704x120  704w
+            "
+            sizes="
+                  (min-width: 704w) 704w
+                  
+                "
+            width="704"
+            height="120"
+            class="object-fit-cover w-100 h-100"
+            alt=""
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<section class="mb-5">
+  <div class="container">
+    <div class="mb-5">
+      <div class="row g-5">
+        <div class="col-xl-3 col-sm-6">
+          {% include "@components/post/post.twig" %}
+        </div>
+        <div class="col-xl-3 col-sm-6">
+          {% include "@components/post/post.twig" %}
+        </div>
+        <div class="col-xl-3 col-sm-6">
+          {% include "@components/post/post.twig" %}
+        </div>
+        <div class="col-xl-3 col-sm-6">
+          {% include "@components/post/post.twig" %}
+        </div>
+      </div>
+      <a href="#" class="btn btn-stroke ms-auto mt-5"
+        >Zobrazit další články {% include "@images/arrow-right.svg" %}</a
+      >
+    </div>
+    <h2 class="h2 text-primary mb-lg-4 mb-3">Dokumenty</h2>
+    <form
+      method="get"
+      action="/news/"
+      class="d-flex align-items-center flex-wrap w-100 w-lg-auto form mb-4"
+    >
+      <label class="o-select select w-lg-auto w-sm-49 w-100">
+        <select name="kategorie" class="js-select">
+          <option>Vyberte rok</option>
+          <option value="aktualni-zpravy">2026</option>
+          <option value="rozhovory">2025</option>
+          <option value="reportaze">2024</option>
+          <option value="mladez">2023</option>
+        </select>
+      </label>
+      <label class="o-select select w-lg-auto w-sm-49 w-100">
+        <select name="kategorie" class="js-select">
+          <option>Vyberte kategorii</option>
+          <option value="aktualni-zpravy">Aktuální zprávy</option>
+          <option value="rozhovory">Rozhovory</option>
+          <option value="reportaze">Reportáže</option>
+          <option value="mladez">Mládež</option>
+          <option value="tiskove-zpravy">Tiskové zprávy</option>
+          <option value="souteze-akce">Soutěže a akce pro fanoušky</option>
+          <option value="preview-k-zaoasu">Preview k zápasu</option>
+          <option value="ohlasy-po-utkani">Ohlasy po utkání</option>
+          <option value="sledge-clanek">Sledge – článek</option>
+          <option value="sledge-reportaz">Sledge – reportáž</option>
+          <option value="historie">Historie</option>
+          <option value="fan-club">Fan Club</option>
+        </select>
+      </label>
+      <div
+        class="d-flex gap-4 align-items-center flex-sm-row flex-column w-100 w-lg-auto"
+      >
+        <div class="form-input">
+          <input
+            name="search"
+            type="text"
+            placeholder="Zadejte hledaný výraz..."
+          />
+          <button type="submit" class="form-input__btn">
+            {% include "@images/search.svg" %}
+          </button>
+        </div>
+        <button class="btn btn-primary w-sm-auto w-100">Hledat</button>
+      </div>
+    </form>
+    <div class="contentBox mb-5">
+      <div class="o-content">
+        <div class="tableHistory">
+          <table>
+            <thead>
+              <tr>
+                <th class="">Název dokumentu</th>
+                <th style="min-width: 200px">Formát (velikost)</th>
+                <th>Nahráno</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="w-100 fw-bold text-primary">
+                  Baseballová pravidla účinná od r. 2026
+                </td>
+                <td>PDF (124 kB)</td>
+                <td>30. 1. 2026</td>
+              </tr>
+              <tr>
+                <td class="w-100 fw-bold text-primary">
+                  Baseballová pravidla účinná od r. 2026
+                </td>
+                <td>PDF (124 kB)</td>
+                <td>30. 1. 2026</td>
+              </tr>
+              <tr>
+                <td class="w-100 fw-bold text-primary">
+                  Baseballová pravidla účinná od r. 2026
+                </td>
+                <td>PDF (124 kB)</td>
+                <td>30. 1. 2026</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <h2 class="h2 text-primary mb-lg-4 mb-3">Komise</h2>
+    <div class="row g-5">
+      <div class="col-xl-4 col-md-6">
+        {% include "@components/contactItem/contactItem.twig" %}
+      </div>
+      <div class="col-xl-4 col-md-6">
+        {% include "@components/contactItem/contactItem.twig" %}
+      </div>
+      <div class="col-xl-4 col-md-6">
+        {% include "@components/contactItem/contactItem.twig" %}
+      </div>
+      <div class="col-xl-4 col-md-6">
+        {% include "@components/contactItem/contactItem.twig" %}
+      </div>
+      <div class="col-xl-4 col-md-6">
+        {% include "@components/contactItem/contactItem.twig" %}
+      </div>
+      <div class="col-xl-4 col-md-6">
+        {% include "@components/contactItem/contactItem.twig" %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="mb-5">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-6">
+        <a class="d-block w-100 h-100" href="#">
+          <img
+            loading="lazy"
+            srcset="
+              https://placehold.co/704x120?text=704x120 1408w,
+              https://placehold.co/704x120?text=704x120  704w
+            "
+            sizes="
+                     (min-width: 704w) 704w
+                     
+                   "
+            width="704"
+            height="120"
+            class="object-fit-cover w-100 h-100"
+            alt=""
+          />
+        </a>
+      </div>
+      <div class="col-lg-6">
+        <a class="d-block w-100 h-100" href="#">
+          <img
+            loading="lazy"
+            srcset="
+              https://placehold.co/704x120?text=704x120 1408w,
+              https://placehold.co/704x120?text=704x120  704w
+            "
+            sizes="
+                  (min-width: 704w) 704w
+                  
+                "
+            width="704"
+            height="120"
+            class="object-fit-cover w-100 h-100"
+            alt=""
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+{% include "@components/partnersSlider/partnersSlider.twig" %} {% endblock %}

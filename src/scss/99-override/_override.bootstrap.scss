@@ -49,6 +49,11 @@
 .mb-5 {
   margin-bottom: 32px !important;
 }
+.mb-lg-5 {
+  @include media-breakpoint-up(lg) {
+    margin-bottom: 32px !important;
+  }
+}
 .mt-5 {
   margin-top: 32px !important;
 }
