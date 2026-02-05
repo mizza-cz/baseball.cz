@@ -48,7 +48,7 @@
 }
 .mb-5 {
   margin-bottom: 32px !important;
-} 
+}
 .mt-5 {
   margin-top: 32px !important;
 }
@@ -131,5 +131,10 @@
 }
 .bg-line {
   background-color: var(--color-line) !important;
+}
+.w-sm-49 {
+  @include media-breakpoint-up(sm) {
+    width: calc(50% - 1rem) !important;
+  }
 }
 /*! purgecss end ignore */
