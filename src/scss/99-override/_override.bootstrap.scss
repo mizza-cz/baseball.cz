@@ -19,12 +19,18 @@
     --bs-gutter-x: 32px !important;
   }
 }
-
+.g-8 {
+  --bs-gutter-y: 56px !important;
+  --bs-gutter-x: 56px !important;
+}
+.fw-bold {
+  font-weight: 700;
+}
 .text-primary {
   color: var(--color-primary) !important;
 }
 .text-tertiary {
-  color: var(--color-tertiary);
+  color: var(--color-tertiary) !important;
 }
 .text-secondary {
   color: var(--color-secondary) !important;
@@ -47,7 +53,12 @@
   margin-top: 32px !important;
 }
 .mb-6 {
-  margin-bottom: 40px !important;
+  margin-bottom: 40px !important ;
+}
+.mb-lg-6 {
+  @include media-breakpoint-up(lg) {
+    margin-bottom: 40px !important;
+  }
 }
 .mb-7 {
   margin-bottom: 48px !important;
@@ -89,6 +100,7 @@
 .gap-40 {
   gap: 40px;
 }
+
 .gap-20 {
   gap: 20px;
 }

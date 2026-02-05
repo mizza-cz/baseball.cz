@@ -1,0 +1,586 @@
+{% extends "@components/base/base.twig" %} {% set title =
+"33.0_сompetition-match-detail" %} {% block main %}
+
+<div class="headerSection mb-7">
+  <div class="container">
+    <div class="headerSection__inner">
+      <div class="d-flex gap-20 align-items-center flex-wrap">
+        <img
+          src="images/content/extraliga.png"
+          width="48"
+          height="48"
+          class="object-fit-contain"
+          alt="login"
+        />
+        <h1 class="h1 text-primary">Extraliga</h1>
+        <form>
+          <label class="o-select select-sm">
+            <select class="js-select">
+              <option>2025</option>
+              <option>2024</option>
+              <option>2023</option>
+              <option>2022</option>
+            </select>
+          </label>
+        </form>
+      </div>
+
+      <div class="d-flex align-items-center gap-5 flex-wrap">
+        <ul class="headerSection__menu">
+          <li>
+            <a href="" class="headerSection__menu-link"> Přehled </a>
+          </li>
+          <li>
+            <a href="" class="headerSection__menu-link"> Rozpis & výsledky </a>
+          </li>
+          <li>
+            <a href="" class="headerSection__menu-link"> Tabulka </a>
+          </li>
+          <li>
+            <a href="" class="headerSection__menu-link active"> Statistiky </a>
+          </li>
+          <li>
+            <a href="" class="headerSection__menu-link"> Týmy </a>
+          </li>
+          <li>
+            <a href="" class="headerSection__menu-link"> Soutěž </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="mb-7">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-6">
+        <a class="d-block w-100 h-100" href="#">
+          <img
+            loading="lazy"
+            srcset="
+              https://placehold.co/704x120?text=704x120 1408w,
+              https://placehold.co/704x120?text=704x120  704w
+            "
+            sizes="
+                     (min-width: 704w) 704w
+                     
+                   "
+            width="704"
+            height="120"
+            class="object-fit-cover w-100 h-100"
+            alt=""
+          />
+        </a>
+      </div>
+      <div class="col-lg-6">
+        <a class="d-block w-100 h-100" href="#">
+          <img
+            loading="lazy"
+            srcset="
+              https://placehold.co/704x120?text=704x120 1408w,
+              https://placehold.co/704x120?text=704x120  704w
+            "
+            sizes="
+                  (min-width: 704w) 704w
+                  
+                "
+            width="704"
+            height="120"
+            class="object-fit-cover w-100 h-100"
+            alt=""
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="subPage mb-7">
+  <div class="container">
+    <div class="contentBox mb-7 ">
+      <div class="d-flex flex-wrap flex-lg-row flex-column align-items-center justify-content-between gap-3 mb-lg-6 mb-4">
+         <div class="d-flex flex-lg-row flex-column align-items-center  text-md gap-lg-4 gap-2">
+          <div class="fw-700">
+            pá 12. 4. 2025, 19:00
+          </div>
+          <div class="d-flex text-tertiary gap-2 align-items-center">
+            <img src="images/ico/marker.svg" width="20 " height="20" class="object-fit-contain" alt="pin">
+            Hřiště Krč, Praha
+          </div>
+        </div>
+        <ul class="matchItem__links text-md w-auto">
+          <li>
+            <a href="#" target="_blank">
+              <img
+                src="images/content/ct.png"
+                width="71"
+                height="16"
+                class="object-fit-contain"
+                alt="ct-sport"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="#" class="matchItem__link text-secondary">
+              {% include "@images/play-live.svg" %} TV
+            </a>
+          </li>
+          <li>
+            <a href="#" class="matchItem__link text-primary">
+              {% include "@images/line.svg" %} PBP
+            </a>
+          </li>
+        </ul>
+      </div>
+      
+      <h2 class="h2 text-primary mb-2 text-lg-start text-center">
+        Eagles Praha – Kotlářka Praha 2:3
+      </h2>
+      <div class="o-content">
+        <table class="table-score">
+          <thead>
+            <tr>
+              <th></th>
+              <th class="text-center text-tertiary h4 fw-bold">1</th>
+              <th class="text-center text-tertiary h4 fw-bold">2</th>
+              <th class="text-center text-tertiary h4 fw-bold">3</th>
+              <th class="text-center text-tertiary h4 fw-bold">4</th>
+              <th class="text-center text-tertiary h4 fw-bold">5</th>
+              <th class="text-center text-tertiary h4 fw-bold">6</th>
+              <th class="text-center text-tertiary h4 fw-bold">7</th>
+              <th class="text-center text-tertiary h4 fw-bold">8</th>
+              <th class="text-center text-tertiary h4 fw-bold">9</th>
+              <th class="text-center text-tertiary h4 fw-bold">10</th>
+              <th class="text-center text-tertiary h4 fw-bold">R</th>
+              <th class="text-center text-tertiary h4 fw-bold">H</th>
+              <th class="text-center text-tertiary h4 fw-bold">E</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <a
+                  href="#"
+                  class="d-flex gap-20 align-items-center h4 fw-bold linkDecoration text-primary"
+                >
+                  <img
+                    width="48"
+                    height="48"
+                    class="object-fit-contain"
+                    src="images/content/club-1.png"
+                    alt="logo"
+                  />
+                  Eagles Praha
+                </a>
+                <td class="text-primary h2 text-center fw-bold">
+                  0
+                </td>
+                  <td class="text-primary h2 text-center fw-bold">
+                  0
+                </td>
+                  <td class="text-primary h2 text-center fw-bold">
+                  0
+                </td>
+                  <td class="text-primary h2 text-center fw-bold">
+                  0
+                </td>
+                  <td class="text-primary h2 text-center fw-bold">
+                  0
+                </td>
+                  <td class="text-primary h2 text-center fw-bold">
+                  0
+                </td>
+                  <td class="text-primary h2 text-center fw-bold">
+                  0
+                </td>
+                  <td class="text-primary h2 text-center fw-bold">
+                  0
+                </td>
+                  <td class="text-primary h2 text-center fw-bold">
+                  0
+                </td>
+                  <td class="text-primary h2 text-center fw-bold">
+                  0
+                </td>
+                  <td class="text-primary h2 text-center fw-bold bg-line">
+                  0
+                </td>
+                  <td class="text-primary h2 text-center fw-bold bg-line">
+                  0
+                </td>
+                  <td class="text-primary h2 text-center fw-bold bg-line">
+                  0
+                </td>
+              </td>
+            </tr>
+             <tr>
+              <td>
+                <a
+                  href="#"
+                  class="d-flex gap-20 align-items-center h4 fw-bold linkDecoration text-primary"
+                >
+                  <img
+                    width="48"
+                    height="48"
+                    class="object-fit-contain"
+                    src="images/content/club-2.png"
+                    alt="logo"
+                  />
+                Kotlářka Praha
+                </a>
+                <td class="text-primary h2 text-center fw-bold">
+                  0
+                </td>
+                  <td class="text-primary h2 text-center fw-bold">
+                  0
+                </td>
+                  <td class="text-primary h2 text-center fw-bold">
+                  0
+                </td>
+                  <td class="text-primary h2 text-center fw-bold">
+                  0
+                </td>
+                  <td class="text-primary h2 text-center fw-bold">
+                  0
+                </td>
+                  <td class="text-primary h2 text-center fw-bold">
+                  0
+                </td>
+                  <td class="text-primary h2 text-center fw-bold">
+                  0
+                </td>
+                  <td class="text-primary h2 text-center fw-bold">
+                  0
+                </td>
+                  <td class="text-primary h2 text-center fw-bold">
+                  0
+                </td>
+                  <td class="text-primary h2 text-center fw-bold">
+                  0
+                </td>
+                  <td class="text-primary h2 text-center fw-bold bg-line">
+                  0
+                </td>
+                  <td class="text-primary h2 text-center fw-bold bg-line">
+                  0
+                </td>
+                  <td class="text-primary h2 text-center fw-bold bg-line">
+                  0
+                </td>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="text-md text-tertiary row align-items-center flex-wrap gx-4 gy-1">
+        <p class="col-auto">
+          <strong class="pe-2">Rozhodčí:</strong>
+        HP: Martinčák Jakub, 1B: Drápal Roman
+        </p>
+        <p class="col-auto">
+          <strong class="pe-2">První nadhoz:</strong>
+          13:00
+        </p>
+        <p class="col-auto">
+          <strong class="pe-2">Délka zápasu:</strong>
+          03:15
+        </p>
+      </div>
+    </div>
+    <div class="contentBox">
+      <div class="row g-8">
+        <div class="col-xl-6">
+          <div class="o-content">
+            <div class="statistics-section">
+              <table>
+                <thead>
+                  <tr>
+                    <th class="d-flex gap-2 align-items-center">
+                      <img
+                        width="32"
+                        height="32"
+                        class="object-fit-contain"
+                        src="images/content/club-1.png"
+                        alt="logo"
+                      />
+                      Eagles Praha
+                    </th>
+                    <th class="text-center">AB</th>
+                    <th class="text-center">R</th>
+                    <th class="text-center">H</th>
+                    <th class="text-center">RBI</th>
+                    <th class="text-center">BB</th>
+                    <th class="text-center">SO</th>
+                    <th class="text-center">BA</th>
+                    <th class="text-center">OBP</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <a href="#" class="text-primary fw-bold linkDecoration">
+                        Rabinowitz Jake
+                      </a>
+                    </td>
+                    <td class="text-center">6</td>
+                    <td class="text-center">0</td>
+                    <td class="text-center">1</td>
+                    <td class="text-center">1</td>
+                    <td class="text-center">0</td>
+                    <td class="text-center">2</td>
+                    <td class="text-center">.167</td>
+                    <td class="text-center">.167</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="#" class="text-primary fw-bold linkDecoration">
+                        Rabinowitz Jake
+                      </a>
+                    </td>
+                    <td class="text-center">6</td>
+                    <td class="text-center">0</td>
+                    <td class="text-center">1</td>
+                    <td class="text-center">1</td>
+                    <td class="text-center">0</td>
+                    <td class="text-center">2</td>
+                    <td class="text-center">.167</td>
+                    <td class="text-center">.167</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="#" class="text-primary fw-bold linkDecoration">
+                        Rabinowitz Jake
+                      </a>
+                    </td>
+                    <td class="text-center">6</td>
+                    <td class="text-center">0</td>
+                    <td class="text-center">1</td>
+                    <td class="text-center">1</td>
+                    <td class="text-center">0</td>
+                    <td class="text-center">2</td>
+                    <td class="text-center">.167</td>
+                    <td class="text-center">.167</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="#" class="text-primary fw-bold linkDecoration">
+                        Rabinowitz Jake
+                      </a>
+                    </td>
+                    <td class="text-center">6</td>
+                    <td class="text-center">0</td>
+                    <td class="text-center">1</td>
+                    <td class="text-center">1</td>
+                    <td class="text-center">0</td>
+                    <td class="text-center">2</td>
+                    <td class="text-center">.167</td>
+                    <td class="text-center">.167</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="#" class="text-primary fw-bold linkDecoration">
+                        Rabinowitz Jake
+                      </a>
+                    </td>
+                    <td class="text-center">6</td>
+                    <td class="text-center">0</td>
+                    <td class="text-center">1</td>
+                    <td class="text-center">1</td>
+                    <td class="text-center">0</td>
+                    <td class="text-center">2</td>
+                    <td class="text-center">.167</td>
+                    <td class="text-center">.167</td>
+                  </tr>
+                  <tr>
+                    <td class="border-0"></td>
+                    <td class="text-center fw-bold border-0">6</td>
+                    <td class="text-center fw-bold border-0">0</td>
+                    <td class="text-center fw-bold border-0">1</td>
+                    <td class="text-center fw-bold border-0">1</td>
+                    <td class="text-center fw-bold border-0">0</td>
+                    <td class="text-center fw-bold border-0">2</td>
+                    <td class="text-center fw-bold border-0">.167</td>
+                    <td class="text-center fw-bold border-0">.167</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <ul class="text-tertiary mt-4 d-grid gap-2">
+              <li>2B: Hluchý Nikolas, Burkert Tomáš, Morgan Benjamin</li>
+              <li>HR: Křeček David</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-6">
+          <div class="o-content">
+            <div class="statistics-section">
+              <table>
+                <thead>
+                  <tr>
+                    <th class="d-flex gap-2 align-items-center">
+                      <img
+                        width="32"
+                        height="32"
+                        class="object-fit-contain"
+                        src="images/content/club-2.png"
+                        alt="logo"
+                      />
+                     Kotlářka Praha
+                    </th>
+                    <th class="text-center">AB</th>
+                    <th class="text-center">R</th>
+                    <th class="text-center">H</th>
+                    <th class="text-center">RBI</th>
+                    <th class="text-center">BB</th>
+                    <th class="text-center">SO</th>
+                    <th class="text-center">BA</th>
+                    <th class="text-center">OBP</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <a href="#" class="text-primary fw-bold linkDecoration">
+                        Rabinowitz Jake
+                      </a>
+                    </td>
+                    <td class="text-center">6</td>
+                    <td class="text-center">0</td>
+                    <td class="text-center">1</td>
+                    <td class="text-center">1</td>
+                    <td class="text-center">0</td>
+                    <td class="text-center">2</td>
+                    <td class="text-center">.167</td>
+                    <td class="text-center">.167</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="#" class="text-primary fw-bold linkDecoration">
+                        Rabinowitz Jake
+                      </a>
+                    </td>
+                    <td class="text-center">6</td>
+                    <td class="text-center">0</td>
+                    <td class="text-center">1</td>
+                    <td class="text-center">1</td>
+                    <td class="text-center">0</td>
+                    <td class="text-center">2</td>
+                    <td class="text-center">.167</td>
+                    <td class="text-center">.167</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="#" class="text-primary fw-bold linkDecoration">
+                        Rabinowitz Jake
+                      </a>
+                    </td>
+                    <td class="text-center">6</td>
+                    <td class="text-center">0</td>
+                    <td class="text-center">1</td>
+                    <td class="text-center">1</td>
+                    <td class="text-center">0</td>
+                    <td class="text-center">2</td>
+                    <td class="text-center">.167</td>
+                    <td class="text-center">.167</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="#" class="text-primary fw-bold linkDecoration">
+                        Rabinowitz Jake
+                      </a>
+                    </td>
+                    <td class="text-center">6</td>
+                    <td class="text-center">0</td>
+                    <td class="text-center">1</td>
+                    <td class="text-center">1</td>
+                    <td class="text-center">0</td>
+                    <td class="text-center">2</td>
+                    <td class="text-center">.167</td>
+                    <td class="text-center">.167</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="#" class="text-primary fw-bold linkDecoration">
+                        Rabinowitz Jake
+                      </a>
+                    </td>
+                    <td class="text-center">6</td>
+                    <td class="text-center">0</td>
+                    <td class="text-center">1</td>
+                    <td class="text-center">1</td>
+                    <td class="text-center">0</td>
+                    <td class="text-center">2</td>
+                    <td class="text-center">.167</td>
+                    <td class="text-center">.167</td>
+                  </tr>
+                  <tr>
+                    <td class="border-0"></td>
+                    <td class="text-center fw-bold border-0">6</td>
+                    <td class="text-center fw-bold border-0">0</td>
+                    <td class="text-center fw-bold border-0">1</td>
+                    <td class="text-center fw-bold border-0">1</td>
+                    <td class="text-center fw-bold border-0">0</td>
+                    <td class="text-center fw-bold border-0">2</td>
+                    <td class="text-center fw-bold border-0">.167</td>
+                    <td class="text-center fw-bold border-0">.167</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <ul class="text-tertiary mt-4 d-grid gap-2">
+              <li>2B: Vykoukal Michael (2)</li>
+              <li>HR: Vykoukal Michael</li>
+              <li>SB: Grepl Jakub, Vykoukal Michael (2), Novotný Matyáš</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="mb-7">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-6">
+        <a class="d-block w-100 h-100" href="#">
+          <img
+            loading="lazy"
+            srcset="
+              https://placehold.co/704x120?text=704x120 1408w,
+              https://placehold.co/704x120?text=704x120  704w
+            "
+            sizes="
+                     (min-width: 704w) 704w
+                     
+                   "
+            width="704"
+            height="120"
+            class="object-fit-cover w-100 h-100"
+            alt=""
+          />
+        </a>
+      </div>
+      <div class="col-lg-6">
+        <a class="d-block w-100 h-100" href="#">
+          <img
+            loading="lazy"
+            srcset="
+              https://placehold.co/704x120?text=704x120 1408w,
+              https://placehold.co/704x120?text=704x120  704w
+            "
+            sizes="
+                  (min-width: 704w) 704w
+                  
+                "
+            width="704"
+            height="120"
+            class="object-fit-cover w-100 h-100"
+            alt=""
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+{% include "@components/partnersSlider/partnersSlider.twig" %} {% endblock %}

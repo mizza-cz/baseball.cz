@@ -1,0 +1,23 @@
+table.table-score {
+  border-collapse: separate !important;
+  border-spacing: 0 8px;
+  th {
+    background-color: var(--color-light);
+    padding: 0 24px;
+    white-space: nowrap;
+  }
+  td {
+    border-bottom: none;
+    padding: 0px 24px;
+    white-space: nowrap;
+  }
+  th:first-child,
+  td:first-child {
+    padding-left: 0;
+    min-width: 280px;
+  }
+  th:not(:first-child),
+  td:not(:first-child) {
+    border-left: 1px solid #d1d1d6;
+  }
+}
