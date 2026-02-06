@@ -1,0 +1,594 @@
+{% extends "@components/base/base.twig" %} {% set title =
+"37.0_competition-tournaments" %} {% block main %}
+
+<div class="headerSection">
+  <div class="container">
+    <div class="headerSection__inner">
+      <h1 class="h1 text-primary">Rozcestník soutěží</h1>
+    </div>
+  </div>
+</div>
+<div class="mb-5">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-6">
+        <a class="d-block w-100 h-100" href="#">
+          <img
+            loading="lazy"
+            srcset="
+              https://placehold.co/704x120?text=704x120 1408w,
+              https://placehold.co/704x120?text=704x120  704w
+            "
+            sizes="
+                     (min-width: 704w) 704w
+                     
+                   "
+            width="704"
+            height="120"
+            class="object-fit-cover w-100 h-100"
+            alt=""
+          />
+        </a>
+      </div>
+      <div class="col-lg-6">
+        <a class="d-block w-100 h-100" href="#">
+          <img
+            loading="lazy"
+            srcset="
+              https://placehold.co/704x120?text=704x120 1408w,
+              https://placehold.co/704x120?text=704x120  704w
+            "
+            sizes="
+                  (min-width: 704w) 704w
+                  
+                "
+            width="704"
+            height="120"
+            class="object-fit-cover w-100 h-100"
+            alt=""
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<section class="mb-5">
+  <div class="container">
+    <div class="contentBox">
+      <ul class="d-flex flex-column gap-48">
+        <li>
+          <h2 class="h1 text-primary mb-lg-5 mb-4">Celostátní soutěže</h2>
+          <div class="row g-6">
+            <div class="col-lg-5">
+              <img
+                class="w-100 object-fit-contain ratio-16x9"
+                src="images/ico/celostatni.svg"
+                loading="lazy"
+                alt="map"
+              />
+            </div>
+            <div class="col-lg-7">
+              <ul class="d-flex flex-wrap gap-3">
+                <li>
+                  <a
+                    href="#"
+                    class="btn-stroke btn text-uppercase border-line-2 px-20 py-12 ls-10"
+                  >
+                    extraliga
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="btn-stroke btn text-uppercase border-line-2 px-20 py-12 ls-10"
+                  >
+                    1. liga
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="btn-stroke btn text-uppercase border-line-2 px-20 py-12 ls-10"
+                  >
+                    Extraliga U18
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <h2 class="h1 text-primary mb-lg-5 mb-4">Region Severozápad</h2>
+          <div class="row g-6">
+            <div class="col-lg-5">
+              <img
+                class="w-100 object-fit-contain ratio-16x9"
+                src="images/ico/severozapad.svg"
+                loading="lazy"
+                alt="map"
+              />
+            </div>
+            <div class="col-lg-7">
+              <ul class="d-flex flex-wrap gap-3">
+                <li>
+                  <a
+                    href="#"
+                    class="btn-stroke btn text-uppercase border-line-2 px-20 py-12 ls-10"
+                  >
+                    Přebor mužů
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="btn-stroke btn text-uppercase border-line-2 px-20 py-12 ls-10"
+                  >
+                    Přebor U15
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="btn-stroke btn text-uppercase border-line-2 px-20 py-12 ls-10"
+                  >
+                    Přebor U12
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="btn-stroke btn text-uppercase border-line-2 px-20 py-12 ls-10"
+                  >
+                    Přebor U14
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="btn-stroke btn text-uppercase border-line-2 px-20 py-12 ls-10"
+                  >
+                    Přebor U13
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="btn-stroke btn text-uppercase border-line-2 px-20 py-12 ls-10"
+                  >
+                    Přebor U11
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="btn-stroke btn text-uppercase border-line-2 px-20 py-12 ls-10"
+                  >
+                    Přebor U9
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="btn-stroke btn text-uppercase border-line-2 px-20 py-12 ls-10"
+                  >
+                    Přebor U8
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="btn-stroke btn text-uppercase border-line-2 px-20 py-12 ls-10"
+                  >
+                    Přebor U7
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <h2 class="h1 text-primary mb-lg-5 mb-4">Region Severovýchod</h2>
+          <div class="row g-6">
+            <div class="col-lg-5">
+              <img
+                class="w-100 object-fit-contain ratio-16x9"
+                src="images/ico/severovychod.svg"
+                loading="lazy"
+                alt="map"
+              />
+            </div>
+            <div class="col-lg-7">
+              <ul class="d-flex flex-wrap gap-3">
+                <li>
+                  <a
+                    href="#"
+                    class="btn-stroke btn text-uppercase border-line-2 px-20 py-12 ls-10"
+                  >
+                    Přebor mužů
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="btn-stroke btn text-uppercase border-line-2 px-20 py-12 ls-10"
+                  >
+                    Přebor U15
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="btn-stroke btn text-uppercase border-line-2 px-20 py-12 ls-10"
+                  >
+                    Přebor U12
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="btn-stroke btn text-uppercase border-line-2 px-20 py-12 ls-10"
+                  >
+                    Přebor U14
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="btn-stroke btn text-uppercase border-line-2 px-20 py-12 ls-10"
+                  >
+                    Přebor U13
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="btn-stroke btn text-uppercase border-line-2 px-20 py-12 ls-10"
+                  >
+                    Přebor U11
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="btn-stroke btn text-uppercase border-line-2 px-20 py-12 ls-10"
+                  >
+                    Přebor U9
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="btn-stroke btn text-uppercase border-line-2 px-20 py-12 ls-10"
+                  >
+                    Přebor U8
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="btn-stroke btn text-uppercase border-line-2 px-20 py-12 ls-10"
+                  >
+                    Přebor U7
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <h2 class="h1 text-primary mb-lg-5 mb-4">Region Jihozápad</h2>
+          <div class="row g-6">
+            <div class="col-lg-5">
+              <img
+                class="w-100 object-fit-contain ratio-16x9"
+                src="images/ico/jihozapad.svg"
+                loading="lazy"
+                alt="map"
+              />
+            </div>
+            <div class="col-lg-7">
+              <ul class="d-flex flex-wrap gap-3">
+                <li>
+                  <a
+                    href="#"
+                    class="btn-stroke btn text-uppercase border-line-2 px-20 py-12 ls-10"
+                  >
+                    Přebor mužů
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="btn-stroke btn text-uppercase border-line-2 px-20 py-12 ls-10"
+                  >
+                    Přebor U15
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="btn-stroke btn text-uppercase border-line-2 px-20 py-12 ls-10"
+                  >
+                    Přebor U12
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="btn-stroke btn text-uppercase border-line-2 px-20 py-12 ls-10"
+                  >
+                    Přebor U14
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="btn-stroke btn text-uppercase border-line-2 px-20 py-12 ls-10"
+                  >
+                    Přebor U13
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="btn-stroke btn text-uppercase border-line-2 px-20 py-12 ls-10"
+                  >
+                    Přebor U11
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="btn-stroke btn text-uppercase border-line-2 px-20 py-12 ls-10"
+                  >
+                    Přebor U9
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="btn-stroke btn text-uppercase border-line-2 px-20 py-12 ls-10"
+                  >
+                    Přebor U8
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="btn-stroke btn text-uppercase border-line-2 px-20 py-12 ls-10"
+                  >
+                    Přebor U7
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <h2 class="h1 text-primary mb-lg-5 mb-4">Region Jiho</h2>
+          <div class="row g-6">
+            <div class="col-lg-5">
+              <img
+                class="w-100 object-fit-contain ratio-16x9"
+                src="images/ico/jih.svg"
+                loading="lazy"
+                alt="map"
+              />
+            </div>
+            <div class="col-lg-7">
+              <ul class="d-flex flex-wrap gap-3">
+                <li>
+                  <a
+                    href="#"
+                    class="btn-stroke btn text-uppercase border-line-2 px-20 py-12 ls-10"
+                  >
+                    Přebor mužů
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="btn-stroke btn text-uppercase border-line-2 px-20 py-12 ls-10"
+                  >
+                    Přebor U15
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="btn-stroke btn text-uppercase border-line-2 px-20 py-12 ls-10"
+                  >
+                    Přebor U12
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="btn-stroke btn text-uppercase border-line-2 px-20 py-12 ls-10"
+                  >
+                    Přebor U14
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="btn-stroke btn text-uppercase border-line-2 px-20 py-12 ls-10"
+                  >
+                    Přebor U13
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="btn-stroke btn text-uppercase border-line-2 px-20 py-12 ls-10"
+                  >
+                    Přebor U11
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="btn-stroke btn text-uppercase border-line-2 px-20 py-12 ls-10"
+                  >
+                    Přebor U9
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="btn-stroke btn text-uppercase border-line-2 px-20 py-12 ls-10"
+                  >
+                    Přebor U8
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="btn-stroke btn text-uppercase border-line-2 px-20 py-12 ls-10"
+                  >
+                    Přebor U7
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <h2 class="h1 text-primary mb-lg-5 mb-4">Region Východ</h2>
+          <div class="row g-6">
+            <div class="col-lg-5">
+              <img
+                class="w-100 object-fit-contain ratio-16x9"
+                src="images/ico/vychod.svg"
+                loading="lazy"
+                alt="map"
+              />
+            </div>
+            <div class="col-lg-7">
+              <ul class="d-flex flex-wrap gap-3">
+                <li>
+                  <a
+                    href="#"
+                    class="btn-stroke btn text-uppercase border-line-2 px-20 py-12 ls-10"
+                  >
+                    Přebor mužů
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="btn-stroke btn text-uppercase border-line-2 px-20 py-12 ls-10"
+                  >
+                    Přebor U15
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="btn-stroke btn text-uppercase border-line-2 px-20 py-12 ls-10"
+                  >
+                    Přebor U12
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="btn-stroke btn text-uppercase border-line-2 px-20 py-12 ls-10"
+                  >
+                    Přebor U14
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="btn-stroke btn text-uppercase border-line-2 px-20 py-12 ls-10"
+                  >
+                    Přebor U13
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="btn-stroke btn text-uppercase border-line-2 px-20 py-12 ls-10"
+                  >
+                    Přebor U11
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="btn-stroke btn text-uppercase border-line-2 px-20 py-12 ls-10"
+                  >
+                    Přebor U9
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="btn-stroke btn text-uppercase border-line-2 px-20 py-12 ls-10"
+                  >
+                    Přebor U8
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="btn-stroke btn text-uppercase border-line-2 px-20 py-12 ls-10"
+                  >
+                    Přebor U7
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="mb-5">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-6">
+        <a class="d-block w-100 h-100" href="#">
+          <img
+            loading="lazy"
+            srcset="
+              https://placehold.co/704x120?text=704x120 1408w,
+              https://placehold.co/704x120?text=704x120  704w
+            "
+            sizes="
+                     (min-width: 704w) 704w
+                     
+                   "
+            width="704"
+            height="120"
+            class="object-fit-cover w-100 h-100"
+            alt=""
+          />
+        </a>
+      </div>
+      <div class="col-lg-6">
+        <a class="d-block w-100 h-100" href="#">
+          <img
+            loading="lazy"
+            srcset="
+              https://placehold.co/704x120?text=704x120 1408w,
+              https://placehold.co/704x120?text=704x120  704w
+            "
+            sizes="
+                  (min-width: 704w) 704w
+                  
+                "
+            width="704"
+            height="120"
+            class="object-fit-cover w-100 h-100"
+            alt=""
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+{% include "@components/partnersSlider/partnersSlider.twig" %} {% endblock %}

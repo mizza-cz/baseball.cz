@@ -10,6 +10,11 @@
   --bs-gutter-y: 32px !important;
   --bs-gutter-x: 32px !important;
 }
+.g-6 {
+  --bs-gutter-y: 40px !important;
+  --bs-gutter-x: 40px !important;
+}
+
 .gx-5 {
   --bs-gutter-x: 32px !important;
 }
@@ -37,6 +42,12 @@
 }
 .border-1 {
   border: 1px solid var(--color-line);
+}
+.border-line-2 {
+  border: 2px solid var(--color-line) !important;
+}
+a.border-line-2:hover {
+  border-color: var(--color-primary) !important;
 }
 .text-dark {
   color: var(--color-dark) !important;
@@ -93,6 +104,13 @@
   padding-left: 12px !important;
   padding-right: 12px !important;
 }
+.py-12 {
+  padding-block: 12px !important;
+}
+.px-20 {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
 .text-light {
   color: var(--color-light) !important;
 }
@@ -104,6 +122,9 @@
 }
 .gap-40 {
   gap: 40px;
+}
+.gap-48 {
+  gap: 48px;
 }
 
 .gap-20 {
@@ -141,5 +162,8 @@
   @include media-breakpoint-up(sm) {
     width: calc(50% - 1rem) !important;
   }
+}
+.ls-10 {
+  letter-spacing: 0.1em;
 }
 /*! purgecss end ignore */

@@ -20,12 +20,14 @@
     align-items: center;
     gap: 4px;
   }
+  .draw,
   .win,
   .lose {
     width: 16px;
     height: 16px;
   }
 }
+.draw,
 .win,
 .lose {
   width: 24px;
@@ -38,4 +40,7 @@
 }
 .lose {
   background-image: url("../images/ico/lose.svg");
+}
+.draw {
+  background-image: url("../images/ico/draw.svg");
 }
