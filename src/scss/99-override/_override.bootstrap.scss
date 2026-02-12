@@ -158,6 +158,33 @@ a.border-line-2:hover {
 .bg-line {
   background-color: var(--color-line) !important;
 }
+.bg-tertiary {
+  background: var(--color-tertiary) !important;
+}
+.bg-green {
+  background: var(--color-green) !important;
+}
+.bg-red {
+  background: var(--color-red) !important;
+}
+.bg-purple {
+  background: var(--color-purple) !important;
+}
+.bg-yellow {
+  background: var(--color-yellow) !important;
+}
+.bg-light-gray {
+  background: var(--color-light-gray) !important;
+}
+.bg-black {
+  background: var(--color-dark) !important;
+}
+.bg-gray {
+  background: var(--color-gray) !important;
+}
+.bg-orange {
+  background: var(--color-orange) !important;
+}
 .w-sm-49 {
   @include media-breakpoint-up(sm) {
     width: calc(50% - 1rem) !important;

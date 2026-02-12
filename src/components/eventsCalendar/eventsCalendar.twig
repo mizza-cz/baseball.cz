@@ -1,0 +1,55 @@
+<section class="mb-5 eventsCalendar">
+  <div class="container">
+    <div class="contentBox">
+      <div class="eventsCalendar-header">
+        <div id="calendarToolbar" class="calendar-toolbar">
+          <button
+            class="calendarToolbar-btn--prev"
+            type="button"
+            data-cal="prev"
+            aria-label="Předchozí měsíc"
+          >
+            {% include "@images/arrow-right.svg" %}
+          </button>
+
+          <select class="js-select" data-cal="month">
+            <option value="2026-01">Leden 2026</option>
+            <option value="2026-02">Únor 2026</option>
+            <option value="2026-03">Březen 2026</option>
+            <option value="2026-04">Duben 2026</option>
+            <option value="2026-05">Květen 2026</option>
+            <option value="2026-06">Červen 2026</option>
+            <option value="2026-07">Červenec 2026</option>
+            <option value="2026-08">Srpen 2026</option>
+            <option value="2026-09">Září 2026</option>
+            <option value="2026-10">Říjen 2026</option>
+            <option value="2026-11">Listopad 2026</option>
+            <option value="2026-12">Prosinec 2026</option>
+          </select>
+
+          <button
+            class="calendarToolbar-btn--next"
+            type="button"
+            data-cal="next"
+            aria-label="Další měsíc"
+          >
+            {% include "@images/arrow-right.svg" %}
+          </button>
+        </div>
+        <ul class="eventsCalendar-categories">
+          <li><span class="bg-tertiary"></span> Muži</li>
+          <li><span class="bg-green"></span> U18</li>
+          <li><span class="bg-red"></span> U15</li>
+          <li><span class="bg-purple"></span> u13</li>
+          <li><span class="bg-yellow"></span> u12</li>
+          <li><span class="bg-light-gray"></span>u10</li>
+          <li><span class="bg-black"></span> Ostatní</li>
+          <li><span class="bg-gray"></span> Turnaj</li>
+          <li><span class="bg-orange"></span>Soutěž</li>
+        </ul>
+      </div>
+
+      <div id="calendar"></div>
+    </div>
+  </div>
+</section>

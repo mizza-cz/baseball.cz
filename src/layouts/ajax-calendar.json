@@ -1,0 +1,32 @@
+{
+    "events": [
+        {
+            "id": "spring-training",
+            "title": "Spring training",
+            "start": "2026-02-02",
+            "end": "2026-02-06",
+            "url": "/akce/spring-training",
+            "backgroundColor": "#678AB5",
+            "borderColor": "#678AB5",
+            "textColor": "#ffffff",
+            "extendedProps": {
+                "popis": "Týmové jarní soustředění",
+                "misto": "Liberec"
+            }
+        },
+        {
+            "id": "liberec-cup",
+            "title": "Liberec Cup 2026 ",
+            "start": "2026-02-02",
+            "end": "2026-02-02",
+            "url": "/akce/spring-training",
+            "backgroundColor": "#CC7D0D",
+            "borderColor": "#CC7D0D",
+            "textColor": "#ffffff",
+            "extendedProps": {
+                "popis": "Týmové jarní soustředění",
+                "misto": "Liberec"
+            }
+        }
+    ]
+}

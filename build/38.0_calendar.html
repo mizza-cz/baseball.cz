@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8" />
-	<title>07.0_nbp-calendar - Česká baseballová asociace </title>
+	<title>38.0_calendar - Česká baseballová asociace </title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
 	<meta name="format-detection" content="telephone=no" />
 
@@ -696,57 +696,100 @@
 		</header>
 
 		<main class="main" aria-label="Hlavní obsah">
+			<!-- <link
+  href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.css"
+  rel="stylesheet"
+/> -->
+			<!--  
+<script src="https://unpkg.com/tippy.js@6"></script>
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/tippy.js@6/animations/scale.css"
+/> -->
 
 			<div class="headerSection">
 				<div class="container">
 					<div class="headerSection__inner">
-						<h1 class="h1 text-primary">NBP</h1>
-						<div class="d-flex align-items-center gap-5 flex-wrap">
-							<ul class="headerSection__menu">
-								<li>
-									<a href="https://mizza-cz.github.io/baseball.cz/build/06.0_nbp-overview.html" class="headerSection__menu-link">
-										Přehled
-									</a>
-								</li>
-								<li>
-									<a href="https://mizza-cz.github.io/baseball.cz/build/05.0_nbp-trainers.html" class="headerSection__menu-link">
-										Pro trenéry
-									</a>
-								</li>
-								<li>
-									<a href="https://mizza-cz.github.io/baseball.cz/build/07.0_nbp-calendar.html" class="headerSection__menu-link active">
-										Kalendář
-									</a>
-								</li>
-							</ul>
-							<ul class="headerSection__social">
-								<li>
-									<a href="#" target="_blank">
-										<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M32 16c0-8.837-7.163-16-16-16S0 7.163 0 16c0 7.988 5.85 14.606 13.5 15.806V20.625H9.437V16H13.5v-3.525c0-4.01 2.387-6.225 6.044-6.225 1.75 0 3.581.313 3.581.313V10.5h-2.019c-1.987 0-2.606 1.234-2.606 2.5v3h4.438l-.71 4.625H18.5v11.181C26.15 30.606 32 23.987 32 16z" fill="#004873" />
-											<path d="M22.228 20.625l.71-4.625H18.5v-3c0-1.266.619-2.5 2.606-2.5h2.019V6.562s-1.831-.312-3.581-.312c-3.656 0-6.044 2.216-6.044 6.225V16H9.437v4.625H13.5v11.181A16.1 16.1 0 0016 32a16.1 16.1 0 002.5-.194V20.625h3.728z" fill="#fff" />
-										</svg> </a>
-								</li>
-								<li>
-									<a href="#" target="_blank">
-										<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<g clip-path="url(#clip0_6754_10661)">
-												<path d="M0 16C0 7.163 7.163 0 16 0s16 7.163 16 16-7.163 16-16 16S0 24.837 0 16z" fill="#004873" />
-												<path d="M24.177 12.049a2.167 2.167 0 00-1.51-1.55c-1.33-.366-6.667-.366-6.667-.366s-5.337 0-6.668.367a2.167 2.167 0 00-1.509 1.549c-.356 1.366-.356 4.218-.356 4.218s0 2.85.356 4.218a2.167 2.167 0 001.51 1.549C10.662 22.4 16 22.4 16 22.4s5.337 0 6.668-.366a2.167 2.167 0 001.509-1.55c.357-1.366.357-4.217.357-4.217s0-2.852-.357-4.218z" fill="#fff" />
-												<path d="M14.4 19.2v-5.333l4.267 2.666L14.4 19.2z" fill="#004873" />
-											</g>
-											<defs>
-												<clipPath id="clip0_6754_10661">
-													<path fill="#fff" d="M0 0h32v32H0z" />
-												</clipPath>
-											</defs>
-										</svg> </a>
-								</li>
-							</ul>
+						<h1 class="h1 text-primary">Kalendář</h1>
+					</div>
+				</div>
+			</div>
+			<div class="mb-5">
+				<div class="container">
+					<div class="row g-5">
+						<div class="col-lg-6">
+							<a class="d-block w-100 h-100" href="#">
+								<img loading="lazy" srcset="
+              https://placehold.co/704x120?text=704x120 1408w,
+              https://placehold.co/704x120?text=704x120  704w
+            " sizes="
+                     (min-width: 704w) 704w
+                     
+                   " width="704" height="120" class="object-fit-cover w-100 h-100" alt="" />
+							</a>
+						</div>
+						<div class="col-lg-6">
+							<a class="d-block w-100 h-100" href="#">
+								<img loading="lazy" srcset="
+              https://placehold.co/704x120?text=704x120 1408w,
+              https://placehold.co/704x120?text=704x120  704w
+            " sizes="
+                  (min-width: 704w) 704w
+                  
+                " width="704" height="120" class="object-fit-cover w-100 h-100" alt="" />
+							</a>
 						</div>
 					</div>
 				</div>
 			</div>
+			<section class="mb-5 eventsCalendar">
+				<div class="container">
+					<div class="contentBox">
+						<div class="eventsCalendar-header">
+							<div id="calendarToolbar" class="calendar-toolbar">
+								<button class="calendarToolbar-btn--prev" type="button" data-cal="prev" aria-label="Předchozí měsíc">
+									<svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M4.167 10.105h11.666m0 0L10 4.272m5.833 5.833L10 15.938" stroke="#fff" />
+									</svg> </button>
+
+								<select class="js-select" data-cal="month">
+									<option value="2026-01">Leden 2026</option>
+									<option value="2026-02">Únor 2026</option>
+									<option value="2026-03">Březen 2026</option>
+									<option value="2026-04">Duben 2026</option>
+									<option value="2026-05">Květen 2026</option>
+									<option value="2026-06">Červen 2026</option>
+									<option value="2026-07">Červenec 2026</option>
+									<option value="2026-08">Srpen 2026</option>
+									<option value="2026-09">Září 2026</option>
+									<option value="2026-10">Říjen 2026</option>
+									<option value="2026-11">Listopad 2026</option>
+									<option value="2026-12">Prosinec 2026</option>
+								</select>
+
+								<button class="calendarToolbar-btn--next" type="button" data-cal="next" aria-label="Další měsíc">
+									<svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M4.167 10.105h11.666m0 0L10 4.272m5.833 5.833L10 15.938" stroke="#fff" />
+									</svg> </button>
+							</div>
+							<ul class="eventsCalendar-categories">
+								<li><span class="bg-tertiary"></span> Muži</li>
+								<li><span class="bg-green"></span> U18</li>
+								<li><span class="bg-red"></span> U15</li>
+								<li><span class="bg-purple"></span> u13</li>
+								<li><span class="bg-yellow"></span> u12</li>
+								<li><span class="bg-light-gray"></span>u10</li>
+								<li><span class="bg-black"></span> Ostatní</li>
+								<li><span class="bg-gray"></span> Turnaj</li>
+								<li><span class="bg-orange"></span>Soutěž</li>
+							</ul>
+						</div>
+
+						<div id="calendar"></div>
+					</div>
+				</div>
+			</section>
+
 			<div class="mb-5">
 				<div class="container">
 					<div class="row g-5">
@@ -776,214 +819,6 @@
 				</div>
 			</div>
 
-			<div class="mb-5">
-				<div class="container">
-					<div class="row g-5">
-						<div class="col-xl-4 col-lg-6">
-							<div class="calendarItem boxShadow">
-								<div class="d-flex gap-5 align-items-center mb-5">
-									<img loading="lazy" srcset="images/content/logo-calendar.png 92w" sizes="
-    (min-width: 92px) 92px
-    
-  " width="92" height="56" alt="logo" />
-									<h3 class="text-primary h3">Czech Talent</h3>
-								</div>
-								<p class="text-md mb-12">
-									Víkendový kemp je určen pro talentovanou mládež. Program má rozvíjet u hráčů
-									baseballové, atletické a posilovací aktivity. Camp je určen pro hráče od
-									13let do 16let. Hráči jsou vybíráni na základě nominací od hlavních trenérů
-									národních reprezentací, hlavního trenéra ČBA a TMK.
-								</p>
-								<ul class="calendarItem__list">
-									<li>
-										<span>Termín výběrů:</span> 30.9.2024 - Morava - Hroši, 2.10.2024 Čechy -
-										Tempo
-									</li>
-									<li><span>Termín akce:</span> 6. - 8.12.2024</li>
-									<li><span>Místo:</span> Nymburk</li>
-									<li><span>Zodpovědné osoby:</span> Tomáš Dufek, Petr Baroch</li>
-									<li><span>Trenéři:</span> 10</li>
-									<li><span>Hráči:</span> Nominace bude nejpozději v polovině listopadu</li>
-									<li><span>Kapacita hráčů:</span> 50</li>
-								</ul>
-							</div>
-						</div>
-						<div class="col-xl-4 col-lg-6">
-							<div class="calendarItem boxShadow">
-								<div class="d-flex gap-5 align-items-center mb-5">
-									<img loading="lazy" srcset="images/content/logo-calendar.png 92w" sizes="
-    (min-width: 92px) 92px
-    
-  " width="92" height="56" alt="logo" />
-									<h3 class="text-primary h3">Czech Talent</h3>
-								</div>
-								<p class="text-md mb-12">
-									Víkendový kemp je určen pro talentovanou mládež. Program má rozvíjet u hráčů
-									baseballové, atletické a posilovací aktivity. Camp je určen pro hráče od
-									13let do 16let. Hráči jsou vybíráni na základě nominací od hlavních trenérů
-									národních reprezentací, hlavního trenéra ČBA a TMK.
-								</p>
-								<ul class="calendarItem__list">
-									<li>
-										<span>Termín výběrů:</span> 30.9.2024 - Morava - Hroši, 2.10.2024 Čechy -
-										Tempo
-									</li>
-									<li><span>Termín akce:</span> 6. - 8.12.2024</li>
-									<li><span>Místo:</span> Nymburk</li>
-									<li><span>Zodpovědné osoby:</span> Tomáš Dufek, Petr Baroch</li>
-									<li><span>Trenéři:</span> 10</li>
-									<li><span>Hráči:</span> Nominace bude nejpozději v polovině listopadu</li>
-									<li><span>Kapacita hráčů:</span> 50</li>
-								</ul>
-							</div>
-						</div>
-						<div class="col-xl-4 col-lg-6">
-							<div class="calendarItem boxShadow">
-								<div class="d-flex gap-5 align-items-center mb-5">
-									<img loading="lazy" srcset="images/content/logo-calendar.png 92w" sizes="
-    (min-width: 92px) 92px
-    
-  " width="92" height="56" alt="logo" />
-									<h3 class="text-primary h3">Czech Talent</h3>
-								</div>
-								<p class="text-md mb-12">
-									Víkendový kemp je určen pro talentovanou mládež. Program má rozvíjet u hráčů
-									baseballové, atletické a posilovací aktivity. Camp je určen pro hráče od
-									13let do 16let. Hráči jsou vybíráni na základě nominací od hlavních trenérů
-									národních reprezentací, hlavního trenéra ČBA a TMK.
-								</p>
-								<ul class="calendarItem__list">
-									<li>
-										<span>Termín výběrů:</span> 30.9.2024 - Morava - Hroši, 2.10.2024 Čechy -
-										Tempo
-									</li>
-									<li><span>Termín akce:</span> 6. - 8.12.2024</li>
-									<li><span>Místo:</span> Nymburk</li>
-									<li><span>Zodpovědné osoby:</span> Tomáš Dufek, Petr Baroch</li>
-									<li><span>Trenéři:</span> 10</li>
-									<li><span>Hráči:</span> Nominace bude nejpozději v polovině listopadu</li>
-									<li><span>Kapacita hráčů:</span> 50</li>
-								</ul>
-							</div>
-						</div>
-						<div class="col-xl-4 col-lg-6">
-							<div class="calendarItem boxShadow">
-								<div class="d-flex gap-5 align-items-center mb-5">
-									<img loading="lazy" srcset="images/content/logo-calendar.png 92w" sizes="
-    (min-width: 92px) 92px
-    
-  " width="92" height="56" alt="logo" />
-									<h3 class="text-primary h3">Czech Talent</h3>
-								</div>
-								<p class="text-md mb-12">
-									Víkendový kemp je určen pro talentovanou mládež. Program má rozvíjet u hráčů
-									baseballové, atletické a posilovací aktivity. Camp je určen pro hráče od
-									13let do 16let. Hráči jsou vybíráni na základě nominací od hlavních trenérů
-									národních reprezentací, hlavního trenéra ČBA a TMK.
-								</p>
-								<ul class="calendarItem__list">
-									<li>
-										<span>Termín výběrů:</span> 30.9.2024 - Morava - Hroši, 2.10.2024 Čechy -
-										Tempo
-									</li>
-									<li><span>Termín akce:</span> 6. - 8.12.2024</li>
-									<li><span>Místo:</span> Nymburk</li>
-									<li><span>Zodpovědné osoby:</span> Tomáš Dufek, Petr Baroch</li>
-									<li><span>Trenéři:</span> 10</li>
-									<li><span>Hráči:</span> Nominace bude nejpozději v polovině listopadu</li>
-									<li><span>Kapacita hráčů:</span> 50</li>
-								</ul>
-							</div>
-						</div>
-						<div class="col-xl-4 col-lg-6">
-							<div class="calendarItem boxShadow">
-								<div class="d-flex gap-5 align-items-center mb-5">
-									<img loading="lazy" srcset="images/content/logo-calendar.png 92w" sizes="
-    (min-width: 92px) 92px
-    
-  " width="92" height="56" alt="logo" />
-									<h3 class="text-primary h3">Czech Talent</h3>
-								</div>
-								<p class="text-md mb-12">
-									Víkendový kemp je určen pro talentovanou mládež. Program má rozvíjet u hráčů
-									baseballové, atletické a posilovací aktivity. Camp je určen pro hráče od
-									13let do 16let. Hráči jsou vybíráni na základě nominací od hlavních trenérů
-									národních reprezentací, hlavního trenéra ČBA a TMK.
-								</p>
-								<ul class="calendarItem__list">
-									<li>
-										<span>Termín výběrů:</span> 30.9.2024 - Morava - Hroši, 2.10.2024 Čechy -
-										Tempo
-									</li>
-									<li><span>Termín akce:</span> 6. - 8.12.2024</li>
-									<li><span>Místo:</span> Nymburk</li>
-									<li><span>Zodpovědné osoby:</span> Tomáš Dufek, Petr Baroch</li>
-									<li><span>Trenéři:</span> 10</li>
-									<li><span>Hráči:</span> Nominace bude nejpozději v polovině listopadu</li>
-									<li><span>Kapacita hráčů:</span> 50</li>
-								</ul>
-							</div>
-						</div>
-						<div class="col-xl-4 col-lg-6">
-							<div class="calendarItem boxShadow">
-								<div class="d-flex gap-5 align-items-center mb-5">
-									<img loading="lazy" srcset="images/content/logo-calendar.png 92w" sizes="
-    (min-width: 92px) 92px
-    
-  " width="92" height="56" alt="logo" />
-									<h3 class="text-primary h3">Czech Talent</h3>
-								</div>
-								<p class="text-md mb-12">
-									Víkendový kemp je určen pro talentovanou mládež. Program má rozvíjet u hráčů
-									baseballové, atletické a posilovací aktivity. Camp je určen pro hráče od
-									13let do 16let. Hráči jsou vybíráni na základě nominací od hlavních trenérů
-									národních reprezentací, hlavního trenéra ČBA a TMK.
-								</p>
-								<ul class="calendarItem__list">
-									<li>
-										<span>Termín výběrů:</span> 30.9.2024 - Morava - Hroši, 2.10.2024 Čechy -
-										Tempo
-									</li>
-									<li><span>Termín akce:</span> 6. - 8.12.2024</li>
-									<li><span>Místo:</span> Nymburk</li>
-									<li><span>Zodpovědné osoby:</span> Tomáš Dufek, Petr Baroch</li>
-									<li><span>Trenéři:</span> 10</li>
-									<li><span>Hráči:</span> Nominace bude nejpozději v polovině listopadu</li>
-									<li><span>Kapacita hráčů:</span> 50</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="mb-5">
-				<div class="container">
-					<div class="row g-5">
-						<div class="col-lg-6">
-							<a class="d-block w-100 h-100" href="#">
-								<img loading="lazy" srcset="
-              https://placehold.co/704x120?text=704x120 1408w,
-              https://placehold.co/704x120?text=704x120  704w
-            " sizes="
-                     (min-width: 704w) 704w
-                     
-                   " width="704" height="120" class="object-fit-cover w-100 h-100" alt="" />
-							</a>
-						</div>
-						<div class="col-lg-6">
-							<a class="d-block w-100 h-100" href="#">
-								<img loading="lazy" srcset="
-              https://placehold.co/704x120?text=704x120 1408w,
-              https://placehold.co/704x120?text=704x120  704w
-            " sizes="
-                  (min-width: 704w) 704w
-                  
-                " width="704" height="120" class="object-fit-cover w-100 h-100" alt="" />
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
 			<div class="partnersSlider">
 				<div class="container">
 					<div class="d-flex gap-3 align-items-center justify-content-between flex-wrap mb-4">
