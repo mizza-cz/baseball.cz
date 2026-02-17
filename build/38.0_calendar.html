@@ -696,16 +696,6 @@
 		</header>
 
 		<main class="main" aria-label="Hlavní obsah">
-			<!-- <link
-  href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.css"
-  rel="stylesheet"
-/> -->
-			<!--  
-<script src="https://unpkg.com/tippy.js@6"></script>
-<link
-  rel="stylesheet"
-  href="https://unpkg.com/tippy.js@6/animations/scale.css"
-/> -->
 
 			<div class="headerSection">
 				<div class="container">
@@ -752,7 +742,7 @@
 										<path d="M4.167 10.105h11.666m0 0L10 4.272m5.833 5.833L10 15.938" stroke="#fff" />
 									</svg> </button>
 
-								<select class="js-select" data-cal="month">
+								<select class="js-select js-calendar-month" data-cal="month">
 									<option value="2026-01">Leden 2026</option>
 									<option value="2026-02">Únor 2026</option>
 									<option value="2026-03">Březen 2026</option>
@@ -785,7 +775,7 @@
 							</ul>
 						</div>
 
-						<div id="calendar"></div>
+						<div id="calendar" data-events-url="/ajax-calendar.json" data-default-month="2026-03"></div>
 					</div>
 				</div>
 			</section>

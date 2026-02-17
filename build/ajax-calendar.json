@@ -27,6 +27,34 @@
                 "popis": "Týmové jarní soustředění",
                 "misto": "Liberec"
             }
+        },
+        {
+            "id": "liberec-cup",
+            "title": "Liberec Cup 2026 ",
+            "start": "2026-03-14",
+            "end": "2026-03-17",
+            "url": "/akce/spring-training",
+            "backgroundColor": "#419e6a",
+            "borderColor": "#419e6a",
+            "textColor": "#ffffff",
+            "extendedProps": {
+                "popis": "Týmové jarní soustředění",
+                "misto": "Liberec"
+            }
+        },
+        {
+            "id": "Leden cup",
+            "title": "Leden Cup 2026 ",
+            "start": "2026-01-06",
+            "end": "2026-01-08",
+            "url": "/akce/spring-training",
+            "backgroundColor": "#d22020",
+            "borderColor": "#d22020",
+            "textColor": "#ffffff",
+            "extendedProps": {
+                "popis": "Týmové jarní soustředění",
+                "misto": "Liberec"
+            }
         }
     ]
 }
