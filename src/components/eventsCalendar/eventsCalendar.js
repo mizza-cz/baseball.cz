@@ -5,10 +5,7 @@
 
   const prevBtn = toolbarEl.querySelector('[data-cal="prev"]');
   const nextBtn = toolbarEl.querySelector('[data-cal="next"]');
-
-  // ВАЖНО: добавь этот класс НА <select>
-  const monthSelect = toolbarEl.querySelector(".js-calendar-month");
-  if (!monthSelect) return;
+  const titleEl = toolbarEl.querySelector('[data-cal="title"]');
 
   const hasTippy = typeof window.tippy === "function";
 
@@ -20,70 +17,20 @@
 
   const events = await loadEventsJson(eventsUrl);
 
-  let calendar = null;
-  let isSyncing = false;
+  // Формат месяца для заголовка (по locale календаря — cs)
+  const titleFormatter = new Intl.DateTimeFormat("cs", {
+    month: "long",
+    year: "numeric",
+  });
 
-  function parseMonthValue(v) {
-    const s = String(v || "").trim();
-    const m = s.match(/^(\d{4})-(\d{2})$/);
-    if (!m) return null;
-    const y = Number(m[1]);
-    const mm = Number(m[2]);
-    if (!y || mm < 1 || mm > 12) return null;
-    return { y, m: mm };
+  function syncTitleFromCalendar(calendarInstance) {
+    if (!titleEl || !calendarInstance) return;
+    const d = calendarInstance.getDate();
+    const t = titleFormatter.format(d);
+    titleEl.textContent = t.charAt(0).toUpperCase() + t.slice(1);
   }
 
-  function gotoFromSelectValue(value) {
-    if (!calendar) return;
-    const parsed = parseMonthValue(value);
-    if (!parsed) return;
-    calendar.gotoDate(new Date(parsed.y, parsed.m - 1, 1));
-  }
-
-  function onMonthPick() {
-    // isSyncing = только чтобы "наши" обновления селекта не гоняли gotoDate по кругу
-    if (isSyncing) return;
-    gotoFromSelectValue(monthSelect.value);
-  }
-
-  function syncSelectFromCalendar() {
-    if (!calendar) return;
-
-    const d = calendar.getDate();
-    const val = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(
-      2,
-      "0"
-    )}`;
-
-    if (String(monthSelect.value).trim() === val) return;
-
-    isSyncing = true;
-    try {
-      monthSelect.value = val;
-
-      // обновить UI select2 (если он есть)
-      if (window.jQuery && window.jQuery.fn && window.jQuery.fn.select2) {
-        window.jQuery(monthSelect).trigger("change.select2");
-      } else {
-        monthSelect.dispatchEvent(new Event("change", { bubbles: true }));
-      }
-    } finally {
-      isSyncing = false;
-    }
-  }
-
-  // 1) Нативные события
-  monthSelect.addEventListener("change", onMonthPick);
-  monthSelect.addEventListener("input", onMonthPick);
-
-  // 2) Событие select2 (это ключевое)
-  if (window.jQuery && window.jQuery.fn && window.jQuery.fn.select2) {
-    window.jQuery(monthSelect).on("select2:select", function () {
-      onMonthPick();
-    });
-  }
-
-  calendar = new FullCalendar.Calendar(calendarEl, {
+  const calendar = new FullCalendar.Calendar(calendarEl, {
     initialView: "dayGridMonth",
     initialDate,
     locale: "cs",
@@ -134,7 +81,7 @@
     },
 
     datesSet() {
-      syncSelectFromCalendar();
+      syncTitleFromCalendar(calendar);
     },
 
     eventClick(info) {
@@ -146,7 +93,7 @@
   });
 
   calendar.render();
-  syncSelectFromCalendar();
+  syncTitleFromCalendar(calendar);
 
   prevBtn?.addEventListener("click", () => calendar.prev());
   nextBtn?.addEventListener("click", () => calendar.next());
