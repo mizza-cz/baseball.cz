@@ -37,6 +37,12 @@
       display: block;
     }
   }
+  #subMenu {
+    @include media-breakpoint-up(xl) {
+      display: block;
+      opacity: 1;
+    }
+  }
   .accordion-button {
     outline: none;
     position: absolute;
