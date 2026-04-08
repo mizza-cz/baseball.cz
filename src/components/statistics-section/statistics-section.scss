@@ -32,3 +32,8 @@
     }
   }
 }
+.sort-table th {
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+}
