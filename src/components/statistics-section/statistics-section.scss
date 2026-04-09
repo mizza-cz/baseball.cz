@@ -37,3 +37,9 @@
   user-select: none;
   white-space: nowrap;
 }
+.sort-table {
+  th.active-column,
+  td.active-column {
+    background-color: var(--color-line);
+  }
+}

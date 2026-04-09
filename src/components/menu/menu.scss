@@ -119,17 +119,43 @@
   }
 }
 
+// fixes scroll menu
+
 @include media-breakpoint-down(xl) {
   body.is-nav-open {
     overflow: hidden;
+    touch-action: none;
   }
 
-  .menu .tab-content {
-    max-height: calc(100dvh - 14.375rem);
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 10001;
   }
-  body.is-nav-open .menu .tab-content {
-    max-height: calc(100dvh - 7.25rem);
+
+  .menu {
+    position: fixed;
+    top: 10.3rem;
+    left: 0;
+    right: 0;
+    height: calc(100dvh - 7.25rem);
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: 10000;
+  }
+
+  .is-nav-open .menu {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  .header.header--scroll .menu {
+    top: 3.5rem;
   }
 }
