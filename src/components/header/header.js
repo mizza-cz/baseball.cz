@@ -28,23 +28,18 @@
     const SELECTORS = {
       btn: ".header__search",
       popup: "#mobile-search",
-
       close:
-        ".js-search-close, .mobile-search__close,      \
-              .search-close, .btn-close, .close, .searchBox__close, \
-              [data-search-close]",
+        ".js-search-close, .mobile-search__close, .search-close, .btn-close, .close, .searchBox__close, [data-search-close]",
     };
 
     const $btn = $(SELECTORS.btn);
     const $popup = $(SELECTORS.popup);
 
-    // открыть / закрыть по лупе
     $btn.on("click", function (e) {
       e.stopPropagation();
       toggleSearch();
     });
 
-    // закрыть по клику на любой крестик
     $(document).on("click", SELECTORS.close, function (e) {
       if ($popup.hasClass("active")) {
         e.stopPropagation();
@@ -64,6 +59,7 @@
     function toggleSearch() {
       $btn.toggleClass("active");
       $popup.toggleClass("active");
+
       if ($popup.hasClass("active")) {
         $popup
           .find("input[type='search'], input[type='text']")
@@ -71,6 +67,7 @@
           .trigger("focus");
       }
     }
+
     function closeSearch() {
       $btn.removeClass("active");
       $popup.removeClass("active");
@@ -112,6 +109,7 @@
     }
 
     refresh();
+
     $(window).on("resize", function () {
       clearTimeout(t);
       t = setTimeout(refresh, 200);
@@ -125,11 +123,12 @@
     function onScroll() {
       if (!ticking) {
         window.requestAnimationFrame(function () {
-          $("html,body").scrollTop() > 0
+          $("html, body").scrollTop() > 0
             ? $header.addClass("header--scroll")
             : $header.removeClass("header--scroll");
           ticking = false;
         });
+
         ticking = true;
       }
     }
