@@ -3,7 +3,6 @@
   margin-bottom: 32px;
   &__wrapper {
     border: 1px solid var(--color-line);
-    box-shadow: var(--shadow-4xl);
     padding: 48px 80px;
     @include media-breakpoint-only(xl) {
       padding: 40px 60px;

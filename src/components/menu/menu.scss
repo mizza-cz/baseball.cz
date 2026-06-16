@@ -62,7 +62,7 @@
   }
   .accordion-header {
     color: var(--color-light);
-    font-weight: 700;
+    font-family: var(--font-display);
     font-size: 16px;
     line-height: 27px;
     letter-spacing: 0.1em;
@@ -111,6 +111,7 @@
     background-color: var(--color-primary);
     color: var(--color-light);
     cursor: pointer;
+    font-family: var(--font-display);
   }
   .nav-link.active {
     background-color: var(--color-light);

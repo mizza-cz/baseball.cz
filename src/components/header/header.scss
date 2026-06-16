@@ -144,10 +144,6 @@
         }
       }
       &-item {
-        font-size: 16px;
-        font-weight: 700;
-        line-height: 16px;
-        color: var(--color-dark);
         transition: all 0.3s;
         position: relative;
         text-decoration: none;
@@ -155,19 +151,16 @@
         align-items: center;
         gap: 8px;
         height: 100%;
-
         padding-left: 24px;
         padding-right: 24px;
         padding-top: 4px;
-
-        font-weight: 700;
         font-size: 16px;
         line-height: 27px;
         letter-spacing: 0.1em;
         vertical-align: middle;
         text-transform: uppercase;
         color: var(--color-light);
-
+        font-family: var(--font-display);
         &::before {
           content: "";
           position: absolute;
@@ -444,5 +437,3 @@
     }
   }
 }
-
- 

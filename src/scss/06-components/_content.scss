@@ -31,7 +31,6 @@
     margin-bottom: 16px;
   }
   ul {
-    color: rgba(0, 17, 15, 1);
     font-size: 16px;
     font-weight: 400;
     line-height: 28px;
@@ -41,7 +40,7 @@
     list-style-type: disc;
 
     li::marker {
-      color: #004873;
+      color: var(--color-dark);
     }
 
     > li {
@@ -54,7 +53,7 @@
       list-style-type: circle;
 
       li::marker {
-        color: #004873;
+        color: var(--color-dark);
       }
 
       > li {
@@ -64,7 +63,6 @@
   }
 
   ol {
-    color: rgba(0, 17, 15, 1);
     font-size: 16px;
     font-weight: 400;
     line-height: 28px;
@@ -73,7 +71,7 @@
     padding-left: 22px;
 
     li::marker {
-      color: #004873;
+      color: var(--color-dark);
       font-weight: 700;
     }
 
@@ -87,7 +85,7 @@
       list-style-type: lower-alpha;
 
       li::marker {
-        color: #004873;
+        color: var(--color-dark);
       }
     }
   }
@@ -97,6 +95,7 @@
 .o-content h1 {
   font-size: 40px;
   line-height: 50px;
+  font-family: var(--font-display);
   @include media-breakpoint-down(lg) {
     font-size: 32px;
     line-height: 42px;
@@ -107,6 +106,7 @@
 .o-content h2 {
   font-size: 32px;
   line-height: 48px;
+  font-family: var(--font-display);
   @include media-breakpoint-down(lg) {
     font-size: 24px;
     line-height: 32px;
@@ -117,6 +117,7 @@
 .o-content h3 {
   font-size: 24px;
   line-height: 32px;
+  font-family: var(--font-display);
   @include media-breakpoint-down(lg) {
     font-size: 22px;
     line-height: 28px;
@@ -127,6 +128,7 @@
 .o-content h4 {
   font-size: 20px;
   line-height: 26px;
+  font-family: var(--font-display);
 }
 
 .h5,

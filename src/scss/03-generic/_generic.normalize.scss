@@ -53,7 +53,8 @@ html:focus-within {
 body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
-  font-family: "Roboto Condensed", sans-serif !important;
+  font-family: var(--font-body);
+  color: var(--color-dark);
 }
 
 /* A elements that don't have a class get default styles */

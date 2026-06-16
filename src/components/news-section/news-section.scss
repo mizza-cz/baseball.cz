@@ -1,7 +1,7 @@
 .news-section {
-  margin-top: 80px;
+  padding-top: 80px;
   @include media-breakpoint-down(lg) {
-    margin-top: 32px;
+    padding-top: 32px;
   }
   .select {
     @include media-breakpoint-only(md) {

@@ -21,7 +21,7 @@
   max-width: 352px;
   transition: all 0.3s;
   padding: 12px 20px;
-  background: var(--color-light);
+  background: var(--color-tertiary);
   border-right: 2px solid var(--color-line);
   display: block;
   text-decoration: none;
@@ -35,10 +35,11 @@
     padding-bottom: 8px;
     margin-bottom: 8px;
     letter-spacing: 0.1em;
-    font-weight: 700;
     font-size: 14px;
     line-height: 20px;
     text-transform: uppercase;
+
+    font-family: var(--font-display);
   }
   &__team {
     display: flex;
@@ -53,6 +54,6 @@
 }
 a.scoreboardItem {
   &:hover {
-    background: rgba(#e4e4e7, 0.4);
+    background: rgba(#f4eace, 0.4);
   }
 }

@@ -1,50 +1,48 @@
 <section class="mb-5 eventsCalendar">
   <div class="container">
-    <div class="contentBox">
-      <div class="eventsCalendar-header">
-        <div id="calendarToolbar" class="calendar-toolbar">
-          <button
-            class="calendarToolbar-btn--prev"
-            type="button"
-            data-cal="prev"
-            aria-label="Předchozí měsíc"
-          >
-            {% include "@images/arrow-right.svg" %}
-          </button>
+    <div class="eventsCalendar-header">
+      <div id="calendarToolbar" class="calendar-toolbar">
+        <button
+          class="calendarToolbar-btn--prev"
+          type="button"
+          data-cal="prev"
+          aria-label="Předchozí měsíc"
+        >
+          {% include "@images/arrow-right.svg" %}
+        </button>
 
-          <div
-            class="calendarToolbar-title"
-            data-cal="title"
-            aria-live="polite"
-          ></div>
+        <div
+          class="calendarToolbar-title"
+          data-cal="title"
+          aria-live="polite"
+        ></div>
 
-          <button
-            class="calendarToolbar-btn--next"
-            type="button"
-            data-cal="next"
-            aria-label="Další měsíc"
-          >
-            {% include "@images/arrow-right.svg" %}
-          </button>
-        </div>
-        <ul class="eventsCalendar-categories">
-          <li><span class="bg-tertiary"></span> Muži</li>
-          <li><span class="bg-green"></span> U18</li>
-          <li><span class="bg-red"></span> U15</li>
-          <li><span class="bg-purple"></span> u13</li>
-          <li><span class="bg-yellow"></span> u12</li>
-          <li><span class="bg-light-gray"></span>u10</li>
-          <li><span class="bg-black"></span> Ostatní</li>
-          <li><span class="bg-gray"></span> Turnaj</li>
-          <li><span class="bg-orange"></span>Soutěž</li>
-        </ul>
+        <button
+          class="calendarToolbar-btn--next"
+          type="button"
+          data-cal="next"
+          aria-label="Další měsíc"
+        >
+          {% include "@images/arrow-right.svg" %}
+        </button>
       </div>
-
-      <div
-        id="calendar"
-        data-events-url="/baseball.cz/build/ajax-calendar.json"
-        data-default-month="2026-03"
-      ></div>
+      <ul class="eventsCalendar-categories">
+        <li><span class="bg-tertiary"></span> Muži</li>
+        <li><span class="bg-green"></span> U18</li>
+        <li><span class="bg-red"></span> U15</li>
+        <li><span class="bg-purple"></span> u13</li>
+        <li><span class="bg-yellow"></span> u12</li>
+        <li><span class="bg-light-gray"></span>u10</li>
+        <li><span class="bg-black"></span> Ostatní</li>
+        <li><span class="bg-gray"></span> Turnaj</li>
+        <li><span class="bg-orange"></span>Soutěž</li>
+      </ul>
     </div>
+
+    <div
+      id="calendar"
+      data-events-url="/baseball.cz/build/ajax-calendar.json"
+      data-default-month="2026-03"
+    ></div>
   </div>
 </section>

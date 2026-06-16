@@ -4,12 +4,12 @@
   justify-content: center;
   gap: 12px;
   padding: 12px 32px;
-  font-weight: 700;
   font-size: 16px;
   line-height: 27px;
   border-radius: 6px;
   transition: color 0.3s, background-color 0.3s, border 0.3s;
   width: fit-content;
+  font-family: var(--font-display);
   @include media-breakpoint-down(lg) {
     font-size: 0.875rem;
     line-height: 1.5;
@@ -39,5 +39,8 @@
   &:hover {
     background-color: var(--color-light);
     color: var(--color-primary);
+    svg path {
+      stroke: var(--color-primary);
+    }
   }
 }

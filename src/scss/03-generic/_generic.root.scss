@@ -1,12 +1,14 @@
 :root {
+  --font-display: "Czechia", sans-serif;
+  --font-body: "Inria Serif", serif;
   --color-light: #fff;
-  --color-dark: #000;
+  --color-dark: #113161;
 
-  --color-primary: #004873;
+  --color-primary: #1d428a;
   --color-secondary: #c22532;
-  --color-tertiary: #678ab5;
+  --color-tertiary: #f4eace;
 
-  --color-line: #e4e4e7;
+  --color-line: #ede2c9;
 
   --gradient-1: linear-gradient(
     180deg,
@@ -14,7 +16,8 @@
     #004873 100%
   );
 
-  --shadow-4xl: 0px 20px 40px -12px #1018280d;
+  // --shadow-4xl: 0px 20px 40px -12px #1018280d;
+
   --bs-accordion-btn-bg: #fff;
 
   --color-green: #419e6a;

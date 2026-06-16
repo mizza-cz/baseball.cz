@@ -1,6 +1,6 @@
 .partners-section {
-  margin-top: 32px;
-  margin-bottom: 32px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   &__item {
     display: flex;
     width: 100%;
@@ -19,6 +19,6 @@
 
 .hp-partners-section {
   padding-top: 32px;
-  margin-bottom: 32px;
+  padding-bottom: 2rem;
   border-top: 1px solid var(--color-line);
 }
