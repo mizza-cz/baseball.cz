@@ -35,9 +35,9 @@
 .btn-primary {
   border: 1px solid var(--color-primary);
   background-color: var(--color-primary);
-  color: var(--color-light);
+  color: var(--color-tertiary);
   &:hover {
-    background-color: var(--color-light);
+    background-color: var(--color-tertiary);
     color: var(--color-primary);
     svg path {
       stroke: var(--color-primary);

@@ -96,6 +96,7 @@
   font-size: 40px;
   line-height: 50px;
   font-family: var(--font-display);
+  font-weight: 400;
   @include media-breakpoint-down(lg) {
     font-size: 32px;
     line-height: 42px;
@@ -106,6 +107,7 @@
 .o-content h2 {
   font-size: 32px;
   line-height: 48px;
+  font-weight: 400;
   font-family: var(--font-display);
   @include media-breakpoint-down(lg) {
     font-size: 24px;
@@ -118,6 +120,7 @@
   font-size: 24px;
   line-height: 32px;
   font-family: var(--font-display);
+  font-weight: 400;
   @include media-breakpoint-down(lg) {
     font-size: 22px;
     line-height: 28px;
@@ -129,6 +132,7 @@
   font-size: 20px;
   line-height: 26px;
   font-family: var(--font-display);
+  font-weight: 400;
 }
 
 .h5,
