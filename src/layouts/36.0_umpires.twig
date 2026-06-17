@@ -104,8 +104,10 @@ block main %}
           {% include "@components/post/post.twig" %}
         </div>
       </div>
-      <a href="#" class="btn btn-primary ms-auto mt-5"
-        >Zobrazit další články
+      <a href="#" class="btn btn-primary ms-auto mt-5">
+        {% include "@images/button.svg" %}
+
+        <span class="btn__text"> Zobrazit další články </span>
       </a>
     </div>
     <h2 class="h2 text-primary mb-lg-4 mb-3">Dokumenty</h2>
@@ -153,7 +155,11 @@ block main %}
             {% include "@images/search.svg" %}
           </button>
         </div>
-        <button class="btn btn-primary w-sm-auto w-100">Hledat</button>
+        <button class="btn btn-primary w-sm-auto w-100">
+          {% include "@images/button.svg" %}
+
+          <span class="btn__text"> Hledat </span>
+        </button>
       </div>
     </form>
     <div class="contentBox mb-5">

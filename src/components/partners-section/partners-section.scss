@@ -18,7 +18,11 @@
 }
 
 .hp-partners-section {
-  padding-top: 32px;
-  padding-bottom: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   border-top: 1px solid var(--color-line);
+  @include media-breakpoint-down(lg) {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
 }
