@@ -25,10 +25,11 @@
   }
   &__menu-link {
     border-radius: 6px;
-    border: 2px solid var(--color-line);
+    border: 2px solid var(--color-tertiary);
+    background: var(--color-tertiary);
     display: block;
     width: fit-content;
-    padding: 13px 20px 11px;
+    padding: 9px 20px 11px;
     color: var(--color-primary);
     font-family: var(--font-display);
     font-weight: 700;
@@ -36,19 +37,30 @@
     line-height: 27px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
+    transition: all 0.3s ease;
     text-decoration-color: transparent;
-
+    clip-path: polygon(
+      clamp(6px, 3%, 12px) 0,
+      calc(100% - clamp(6px, 3%, 12px)) 0,
+      100% clamp(6px, 3%, 12px),
+      100% calc(100% - clamp(6px, 3%, 12px)),
+      calc(100% - clamp(6px, 3%, 12px)) 100%,
+      clamp(6px, 3%, 12px) 100%,
+      0 calc(100% - clamp(6px, 3%, 12px)),
+      0 clamp(6px, 3%, 12px)
+    );
     @include media-breakpoint-down(lg) {
       font-size: 0.75rem;
       line-height: 1.5;
       padding: 9px 12px 8px;
     }
     &:hover {
-      text-decoration-color: inherit;
+      background: var(--color-line);
+      border-color: var(--color-line);
     }
     &.active {
       border-color: var(--color-primary);
-      color: var(--color-light);
+      color: var(--color-tertiary);
       background-color: var(--color-primary);
     }
   }
