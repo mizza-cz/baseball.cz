@@ -1,0 +1,115 @@
+.tournament-bracket {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  min-height: 540px;
+  gap: 54px;
+  @include media-breakpoint-down(lg) {
+    gap: 32px;
+  }
+
+  @include media-breakpoint-down(md) {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    gap: 40px;
+  }
+
+  &__round {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+  }
+
+  &__matches {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 32px;
+
+    @include media-breakpoint-down(md) {
+      flex: none;
+      justify-content: flex-start;
+      gap: 24px;
+    }
+  }
+
+  &__round--semifinal {
+    .tournament-bracket__matches {
+      justify-content: space-around;
+
+      @include media-breakpoint-down(md) {
+        justify-content: flex-start;
+      }
+    }
+  }
+
+  &__round--final {
+    .tournament-bracket__matches {
+      justify-content: center;
+
+      @include media-breakpoint-down(md) {
+        justify-content: flex-start;
+      }
+    }
+  }
+}
+
+.bracket-match {
+  width: 100%;
+
+  border: 1px solid var(--color-line);
+
+  &__team {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 56px;
+    padding: 8px 12px;
+    gap: 12px;
+    color: var(--color-primary);
+
+    &--winner {
+      background: var(--color-tertiary);
+    }
+
+    strong {
+      flex-shrink: 0;
+      font-family: var(--font-display);
+      font-size: 20px;
+      line-height: 1;
+    }
+  }
+
+  &__team-info {
+    display: flex;
+    align-items: center;
+    min-width: 0;
+    gap: 12px;
+
+    img {
+      width: 32px;
+      height: 32px;
+      flex-shrink: 0;
+      object-fit: contain;
+    }
+
+    span {
+      min-width: 0;
+      overflow: hidden;
+      font-family: var(--font-display);
+      font-size: 20px;
+      line-height: 1.2;
+      text-overflow: ellipsis;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+  }
+
+  &__placeholder {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    background: var(--color-tertiary);
+  }
+}
