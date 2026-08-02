@@ -65,7 +65,7 @@
     align-items: center;
     justify-content: space-between;
     min-height: 56px;
-    padding: 8px 12px;
+    padding: 8px 16px;
     gap: 12px;
     color: var(--color-primary);
 
@@ -76,8 +76,14 @@
     strong {
       flex-shrink: 0;
       font-family: var(--font-display);
-      font-size: 20px;
+      font-size: 32px;
       line-height: 1;
+      min-width: 32px;
+      text-align: center;
+      @include media-breakpoint-down(md) {
+        font-size: 28px;
+        min-width: 28px;
+      }
     }
   }
 
@@ -103,6 +109,9 @@
       text-overflow: ellipsis;
       text-transform: uppercase;
       white-space: nowrap;
+      @include media-breakpoint-down(sm) {
+        font-size: 18px;
+      }
     }
   }
 
