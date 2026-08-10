@@ -138,7 +138,8 @@
   &__numbers {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    background: var(--color-line);
+
+    border: 0.0625rem solid var(--color-line);
     span {
       display: flex;
       align-items: center;
@@ -151,7 +152,7 @@
       height: 80px;
       min-width: 80px;
       & + span {
-        border-left: 1px solid #d1d1d6;
+        border-left: 1px solid var(--color-line);
       }
     }
   }
