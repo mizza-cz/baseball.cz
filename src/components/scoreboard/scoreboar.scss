@@ -1,5 +1,5 @@
 .scoreboard {
-  background: var(--color-light);
+  background: var(--color-tertiary);
   position: relative;
   z-index: 11;
   overflow-x: hidden;
@@ -49,6 +49,6 @@
 }
 a.scoreboardItem {
   &:hover {
-    background: rgba(#f4eace, 0.4);
+    background: rgba(#ffff, 0.5);
   }
 }
