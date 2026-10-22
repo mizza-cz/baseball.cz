@@ -53,6 +53,11 @@
       flex-direction: column;
     }
     .h4 {
+      @include media-breakpoint-down(lg) {
+        flex-wrap: wrap;
+        justify-content: center;
+        white-space: initial;
+      }
       @include media-breakpoint-down(sm) {
         flex-direction: column;
         gap: 0 !important;
